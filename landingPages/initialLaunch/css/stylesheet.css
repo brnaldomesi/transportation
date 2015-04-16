@@ -1,3 +1,81 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.grid .row {
+  margin: 10px 0; }
+  .grid .row:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .grid .row:last-child {
+    margin-bottom: 0; }
+  .grid .row:first-child {
+    margin-top: 0; }
+  .grid .row [class*="col-"] {
+    padding: 10px;
+    box-sizing: border-box; }
+  @media all and (min-width: 600px) {
+    .grid .row .col-2-3 {
+      float: left;
+      width: 66.66%; }
+    .grid .row .col-1-2 {
+      float: left;
+      width: 50%; }
+    .grid .row .col-1-3 {
+      float: left;
+      width: 33.33%; }
+    .grid .row .col-1-4 {
+      float: left;
+      width: 25%; }
+    .grid .row .col-1-8 {
+      float: left;
+      width: 12.5%; } }
+
 /*
 COLORS
 Purple:  #652c90 – CTA links hover color; also use underline
@@ -13,85 +91,68 @@ Headlines:  26pt
 Featured copy (“About Us” blurb & photo labels): 18 pt
 Main copy (bottom):  16pt
 */
-body{
+body {
   font-family: 'Open Sans', sans-serif;
-  color: #333333;
-}
+  color: #333333; }
 
 header {
   height: 200px;
   width: 100%;
   position: relative;
   border-bottom: 1px solid #e5e5e5;
-  box-shadow: 0px 1px 2px #e5e5e5;
-}
+  box-shadow: 0px 1px 2px #e5e5e5; }
 
 .header-logo {
   position: absolute;
   top: 35px;
   left: 50%;
-  transform: translate(-50%);
-}
+  transform: translate(-50%); }
 
-h1, h2 {
+h1 {
   font-size: 26px;
   font-weight: bold;
   text-align: center;
-}
+  line-height: 50px; }
 
-h1 {
-  line-height: 50px;
-}
+h2 {
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 50px; }
 
-section {
-
-}
+h2.h2-center {
+  text-align: center; }
 
 .headline {
-  margin: 50px;
-}
+  margin: 50px; }
 
 .headline-copy {
   margin: 30px 197px;
   text-align: center;
-  line-height: 30px;
-}
+  line-height: 30px; }
 
 p.headline-copy {
-  font-size: 18px;
-}
+  font-size: 18px; }
 
-.banner {
+.banner-container {
   margin: 0 30px;
-  padding-bottom: 50px;
-  overflow: hidden;
-}
-
-.banner figure {
-  float: left;
-  padding: 0 12px;
-}
+  padding-bottom: 50px; }
 
 .banner figcaption {
   padding: 16px;
   font-weight: bold;
-  text-align: center;
-}
+  text-align: center; }
 
 aside {
   width: 100%;
-  clear: both;
-  background-color: #e5e5e5;
-}
-
-aside .column {
-  width: 50%;
-}
+  clear: both; }
+  aside .info-container {
+    background-color: #e5e5e5;
+    padding: 60px !important;
+    border-right: 1px solid #FFFFFF; }
 
 footer {
-  background-color: #333333;
-}
+  background-color: #333333; }
+  footer p {
+    color: #e5e5e5; }
 
-footer p {
-  color: #e5e5e5;
-}
+/*# sourceMappingURL=stylesheet.css.map */
