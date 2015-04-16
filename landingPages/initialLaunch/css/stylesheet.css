@@ -1,0 +1,97 @@
+/*
+COLORS
+Purple:  #652c90 – CTA links hover color; also use underline
+Dark Purple:  #480a52 – not used currently; for button color later
+Light Gray: #e5e5e5 – background color
+Dark Grey:  #333333 – All text + footer bkgd
+FONTS
+Open Sans: https://www.google.com/fonts#UsePlace:use/Collection:Open+Sans
+– Weights used: Normal, Italic, Bold
+font-family: 'Open Sans', sans-serif;
+FONT SIZES  (regular desktop version)
+Headlines:  26pt
+Featured copy (“About Us” blurb & photo labels): 18 pt
+Main copy (bottom):  16pt
+*/
+body{
+  font-family: 'Open Sans', sans-serif;
+  color: #333333;
+}
+
+header {
+  height: 200px;
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid #e5e5e5;
+  box-shadow: 0px 1px 2px #e5e5e5;
+}
+
+.header-logo {
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+h1, h2 {
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+}
+
+h1 {
+  line-height: 50px;
+}
+
+section {
+
+}
+
+.headline {
+  margin: 50px;
+}
+
+.headline-copy {
+  margin: 30px 197px;
+  text-align: center;
+  line-height: 30px;
+}
+
+p.headline-copy {
+  font-size: 18px;
+}
+
+.banner {
+  margin: 0 30px;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+
+.banner figure {
+  float: left;
+  padding: 0 12px;
+}
+
+.banner figcaption {
+  padding: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+aside {
+  width: 100%;
+  clear: both;
+  background-color: #e5e5e5;
+}
+
+aside .column {
+  width: 50%;
+}
+
+footer {
+  background-color: #333333;
+}
+
+footer p {
+  color: #e5e5e5;
+}
