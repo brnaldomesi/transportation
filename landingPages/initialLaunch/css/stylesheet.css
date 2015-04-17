@@ -140,7 +140,7 @@ a:hover {
   margin: 56px 20px 20px; }
 
 .headline-copy {
-  margin: 30px 197px;
+  margin: 30px 200px;
   text-align: center;
   line-height: 30px; }
 
@@ -148,7 +148,7 @@ p.headline-copy {
   font-size: 18px; }
 
 .banner-container {
-  margin: 0 40px 35px;
+  margin: 0 auto 35px;
   max-width: 1200px; }
 
 .banner figcaption {
@@ -158,20 +158,23 @@ p.headline-copy {
 
 footer {
   height: 50px;
+  width: 100%;
+  bottom: 0;
   background-color: #333333; }
   footer p {
     color: #e5e5e5;
     text-align: center;
     line-height: 50px; }
 
-#landing-page .info-container {
-  width: 100%;
-  max-width: 1280px;
-  clear: both;
+#landing-page aside.grid {
   background-color: #e5e5e5; }
+#landing-page .info-container {
+  margin-top: 0 auto;
+  max-width: 1280px;
+  clear: both; }
   #landing-page .info-container .jobs-container, #landing-page .info-container .contact-container {
-    padding: 45px 80px 35px 80px;
-    border-right: 2px solid #FFFFFF; }
+    height: 380px;
+    padding: 45px 80px 35px 80px; }
     #landing-page .info-container .jobs-container p, #landing-page .info-container .contact-container p {
       padding: 20px 0 10px 0; }
   #landing-page .info-container .jobs-container a {
@@ -181,6 +184,8 @@ footer {
     padding-left: 0; }
   #landing-page .info-container .jobs-container a:last-child {
     border-right: none; }
+  #landing-page .info-container .jobs-container:first-child {
+    border-right: 2px solid #FFFFFF; }
   #landing-page .info-container .contact-container p {
     padding: 0; }
   #landing-page .info-container .contact-container .contact-info {
