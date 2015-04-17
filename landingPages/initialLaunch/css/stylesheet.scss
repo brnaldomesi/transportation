@@ -32,7 +32,7 @@ header {
 
 .header-logo {
   position: absolute;
-  top: 35px;
+  top: 30px;
   left: 50%;
   transform: translate(-50%);
 }
@@ -47,15 +47,33 @@ h1 {
 h2 {
   font-size: 26px;
   font-weight: bold;
-  line-height: 50px;
 }
 
 h2.h2-center {
   text-align: center;
 }
 
+h3 {
+  font-weight: bold;
+  padding: 20px 0 3px 0;
+}
+
+p {
+  line-height: 22px;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #652c90;
+}
+
 .headline {
-  margin: 50px;
+  margin: 56px 20px 20px;
 }
 
 .headline-copy {
@@ -69,8 +87,8 @@ p.headline-copy {
 }
 
 .banner-container, {
-  margin: 0 30px;
-  padding-bottom: 50px;
+  margin: 0 40px 35px;
+  max-width: 1200px;
 }
 
 .banner figcaption {
@@ -79,19 +97,59 @@ p.headline-copy {
   text-align: center;
 }
 
-aside {
-  width: 100%;
-  clear: both;
-  .info-container {
-      background-color: #e5e5e5;
-      padding: 60px !important;
-      border-right: 1px solid #FFFFFF;
-  }
-}
-
 footer {
+  height: 50px;
   background-color: #333333;
   p {
     color: #e5e5e5;
+    text-align: center;
+    line-height: 50px;
+  }
+}
+
+#landing-page {
+  .info-container {
+    width: 100%;
+    max-width: 1280px;
+    clear: both;
+    background-color: #e5e5e5;
+    .jobs-container, .contact-container {
+      padding: 45px 80px 35px 80px;
+      border-right: 2px solid #FFFFFF;
+      p {
+        padding: 20px 0 10px 0;
+      }
+    }
+    .jobs-container {
+      a {
+        padding: 0 20px 0 10px;
+        border-right: 1px solid #333333;
+      }
+      a:first-child {
+        padding-left: 0;
+      }
+      a:last-child {
+        border-right: none;
+      }
+    }
+    .contact-container {
+      p {
+        padding: 0;
+        // line-height: 10px;
+      }
+      .contact-info {
+        padding: 20px 0 5px 0;
+      }
+      .inline-contact{
+        margin-left: 10px;
+      }
+      .inline-contact, a {
+        vertical-align: top;
+        line-height: 39px;
+      }
+      .social-media{
+        padding: 10px 0;
+      }
+    }
   }
 }
