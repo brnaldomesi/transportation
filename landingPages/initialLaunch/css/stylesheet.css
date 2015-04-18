@@ -111,6 +111,7 @@ header {
 
 h1 {
   margin: 0 10%;
+  padding-bottom: 20px;
   font-size: 26px;
   font-weight: bold;
   text-align: center;
@@ -118,8 +119,7 @@ h1 {
 
 h2 {
   font-size: 26px;
-  font-weight: bold;
-  padding-top: 20px; }
+  font-weight: bold; }
 
 h2.h2-center {
   text-align: center; }
@@ -155,7 +155,7 @@ p.headline-copy {
   font-size: 18px; }
 
 .banner-container {
-  margin-top: 35px; }
+  margin: 30px auto; }
 
 .fluid-images {
   max-width: 100%;
@@ -183,7 +183,7 @@ footer {
   clear: both; }
   #landing-page .info-container .jobs-container, #landing-page .info-container .contact-container {
     height: 380px;
-    padding: 45px 80px 35px 80px; }
+    padding: 50px 80px; }
     #landing-page .info-container .jobs-container p, #landing-page .info-container .contact-container p {
       padding: 20px 0 10px 0; }
   #landing-page .info-container .jobs-container a {
