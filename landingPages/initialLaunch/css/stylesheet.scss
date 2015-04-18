@@ -170,3 +170,27 @@ footer {
     }
   }
 }
+
+@media only screen and (max-device-width: 480px) {
+  .grid {
+    .row {
+      .col-1-4 {
+        width: 50%;
+      }
+      .col-1-2 {
+        width: 100%;
+      }
+    }
+  }
+  .banner.row {
+    padding: 70px 0;
+  }
+  .fluid-images {
+    width: 100%;
+    height: auto;
+  }
+  .jobs-container:first-child {
+    border-right: none;
+    border-bottom: 2px solid #FFFFFF;
+  }
+}
