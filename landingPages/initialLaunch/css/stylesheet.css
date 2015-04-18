@@ -179,6 +179,7 @@ footer {
 #landing-page aside.grid {
   background-color: #e5e5e5; }
 #landing-page .info-container {
+  margin: 0 auto;
   clear: both; }
   #landing-page .info-container .jobs-container, #landing-page .info-container .contact-container {
     height: 380px;
