@@ -1,0 +1,52 @@
+//Colors
+// CTA links hover color; also use underline
+$purple: #652c90;
+// Not used currently; for button color later
+$dark-purple: #480a52;
+// Background color
+$light-grey: #e5e5e5;
+// All text and footer background
+$dark-grey: #333333;
+
+//header
+header {
+  height: 200px;
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid $light-grey;
+  box-shadow: 0px 1px 2px $light-grey;
+}
+
+.header-logo {
+  // img {
+  //   height: 150;
+  //   width: 288;
+  // }
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+}
+
+//footer
+footer {
+  width: 100%;
+  bottom: 0;
+  background-color: $dark-grey;
+  p {
+    color: $light-grey;
+    text-align: center;
+    line-height: 50px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $dark-grey;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: $purple;
+}
