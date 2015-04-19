@@ -76,24 +76,63 @@ table {
       float: left;
       width: 12.5%; } }
 
-/*
-COLORS
-Purple:  #652c90 – CTA links hover color; also use underline
-Dark Purple:  #480a52 – not used currently; for button color later
-Light Gray: #e5e5e5 – background color
-Dark Grey:  #333333 – All text + footer bkgd
-FONTS
-Open Sans: https://www.google.com/fonts#UsePlace:use/Collection:Open+Sans
-– Weights used: Normal, Italic, Bold
-font-family: 'Open Sans', sans-serif;
-FONT SIZES  (regular desktop version)
-Headlines:  26pt
-Featured copy (“About Us” blurb & photo labels): 18 pt
-Main copy (bottom):  16pt
-*/
+header {
+  height: 200px;
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid #e5e5e5;
+  box-shadow: 0px 1px 2px #e5e5e5; }
+
+.header-logo {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%);
+  -webkit-transform: translate(-50%); }
+
+footer {
+  width: 100%;
+  bottom: 0;
+  background-color: #333333; }
+  footer p {
+    color: #e5e5e5;
+    text-align: center;
+    line-height: 50px; }
+
+a {
+  text-decoration: none;
+  color: #333333; }
+
+a:hover {
+  text-decoration: underline;
+  color: #652c90; }
+
 body {
   font-family: 'Open Sans', sans-serif;
   color: #333333; }
+
+h1 {
+  margin: 0 10%;
+  padding-bottom: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 30px; }
+
+h2 {
+  font-size: 30px;
+  font-weight: bold; }
+
+h2.h2-center {
+  text-align: center; }
+
+h3 {
+  font-weight: bold;
+  padding: 20px 0 3px 0; }
+
+p {
+  font-size: 18px;
+  line-height: 30px; }
 
 header {
   height: 200px;
@@ -109,27 +148,14 @@ header {
   transform: translate(-50%);
   -webkit-transform: translate(-50%); }
 
-h1 {
-  margin: 0 10%;
-  font-size: 26px;
-  font-weight: bold;
-  text-align: center;
-  line-height: 30px; }
-
-h2 {
-  font-size: 26px;
-  font-weight: bold;
-  padding-top: 20px; }
-
-h2.h2-center {
-  text-align: center; }
-
-h3 {
-  font-weight: bold;
-  padding: 20px 0 3px 0; }
-
-p {
-  line-height: 22px; }
+footer {
+  width: 100%;
+  bottom: 0;
+  background-color: #333333; }
+  footer p {
+    color: #e5e5e5;
+    text-align: center;
+    line-height: 50px; }
 
 a {
   text-decoration: none;
@@ -139,6 +165,21 @@ a:hover {
   text-decoration: underline;
   color: #652c90; }
 
+/*
+COLORS
+Purple:  #652c90 – CTA links hover color; also use underline
+Dark Purple:  #480a52 – not used currently; for button color later
+Light Gray: #e5e5e5 – background color
+Dark Grey:  #333333 – All text + footer bkgd
+FONTS
+Open Sans: https://www.google.com/fonts#UsePlace:use/Collection:Open+Sans
+– Weights used: Normal, Italic, Bold
+font-family: 'Open Sans', sans-serif;
+FONT SIZES  (regular desktop version)
+Headlines:  26pt
+Featured copy (“About Us” blurb & photo labels): 18 pt
+Main copy (bottom):  16pt
+*/
 .max-width-content {
   max-width: 1200px;
   margin: 0 auto; }
@@ -147,15 +188,11 @@ a:hover {
   margin-top: 56px; }
 
 .headline-copy {
-  margin: 30px 10%;
-  text-align: center;
-  line-height: 30px; }
-
-p.headline-copy {
-  font-size: 18px; }
+  margin: 50px 10%;
+  text-align: center; }
 
 .banner-container {
-  margin-top: 35px; }
+  margin: 0 auto 30px; }
 
 .fluid-images {
   max-width: 100%;
@@ -166,16 +203,6 @@ p.headline-copy {
   font-weight: bold;
   text-align: center; }
 
-footer {
-  height: 50px;
-  width: 100%;
-  bottom: 0;
-  background-color: #333333; }
-  footer p {
-    color: #e5e5e5;
-    text-align: center;
-    line-height: 50px; }
-
 #landing-page aside.grid {
   background-color: #e5e5e5; }
 #landing-page .info-container {
@@ -183,7 +210,7 @@ footer {
   clear: both; }
   #landing-page .info-container .jobs-container, #landing-page .info-container .contact-container {
     height: 380px;
-    padding: 45px 80px 35px 80px; }
+    padding: 50px 80px; }
     #landing-page .info-container .jobs-container p, #landing-page .info-container .contact-container p {
       padding: 20px 0 10px 0; }
   #landing-page .info-container .jobs-container a {
@@ -206,5 +233,54 @@ footer {
     line-height: 39px; }
   #landing-page .info-container .contact-container .social-media {
     padding: 10px 0; }
+    #landing-page .info-container .contact-container .social-media img {
+      height: 29px;
+      width: 29px; }
+
+@media only screen and (max-device-width: 480px) {
+  h1, h2 {
+    font-size: 60px;
+    line-height: 60px; }
+
+  h3, p, figcaption {
+    font-size: 40px;
+    line-height: 60px; }
+
+  header {
+    height: 300px;
+    border-bottom: 2px solid #e5e5e5;
+    box-shadow: 0px 1px 6px #e5e5e5; }
+    header img {
+      height: 250px; }
+
+  section.grid {
+    margin: 0 60px; }
+
+  .grid .row .col-1-4 {
+    width: 50%; }
+  .grid .row .col-1-2 {
+    width: 100%; }
+
+  .banner-container .banner.row {
+    padding: 70px 10px; }
+
+  .fluid-images {
+    width: 100%;
+    height: auto; }
+
+  #landing-page .info-container .jobs-container, #landing-page .info-container .contact-container {
+    height: 700px;
+    padding: 90px 60px; }
+  #landing-page .info-container .contact-container .social-media img {
+    height: 75px;
+    width: 75px;
+    padding: 0 10px; }
+
+  .jobs-container:first-child {
+    border-right: none;
+    border-bottom: 2px solid #FFFFFF; }
+
+  footer {
+    padding: 50px 0; } }
 
 /*# sourceMappingURL=stylesheet.css.map */
