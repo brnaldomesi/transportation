@@ -114,25 +114,25 @@ body {
 h1 {
   margin: 0 10%;
   padding-bottom: 20px;
-  font-size: 30px;
+  font-size: 26px;
   font-weight: bold;
   text-align: center;
   line-height: 30px; }
 
 h2 {
-  font-size: 30px;
+  font-size: 26px;
   font-weight: bold; }
 
 h2.h2-center {
   text-align: center; }
 
 h3 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   padding: 20px 0 3px 0; }
 
 p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 30px; }
 
 header {
@@ -189,7 +189,7 @@ Main copy (bottom):  16pt
   margin-top: 56px; }
 
 .headline-copy {
-  margin: 50px 10%;
+  margin: 50px 16%;
   text-align: center; }
 
 .banner-container {
@@ -210,7 +210,7 @@ Main copy (bottom):  16pt
   margin: 0 auto;
   clear: both; }
   #landing-page .info-container .jobs-container, #landing-page .info-container .contact-container {
-    height: 410px;
+    height: 400px;
     padding: 50px 80px; }
     #landing-page .info-container .jobs-container p, #landing-page .info-container .contact-container p {
       padding: 20px 0 10px 0; }
@@ -222,7 +222,7 @@ Main copy (bottom):  16pt
   #landing-page .info-container .jobs-container a:last-child {
     border-right: none; }
   #landing-page .info-container .jobs-container .job-listing p {
-    padding: 10px 0; }
+    padding: 0; }
   #landing-page .info-container .jobs-container:first-child {
     border-right: 2px solid #FFFFFF; }
   #landing-page .info-container .contact-container p {
@@ -263,6 +263,10 @@ Main copy (bottom):  16pt
     width: 50%; }
   .grid .row .col-1-2 {
     width: 100%; }
+
+  .headline-copy {
+    margin: 50px 12%;
+    text-align: center; }
 
   .banner-container .banner.row {
     padding: 70px 10px; }
