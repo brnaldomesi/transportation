@@ -17,8 +17,20 @@
     					'fallback_cb' => 'bones_footer_links_fallback'  // fallback function
 						)); ?>
 					</nav>
-
-					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
+          <ul>
+            <li>
+              <p>© 2015 Kevin Smith Transportation Group</p>
+            </li>
+            <li>
+              <p>Legal</p>
+            </li>
+            <li>
+              <p>Lorem Ipsum</p>
+            </li>
+            <li>
+              <p>Lorem Ipsum</p>
+            </li>
+          </ul>
 
 				</div>
 
