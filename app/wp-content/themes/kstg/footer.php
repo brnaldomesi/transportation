@@ -17,9 +17,27 @@
     					'fallback_cb' => 'bones_footer_links_fallback'  // fallback function
 						)); ?>
 					</nav>
-
-					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
-
+          <ul>
+            <li>
+              <p>© 2015 Kevin Smith Transportation Group</p>
+            </li>
+            <li>
+              <p>Legal</p>
+            </li>
+            <li>
+              <p>Lorem Ipsum</p>
+            </li>
+            <li>
+              <p>Lorem Ipsum</p>
+            </li>
+          </ul>
+          <ul>
+            <a href="https://www.facebook.com/kevinsmithgroup" target="_blank"><li><img src="" /></li></a><!-- Facebook -->
+            <a href="https://www.twitter.com/Kevinsmithgrp" target="_blank"><li><img src="" /></li></a><!-- Twitter -->
+            <a href="https://www.linkedin.com/company/kevin-smith-transportation-group" target="_blank"><li><img src="" /></li></a><!-- LinkedIn -->
+            <a href="https://www.youtube.com/channel/UCMeEufGeiAWaxOsIS0Lwegg" target="_blank"><li><img src="" /></li></a><!-- Youtube -->
+            <a href="https://plus.google.com/b/115066308991397006542/115066308991397006542/posts" target="_blank"><li><img src="" /></li></a><!-- googleplus -->
+          </ul>
 				</div>
 
 			</footer>
