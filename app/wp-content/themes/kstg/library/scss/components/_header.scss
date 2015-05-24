@@ -1,0 +1,36 @@
+//header
+header {
+  height: 100px;
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid $light-grey;
+  box-shadow: 0 5px 6px -6px $light-grey;
+}
+
+a {
+  img{
+    float: left;
+    margin: 15px 25px;
+  }
+}
+
+nav {
+  float: right;
+  padding: 35px 0;
+  a {
+    float: left;
+    li {
+      padding-left: 4.5em;
+      p {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.header-logo {
+  img {
+    width: 138px;
+    height: 72px;
+  }
+}

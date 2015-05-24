@@ -1,0 +1,25 @@
+body {
+  margin: 0 80px
+}
+
+//footer
+footer {
+  width: 100%;
+  bottom: 0;
+  background-color: $dark-grey;
+  p {
+    color: $light-grey;
+    text-align: center;
+    line-height: 50px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $dark-grey;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: $purple;
+}
