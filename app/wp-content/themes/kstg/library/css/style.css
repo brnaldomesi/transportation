@@ -76,15 +76,6 @@ table {
       float: left;
       width: 12.5%; } }
 
-footer {
-  width: 100%;
-  bottom: 0;
-  background-color: #333333; }
-  footer p {
-    color: #E5E5E5;
-    text-align: center;
-    line-height: 50px; }
-
 a {
   text-decoration: none;
   color: #333333; }
@@ -92,15 +83,6 @@ a {
 a:hover {
   text-decoration: underline;
   color: #652C90; }
-
-footer {
-  width: 100%;
-  bottom: 0;
-  background-color: #333333; }
-  footer p {
-    color: #E5E5E5;
-    text-align: center;
-    line-height: 50px; }
 
 a {
   text-decoration: none;
@@ -135,8 +117,7 @@ h3 {
   padding: 20px 0 3px 0; }
 
 p {
-  font-size: 16px;
-  line-height: 30px; }
+  font-size: 14px; }
 
 header {
   margin: 0 80px;
@@ -145,14 +126,13 @@ header {
   position: relative;
   border-bottom: 1px solid #E5E5E5;
   box-shadow: 0 5px 6px -6px #E5E5E5; }
-
-a img {
-  float: left;
-  margin: 15px 25px; }
+  header a img {
+    float: left;
+    margin: 15px 25px; }
 
 nav {
   float: right;
-  padding: 35px 0; }
+  padding: 42px 0; }
   nav a {
     float: left; }
     nav a li {
@@ -163,6 +143,33 @@ nav {
 .header-logo img {
   width: 138px;
   height: 72px; }
+
+footer {
+  width: 88%;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  padding: 0 80px;
+  background-color: #333333; }
+  footer .navigation {
+    float: left; }
+    footer .navigation li:first-child {
+      border-left: none; }
+    footer .navigation li {
+      float: left;
+      border-left: 1px solid #E5E5E5;
+      line-height: 17px;
+      padding: 0px 16px;
+      margin: 16px 0; }
+      footer .navigation li p {
+        color: #E5E5E5; }
+  footer .social {
+    float: right; }
+    footer .social li {
+      float: left;
+      border-right: 1px solid #E5E5E5; }
+    footer .social li:first-child {
+      border-left: 1px solid #E5E5E5; }
 
 /*
 COLORS

@@ -5,18 +5,18 @@ header {
   position: relative;
   border-bottom: 1px solid $light-grey;
   box-shadow: 0 5px 6px -6px $light-grey;
-}
-
-a {
-  img{
-    float: left;
-    margin: 15px 25px;
+  a {
+    img{
+      float: left;
+      margin: 15px 25px;
+    }
   }
 }
 
+
 nav {
   float: right;
-  padding: 35px 0;
+  padding: 42px 0;
   a {
     float: left;
     li {
