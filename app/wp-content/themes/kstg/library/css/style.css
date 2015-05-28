@@ -129,16 +129,15 @@ header {
   header a img {
     float: left;
     margin: 15px 25px; }
-
-nav {
-  float: right;
-  padding: 42px 0; }
-  nav a {
-    float: left; }
-    nav a li {
-      padding-left: 4.5em; }
-      nav a li p {
-        font-weight: bold; }
+  header nav {
+    float: right;
+    padding: 42px 0; }
+    header nav a {
+      float: left; }
+      header nav a li {
+        padding-left: 4.5em; }
+        header nav a li p {
+          font-weight: bold; }
 
 .header-logo img {
   width: 138px;
@@ -149,27 +148,86 @@ footer {
   height: 50px;
   position: fixed;
   bottom: 0;
-  padding: 0 80px;
-  background-color: #333333; }
-  footer .navigation {
+  padding: 0 6%;
+  background-color: #333333;
+  /************/
+  /** MOBILE **/
+  /************/ }
+  footer p {
+    font-size: 12px;
+    color: #E5E5E5;
+    line-height: 17px;
+    margin: 16px 0; }
+  footer .copyright {
+    width: 30%;
     float: left; }
-    footer .navigation li:first-child {
-      border-left: none; }
-    footer .navigation li {
-      float: left;
-      border-left: 1px solid #E5E5E5;
-      line-height: 17px;
-      padding: 0px 16px;
-      margin: 16px 0; }
-      footer .navigation li p {
-        color: #E5E5E5; }
+    footer .copyright p {
+      padding: 0px 4%; }
+  footer nav {
+    width: 30%;
+    margin-top: 5px;
+    float: left; }
+    footer nav ul {
+      margin: 10px 0; }
+      footer nav ul li:first-child {
+        border-left: none; }
+      footer nav ul li {
+        float: left;
+        border-left: 1px solid #CCCCCC;
+        padding: 0 5%; }
+        footer nav ul li p {
+          margin: 0; }
   footer .social {
+    width: 30%;
     float: right; }
-    footer .social li {
-      float: left;
-      border-right: 1px solid #E5E5E5; }
-    footer .social li:first-child {
-      border-left: 1px solid #E5E5E5; }
+    footer .social ul li {
+      float: left; }
+      footer .social ul li img {
+        width: 100%;
+        height: 100%;
+        border-right: 1px solid #CCCCCC; }
+    footer .social ul li:first-child {
+      border-left: 1px solid #CCCCCC; }
+  @media only screen and (max-device-width: 480px) {
+    footer {
+      width: 100%;
+      height: 132px;
+      padding: 0; }
+      footer p {
+        margin: 10px 7%;
+        padding: 0; }
+      footer .copyright {
+        width: 100%; }
+        footer .copyright p {
+          text-align: center; }
+      footer nav {
+        margin: 0;
+        padding: 0;
+        width: 100%; }
+        footer nav .nav {
+          text-align: center; }
+          footer nav .nav li {
+            float: none;
+            display: inline; }
+            footer nav .nav li a {
+              display: inline-block; }
+      footer .social {
+        width: 100%;
+        margin-top: 10px;
+        border-top: 1px solid #CCCCCC;
+        float: none;
+        display: inline-block; }
+        footer .social ul {
+          text-align: center;
+          overflow: hidden; }
+          footer .social ul li {
+            width: 18.9%;
+            float: none;
+            display: inline-block; }
+          footer .social ul li:first-child {
+            border: none; }
+          footer .social ul li:last-child img {
+            border: none; } }
 
 /*
 COLORS
@@ -197,55 +255,5 @@ body {
 .fluid-images {
   max-width: 100%;
   height: auto; }
-
-@media only screen and (max-device-width: 480px) {
-  h1, h2 {
-    font-size: 60px;
-    line-height: 70px; }
-
-  h3, p, figcaption {
-    font-size: 40px;
-    line-height: 60px; }
-
-  header {
-    height: 300px;
-    border-bottom: 2px solid #E5E5E5;
-    box-shadow: 0px 1px 6px #E5E5E5; }
-    header img {
-      height: 250px; }
-
-  section.grid {
-    margin: 0 60px; }
-
-  .grid .row .col-1-4 {
-    width: 50%; }
-  .grid .row .col-1-2 {
-    width: 100%; }
-
-  .headline-copy {
-    margin: 50px 12%;
-    text-align: center; }
-
-  .banner-container .banner.row {
-    padding: 70px 10px; }
-
-  .fluid-images {
-    width: 100%;
-    height: auto; }
-
-  #landing-page .info-container .jobs-container, #landing-page .info-container .contact-container {
-    height: 770px;
-    padding: 90px 60px; }
-  #landing-page .info-container .contact-container .social-media img {
-    height: 75px;
-    width: 75px;
-    padding: 0 10px; }
-
-  .jobs-container:first-child {
-    border-right: none;
-    border-bottom: 2px solid #FFFFFF; }
-
-  footer {
-    padding: 50px 0; } }
 
 /*# sourceMappingURL=style.css.map */
