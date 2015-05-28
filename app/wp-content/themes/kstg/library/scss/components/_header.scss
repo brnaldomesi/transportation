@@ -6,13 +6,15 @@ header {
   border-bottom: 1px solid $light-grey;
   box-shadow: 0 5px 6px -6px $light-grey;
   a {
-    img{
+    img {
       float: left;
       margin: 15px 25px;
     }
   }
+  a.mobile-logo {
+    display: none;
+  }
 }
-
 
 nav {
   float: right;
@@ -34,3 +36,4 @@ nav {
     height: 72px;
   }
 }
+
