@@ -125,26 +125,51 @@ header {
   width: auto;
   position: relative;
   border-bottom: 1px solid #E5E5E5;
-  box-shadow: 0 5px 6px -6px #E5E5E5; }
+  box-shadow: 0 5px 6px -6px #E5E5E5;
+  /************/
+  /** MOBILE **/
+  /************/ }
   header a img {
     float: left;
-    margin: 15px 25px; }
-  header a.mobile-logo {
-    display: none; }
-
-nav {
-  float: right;
-  padding: 42px 0; }
-  nav a {
-    float: left; }
-    nav a li {
-      padding-left: 4.5em; }
-      nav a li p {
-        font-weight: bold; }
-
-.header-logo img {
-  width: 138px;
-  height: 72px; }
+    margin: 15px 25px;
+    width: 138px;
+    height: 72px; }
+  header nav {
+    float: right;
+    padding: 42px 0; }
+    header nav a {
+      float: left; }
+      header nav a li {
+        padding-left: 4.5em; }
+        header nav a li p {
+          font-weight: bold; }
+  @media only screen and (max-device-width: 480px) {
+    header {
+      height: 70px;
+      margin: 0;
+      padding: 0; }
+      header a img {
+        margin: 8px 20px;
+        width: 91px;
+        height: 50px; }
+      header .dropdown {
+        float: right; }
+      header nav {
+        width: 100%;
+        margin: 10px 0;
+        padding: 0;
+        float: none;
+        text-align: center;
+        display: inline-block; }
+        header nav ul {
+          width: 100%;
+          display: inline-block; }
+          header nav ul li {
+            padding: 12px 0;
+            border-bottom: 1px solid #CCCCCC;
+            background-color: white; }
+            header nav ul li a {
+              float: none; } }
 
 footer {
   width: 88%;
@@ -191,63 +216,5 @@ Main copy (bottom):  16pt
 body {
   font-family: 'Open Sans', sans-serif;
   color: #333333; }
-
-.max-width-content {
-  max-width: 1200px;
-  margin: 0 auto; }
-
-.fluid-images {
-  max-width: 100%;
-  height: auto; }
-
-@media only screen and (max-device-width: 480px) {
-  h1, h2 {
-    font-size: 60px;
-    line-height: 70px; }
-
-  h3, p, figcaption {
-    font-size: 40px;
-    line-height: 60px; }
-
-  header {
-    height: 300px;
-    border-bottom: 2px solid #E5E5E5;
-    box-shadow: 0px 1px 6px #E5E5E5; }
-    header img {
-      height: 250px; }
-
-  section.grid {
-    margin: 0 60px; }
-
-  .grid .row .col-1-4 {
-    width: 50%; }
-  .grid .row .col-1-2 {
-    width: 100%; }
-
-  .headline-copy {
-    margin: 50px 12%;
-    text-align: center; }
-
-  .banner-container .banner.row {
-    padding: 70px 10px; }
-
-  .fluid-images {
-    width: 100%;
-    height: auto; }
-
-  #landing-page .info-container .jobs-container, #landing-page .info-container .contact-container {
-    height: 770px;
-    padding: 90px 60px; }
-  #landing-page .info-container .contact-container .social-media img {
-    height: 75px;
-    width: 75px;
-    padding: 0 10px; }
-
-  .jobs-container:first-child {
-    border-right: none;
-    border-bottom: 2px solid #FFFFFF; }
-
-  footer {
-    padding: 50px 0; } }
 
 /*# sourceMappingURL=style.css.map */
