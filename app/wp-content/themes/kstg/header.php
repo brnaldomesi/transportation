@@ -70,7 +70,7 @@
 
       <header>
         <a class="desktop-logo" href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php bloginfo('template_url'); ?>/library/images/logo-128x72.png"/ class="logo" /></a>
-        <a href="#home" class="dropdown" data-scroll>LOGO</a>
+        <a href="#home" class="dropdown" data-scroll><img src="<?php bloginfo('template_url'); ?>/library/images/icon-menu.png"/ class="logo" id = "open-menu close-menu" /></a>
         <nav class="nav-collapse">
           <ul>
             <li class="menu-item active"><a href="#home">HOME</a></li>

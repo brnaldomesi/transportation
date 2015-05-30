@@ -154,21 +154,30 @@ header {
         height: 50px; }
       header .dropdown {
         float: right; }
+        header .dropdown img {
+          width: 15px;
+          height: 10px;
+          margin: 30px 20px; }
       header nav {
         width: 100%;
         margin: 10px 0;
         padding: 0;
         float: none;
         text-align: center;
-        display: inline-block; }
+        display: inline-block;
+        position: absolute;
+        top: 61px;
+        left: 0;
+        z-index: 100; }
         header nav ul {
           width: 100%;
           display: inline-block; }
           header nav ul li {
-            padding: 12px 0;
+            padding: 9px 0;
             border-bottom: 1px solid #CCCCCC;
             background-color: white; }
             header nav ul li a {
+              font-weight: bold;
               float: none; } }
 
 footer {
