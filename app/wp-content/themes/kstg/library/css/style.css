@@ -149,7 +149,8 @@ header {
     header {
       height: 70px;
       margin: 0;
-      padding: 0; }
+      padding: 0;
+      position: relative; }
       header.desktop-header {
         display: none; }
       header.mobile-header {
@@ -164,29 +165,46 @@ header {
           width: 15px;
           height: 10px;
           margin: 30px 20px; }
+      header .banner-wrapper {
+        position: absolute;
+        z-index: 200;
+        background-color: white;
+        width: 100%; }
       header nav {
-        display: none; }
-        header nav.open-menu {
+        width: 100%;
+        margin: 10px 0;
+        padding: 0;
+        float: none;
+        text-align: center;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        z-index: 100; }
+        header nav.open-menu ul {
+          top: 62px;
+          -webkit-transition: all .25s ease;
+          -moz-transition: all .25s ease;
+          -ms-transition: all .25s ease;
+          -o-transition: all .25s ease;
+          transition: all .25s ease; }
+        header nav ul {
           width: 100%;
-          margin: 10px 0;
-          padding: 0;
-          float: none;
-          text-align: center;
+          top: -143px;
           display: inline-block;
           position: absolute;
-          top: 61px;
           left: 0;
-          z-index: 100; }
-          header nav.open-menu ul {
-            width: 100%;
-            display: inline-block; }
-            header nav.open-menu ul li {
-              padding: 9px 0;
-              border-bottom: 1px solid #CCCCCC;
-              background-color: white; }
-              header nav.open-menu ul li a {
-                font-weight: bold;
-                float: none; } }
+          -webkit-transition: all .25s ease;
+          -moz-transition: all .25s ease;
+          -ms-transition: all .25s ease;
+          -o-transition: all .25s ease;
+          transition: all .25s ease; }
+          header nav ul li {
+            padding: 9px 0;
+            border-bottom: 1px solid #CCCCCC;
+            background-color: white; }
+            header nav ul li a {
+              font-weight: bold;
+              float: none; } }
 
 footer {
   width: 88%;
