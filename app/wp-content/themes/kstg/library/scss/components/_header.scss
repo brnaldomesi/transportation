@@ -1,4 +1,7 @@
 header {
+  &.mobile-header {
+    display: none;
+  }
   margin: 0 80px;
   height: 100px;
   width: auto;
@@ -26,10 +29,16 @@ header {
       }
     }
   }
-    /************/
+  /************/
   /** MOBILE **/
   /************/
   @media only screen and (max-device-width: 480px) {
+    &.desktop-header {
+      display: none;
+    }
+    &.mobile-header {
+      display: block;
+    }
     height: 70px;
     margin: 0;
     padding: 0;
@@ -51,7 +60,6 @@ header {
     nav {
       display: none;
       &.open-menu {
-
         width: 100%;
         margin: 10px 0;
         padding: 0;
