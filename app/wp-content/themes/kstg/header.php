@@ -70,8 +70,8 @@
 
       <header>
         <a class="desktop-logo" href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php bloginfo('template_url'); ?>/library/images/logo-128x72.png"/ class="logo" /></a>
-        <a href="#home" class="dropdown" data-scroll><img src="<?php bloginfo('template_url'); ?>/library/images/icon-menu.png"/ class="logo" id = "open-menu close-menu" /></a>
-        <nav class="nav-collapse">
+        <a href="#home"  id="menu-button" class="dropdown" data-scroll><img src="<?php bloginfo('template_url'); ?>/library/images/icon-menu.png"/ class="logo" /></a>
+        <nav class="toggle-menu">
           <ul>
             <li class="menu-item active"><a href="#home">HOME</a></li>
             <li class="menu-item"><a href="">SERVICE</a></li>
