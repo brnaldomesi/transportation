@@ -28,14 +28,3 @@ body {
   color: $dark-grey;
 }
 
-.max-width-content {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.fluid-images {
-  max-width: 100%;
-  height: auto;
-}
-
-@import "components/mobile";

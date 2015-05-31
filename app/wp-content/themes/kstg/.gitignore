@@ -56,4 +56,4 @@ temp/
 
 *.codekit
 *.scssc
-style.css.map
+*.css.map
