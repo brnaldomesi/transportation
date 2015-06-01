@@ -1,0 +1,19 @@
+section {
+  padding: $site-padding;
+  background-color: $light-grey;
+  .gallery-container {
+    display: inline-block;
+    .gallery-corporate, .gallery-events, .gallery-travel, .gallery-wedding {
+      float: left;
+    }
+
+    a {
+      height: 45px;
+      width: 282px;
+      background-color: $purple;
+      color: $light-grey;
+      margin-top: -2px;
+      display: block;
+    }
+  }
+}

@@ -1,34 +1,36 @@
 footer {
-  width: 88%;
-  height: 50px;
-  position: fixed;
-  bottom: 0;
-  padding: 0 80px;
-  background-color: $dark-grey;
-  .navigation {
-    float: left;
-    li:first-child {
-      border-left: none;
-    }
-    li {
+    height: 50px;
+    bottom: 0;
+    padding: $site-padding;
+    background-color: $dark-grey;
+  .inner-footer {
+    max-width: 1220px;
+    margin: 0 auto;
+    .navigation {
       float: left;
-      border-left: 1px solid #E5E5E5;
-      line-height: 17px;
-      padding: 0px 16px;
-      margin: 16px 0;
-      p {
-        color: $light-grey;
+      li:first-child {
+        border-left: none;
+      }
+      li {
+        float: left;
+        border-left: 1px solid #E5E5E5;
+        line-height: 17px;
+        padding: 0px 16px;
+        margin: 16px 0;
+        p {
+          color: $light-grey;
+        }
       }
     }
-  }
-  .social {
-    float: right;
-    li {
-      float: left;
-      border-right: 1px solid $light-grey;
-    }
-    li:first-child {
-      border-left: 1px solid $light-grey;
+    .social {
+      float: right;
+      li {
+        float: left;
+        border-right: 1px solid $light-grey;
+      }
+      li:first-child {
+        border-left: 1px solid $light-grey;
+      }
     }
   }
 }

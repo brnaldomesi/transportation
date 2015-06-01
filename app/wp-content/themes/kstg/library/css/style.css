@@ -120,12 +120,13 @@ p {
   font-size: 14px; }
 
 header {
-  margin: 0 80px;
+  padding: 0 30px;
   height: 100px;
-  width: auto;
   position: relative;
   border-bottom: 1px solid #E5E5E5;
   box-shadow: 0 5px 6px -6px #E5E5E5;
+  max-width: 1220px;
+  margin: 0 auto;
   /************/
   /** MOBILE **/
   /************/ }
@@ -206,32 +207,48 @@ header {
               font-weight: bold;
               float: none; } }
 
+section {
+  padding: 0 30px;
+  background-color: #E5E5E5; }
+  section .gallery-container {
+    display: inline-block; }
+    section .gallery-container .gallery-corporate, section .gallery-container .gallery-events, section .gallery-container .gallery-travel, section .gallery-container .gallery-wedding {
+      float: left; }
+    section .gallery-container a {
+      height: 45px;
+      width: 282px;
+      background-color: #652C90;
+      color: #E5E5E5;
+      margin-top: -2px;
+      display: block; }
+
 footer {
-  width: 88%;
   height: 50px;
-  position: fixed;
   bottom: 0;
-  padding: 0 80px;
+  padding: 0 30px;
   background-color: #333333; }
-  footer .navigation {
-    float: left; }
-    footer .navigation li:first-child {
-      border-left: none; }
-    footer .navigation li {
-      float: left;
-      border-left: 1px solid #E5E5E5;
-      line-height: 17px;
-      padding: 0px 16px;
-      margin: 16px 0; }
-      footer .navigation li p {
-        color: #E5E5E5; }
-  footer .social {
-    float: right; }
-    footer .social li {
-      float: left;
-      border-right: 1px solid #E5E5E5; }
-    footer .social li:first-child {
-      border-left: 1px solid #E5E5E5; }
+  footer .inner-footer {
+    max-width: 1220px;
+    margin: 0 auto; }
+    footer .inner-footer .navigation {
+      float: left; }
+      footer .inner-footer .navigation li:first-child {
+        border-left: none; }
+      footer .inner-footer .navigation li {
+        float: left;
+        border-left: 1px solid #E5E5E5;
+        line-height: 17px;
+        padding: 0px 16px;
+        margin: 16px 0; }
+        footer .inner-footer .navigation li p {
+          color: #E5E5E5; }
+    footer .inner-footer .social {
+      float: right; }
+      footer .inner-footer .social li {
+        float: left;
+        border-right: 1px solid #E5E5E5; }
+      footer .inner-footer .social li:first-child {
+        border-left: 1px solid #E5E5E5; }
 
 /*
 COLORS

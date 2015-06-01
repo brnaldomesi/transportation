@@ -1,6 +1,6 @@
-			<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+			<footer class="footer">
 
-				<div id="inner-footer" class="wrap cf">
+				<div class="inner-footer">
           <ul class="navigation">
             <li>
               <p>© 2015 Kevin Smith Transportation Group</p>

@@ -2,12 +2,13 @@ header {
   &.mobile-header {
     display: none;
   }
-  margin: 0 80px;
+  padding: $site-padding;
   height: 100px;
-  width: auto;
   position: relative;
   border-bottom: 1px solid $light-grey;
   box-shadow: 0 5px 6px -6px $light-grey;
+  max-width: 1220px;
+  margin: 0 auto;
   a {
     img {
       float: left;

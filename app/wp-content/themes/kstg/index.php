@@ -3,19 +3,19 @@
 <section class="main">
 	<div class="gallery-container">
 		<div class="gallery-corporate">
-			<img src="" alt="corporate services" />
-			<a href=""><p>COPORATE</p><img src="" /></a>
+			<img src="<?php bloginfo('template_url'); ?>/library/images/corporate.png" alt="corporate services" width="280" height="350" />
+			<a href=""><p>CORPORATE</p><img src="" /></a>
 		</div>
 		<div class="gallery-events">
-			<img src="" alt="personal services and events"/>
+			<img src="<?php bloginfo('template_url'); ?>/library/images/personal.png" alt="personal services and events" width="280" height="350" />
 			<a href=""><p>PERSONAL & EVENTS</p><img src="" /></a>
 		</div>
 		<div class="gallery-travel">
-			<img src="" alt="travel services"/>
+			<img src="<?php bloginfo('template_url'); ?>/library/images/travel.png" alt="travel services" width="280" height="350" />
 			<a href=""><p>TRAVEL</p><img src="" /></a>
 		</div>
 		<div class="gallery-wedding">
-			<img src="" alt="wedding services"/>
+			<img src="<?php bloginfo('template_url'); ?>/library/images/wedding.png" alt="personal services and events" alt="wedding services" width="280" height="350" />
 			<a href=""><p>WEDDING</p><img src="" /></a>
 		</div>
 	</div>
