@@ -97,34 +97,30 @@ body {
   color: #333333; }
 
 h1 {
-  margin: 0 10%;
-  padding-bottom: 20px;
-  font-size: 26px;
+  font-size: 30.5px;
   font-weight: bold;
   text-align: center;
-  line-height: 30px; }
+  color: #6A027B; }
 
 h2 {
-  font-size: 26px;
-  font-weight: bold; }
-
-h2.h2-center {
-  text-align: center; }
+  font-size: 20px;
+  font-weight: 700; }
 
 h3 {
   font-size: 16px;
   font-weight: bold;
-  padding: 20px 0 3px 0; }
+  padding: 20px 0 10px 0; }
 
 p {
-  font-size: 14px; }
+  font-size: 16px;
+  color: #333333; }
 
 header {
   padding: 0 30px;
   height: 100px;
   position: relative;
-  border-bottom: 1px solid #E5E5E5;
-  box-shadow: 0 5px 6px -6px #E5E5E5;
+  border-bottom: 1px solid #EEEEEE;
+  box-shadow: 0 5px 6px -6px #EEEEEE;
   max-width: 1220px;
   margin: 0 auto;
   /************/
@@ -208,19 +204,82 @@ header {
               float: none; } }
 
 section {
-  padding: 0 30px;
-  background-color: #E5E5E5; }
+  padding: 0 30px 100px 30px;
+  background-color: #EEEEEE; }
   section .gallery-container {
+    margin: 60px 0;
     display: inline-block; }
+    section .gallery-container div {
+      padding-right: 30px; }
+    section .gallery-container div:last-child {
+      padding-right: 0; }
     section .gallery-container .gallery-corporate, section .gallery-container .gallery-events, section .gallery-container .gallery-travel, section .gallery-container .gallery-wedding {
       float: left; }
     section .gallery-container a {
       height: 45px;
-      width: 282px;
-      background-color: #652C90;
-      color: #E5E5E5;
       margin-top: -2px;
-      display: block; }
+      display: block;
+      background-color: #652C90; }
+      section .gallery-container a p {
+        padding: 13px 0;
+        font-weight: 600;
+        color: #EEEEEE;
+        text-align: center; }
+  section .about {
+    background-color: white;
+    padding: 70px 100px;
+    border: 1px solid #DDDDDD; }
+    section .about p {
+      margin-top: 20px;
+      line-height: 20px;
+      color: #333333; }
+    section .about a {
+      width: 240px;
+      height: 45px;
+      margin-top: -2px;
+      display: block;
+      background-color: #652C90; }
+      section .about a p {
+        padding: 13px 0;
+        font-weight: 600;
+        color: #EEEEEE;
+        text-align: center; }
+
+aside {
+  padding: 50px 0;
+  background-color: #CCCCCC;
+  display: inline-block;
+  width: 100%; }
+  aside .newsletter, aside .contact-us {
+    float: left;
+    height: 185px;
+    width: 39.7%; }
+  aside .newsletter {
+    padding-left: 130px; }
+    aside .newsletter h2 {
+      margin-bottom: 20px; }
+    aside .newsletter form label {
+      font-weight: 600; }
+    aside .newsletter form input[type="email"] {
+      width: 380px;
+      height: 45px;
+      border: none;
+      margin: 10px 0; }
+    aside .newsletter button {
+      width: 140px;
+      height: 45px;
+      margin-top: 20px;
+      display: block;
+      background-color: #652C90;
+      border: none;
+      color: #EEEEEE;
+      font-weight: 600; }
+  aside .contact-us {
+    padding-right: 130px; }
+    aside .contact-us p {
+      line-height: 20px; }
+      aside .contact-us p span {
+        font-weight: 600; }
 
 footer {
   height: 50px;
@@ -241,14 +300,14 @@ footer {
         padding: 0px 16px;
         margin: 16px 0; }
         footer .inner-footer .navigation li p {
-          color: #E5E5E5; }
+          color: #EEEEEE; }
     footer .inner-footer .social {
       float: right; }
       footer .inner-footer .social li {
         float: left;
-        border-right: 1px solid #E5E5E5; }
+        border-right: 1px solid #EEEEEE; }
       footer .inner-footer .social li:first-child {
-        border-left: 1px solid #E5E5E5; }
+        border-left: 1px solid #EEEEEE; }
 
 /*
 COLORS

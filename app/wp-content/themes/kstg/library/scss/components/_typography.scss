@@ -6,31 +6,38 @@ body {
   color: $dark-grey;
 }
 
-// Headers
 h1 {
-  margin: 0 10%;
-  padding-bottom: 20px;
-  font-size: 26px;
+  font-size: 30.5px;
   font-weight: bold;
   text-align: center;
-  line-height: 30px;
+  color: $purple-text;
 }
 
+//body headlines and navigation
 h2 {
-  font-size: 26px;
-  font-weight: bold;
-}
-
-h2.h2-center {
-  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 h3 {
   font-size: 16px;
   font-weight: bold;
-  padding: 20px 0 3px 0;
+  padding: 20px 0 10px 0;
 }
 
 p {
-  font-size: 14px;
+  font-size: 16px;
+  color: $dark-grey;
 }
+
+// Headline 1  -  28 pt
+// Headeline 2  -  20 pt  (body headlines & navigation)
+// Body copy  -  18 pt
+// Dropdown menu copy - 16 pt
+// Footer copy  - 14 pt
+// Breadcrumb  -  12 pt
+//MOBILE
+// Headline 1 - 18 pt
+// Headline 2 - 18 pt (body headlines)
+// Body copy - 16 pt
+// Navigation menu & footer copy - 14 pt
