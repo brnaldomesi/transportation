@@ -47,7 +47,7 @@ table {
   border-spacing: 0; }
 
 .grid .row {
-  margin: 10px 0; }
+  margin: 5px 0; }
   .grid .row:after {
     content: "";
     display: table;
@@ -57,7 +57,7 @@ table {
   .grid .row:first-child {
     margin-top: 0; }
   .grid .row [class*="col-"] {
-    padding: 10px;
+    padding: 5px;
     box-sizing: border-box; }
   @media all and (min-width: 600px) {
     .grid .row .col-2-3 {
@@ -116,33 +116,34 @@ p {
   color: #333333; }
 
 header {
-  padding: 0 30px;
   height: 100px;
   position: relative;
   border-bottom: 1px solid #EEEEEE;
-  box-shadow: 0 5px 6px -6px #EEEEEE;
-  max-width: 1220px;
-  margin: 0 auto;
+  box-shadow: 0 5px 6px -6px #333333;
   /************/
   /** MOBILE **/
   /************/ }
   header.mobile-header {
     display: none; }
-  header a img {
-    float: left;
-    margin: 15px 25px;
-    width: 138px;
-    height: 72px; }
-  header nav {
-    float: right;
-    padding: 42px 0; }
-    header nav a {
-      float: left; }
-      header nav a li {
-        padding-left: 4.5em; }
-        header nav a li p {
-          font-weight: bold; }
-  @media only screen and (max-device-width: 480px) {
+  header .inner-header {
+    padding: 0 30px;
+    max-width: 1220px;
+    margin: 0 auto; }
+    header .inner-header a img {
+      float: left;
+      margin: 15px 25px;
+      width: 138px;
+      height: 72px; }
+    header .inner-header nav {
+      float: right;
+      padding: 42px 0; }
+      header .inner-header nav a {
+        float: left; }
+        header .inner-header nav a li {
+          padding-left: 4.5em; }
+          header .inner-header nav a li p {
+            font-weight: bold; }
+  @media only screen and (max-width: 1000px) {
     header {
       height: 70px;
       margin: 0;
@@ -203,83 +204,103 @@ header {
               font-weight: bold;
               float: none; } }
 
-section {
-  padding: 0 30px 100px 30px;
-  background-color: #EEEEEE; }
-  section .gallery-container {
-    margin: 60px 0;
-    display: inline-block; }
-    section .gallery-container div {
-      padding-right: 30px; }
-    section .gallery-container div:last-child {
-      padding-right: 0; }
-    section .gallery-container .gallery-corporate, section .gallery-container .gallery-events, section .gallery-container .gallery-travel, section .gallery-container .gallery-wedding {
-      float: left; }
-    section .gallery-container a {
-      height: 45px;
-      margin-top: -2px;
-      display: block;
-      background-color: #652C90; }
-      section .gallery-container a p {
-        padding: 13px 0;
-        font-weight: 600;
-        color: #EEEEEE;
-        text-align: center; }
-  section .about {
-    background-color: white;
-    padding: 70px 100px;
-    border: 1px solid #DDDDDD; }
-    section .about p {
-      margin-top: 20px;
-      line-height: 20px;
-      color: #333333; }
-    section .about a {
-      width: 240px;
-      height: 45px;
-      margin-top: -2px;
-      display: block;
-      background-color: #652C90; }
-      section .about a p {
-        padding: 13px 0;
-        font-weight: 600;
-        color: #EEEEEE;
-        text-align: center; }
-
-aside {
-  padding: 50px 0;
-  background-color: #CCCCCC;
-  display: inline-block;
-  width: 100%; }
-  aside .newsletter, aside .contact-us {
-    float: left;
-    height: 185px;
-    width: 39.7%; }
-  aside .newsletter {
-    padding-left: 130px; }
-    aside .newsletter h2 {
-      margin-bottom: 20px; }
-    aside .newsletter form label {
-      font-weight: 600; }
-    aside .newsletter form input[type="email"] {
-      width: 380px;
-      height: 45px;
-      border: none;
-      margin: 10px 0; }
-    aside .newsletter button {
-      width: 140px;
-      height: 45px;
-      margin-top: 20px;
-      display: block;
-      background-color: #652C90;
-      border: none;
-      color: #EEEEEE;
-      font-weight: 600; }
-  aside .contact-us {
-    padding-right: 130px; }
-    aside .contact-us p {
-      line-height: 20px; }
-      aside .contact-us p span {
+.homepage-wrapper {
+  background-color: #EEEEEE;
+  /************/
+  /** MOBILE **/
+  /************/ }
+  .homepage-wrapper section {
+    padding: 0 30px 100px 30px;
+    max-width: 1220px;
+    margin: 0 auto; }
+    .homepage-wrapper section .gallery-container {
+      margin: 60px 0;
+      display: inline-block; }
+      .homepage-wrapper section .gallery-container div {
+        padding-right: 30px; }
+      .homepage-wrapper section .gallery-container div:last-child {
+        padding-right: 0; }
+      .homepage-wrapper section .gallery-container .gallery-corporate, .homepage-wrapper section .gallery-container .gallery-events, .homepage-wrapper section .gallery-container .gallery-travel, .homepage-wrapper section .gallery-container .gallery-wedding {
+        float: left; }
+      .homepage-wrapper section .gallery-container a {
+        height: 45px;
+        margin-top: -2px;
+        display: block;
+        background-color: #652C90; }
+        .homepage-wrapper section .gallery-container a p {
+          padding: 13px 0;
+          font-weight: 600;
+          color: #EEEEEE;
+          text-align: center; }
+    .homepage-wrapper section .about {
+      background-color: white;
+      padding: 70px 100px;
+      border: 1px solid #DDDDDD; }
+      .homepage-wrapper section .about p {
+        margin-top: 20px;
+        line-height: 20px;
+        color: #333333; }
+      .homepage-wrapper section .about a {
+        width: 240px;
+        height: 45px;
+        margin-top: -2px;
+        display: block;
+        background-color: #652C90; }
+        .homepage-wrapper section .about a p {
+          padding: 13px 0;
+          font-weight: 600;
+          color: #EEEEEE;
+          text-align: center; }
+  .homepage-wrapper aside {
+    background-color: #CCCCCC; }
+    .homepage-wrapper aside .aside-wrapper {
+      max-width: 1220px;
+      margin: 0 auto;
+      padding: 50px 30px; }
+      .homepage-wrapper aside .aside-wrapper:after {
+        content: "";
+        display: table;
+        clear: both; }
+      .homepage-wrapper aside .aside-wrapper .newsletter, .homepage-wrapper aside .aside-wrapper .contact-us {
+        float: left;
+        height: 185px;
+        width: 50%; }
+      .homepage-wrapper aside .aside-wrapper .newsletter h2 {
+        margin-bottom: 20px; }
+      .homepage-wrapper aside .aside-wrapper .newsletter form label {
         font-weight: 600; }
+      .homepage-wrapper aside .aside-wrapper .newsletter form input[type="email"] {
+        width: 380px;
+        height: 45px;
+        border: none;
+        margin: 10px 0; }
+      .homepage-wrapper aside .aside-wrapper .newsletter button {
+        width: 140px;
+        height: 45px;
+        margin-top: 20px;
+        display: block;
+        background-color: #652C90;
+        border: none;
+        color: #EEEEEE;
+        font-weight: 600; }
+      .homepage-wrapper aside .aside-wrapper .contact-us p {
+        line-height: 20px; }
+        .homepage-wrapper aside .aside-wrapper .contact-us p span {
+          font-weight: 600; }
+  @media only screen and (max-width: 460px) {
+    .homepage-wrapper section {
+      padding: 20px 4% 40px; }
+      .homepage-wrapper section .col-1-4 {
+        width: 50%; }
+      .homepage-wrapper section .gallery-corporate img, .homepage-wrapper section .gallery-events img, .homepage-wrapper section .gallery-travel img, .homepage-wrapper section .gallery-wedding img {
+        width: 136px;
+        height: 168px; }
+      .homepage-wrapper section .gallery-corporate a, .homepage-wrapper section .gallery-events a, .homepage-wrapper section .gallery-travel a, .homepage-wrapper section .gallery-wedding a {
+        width: 136px; }
+        .homepage-wrapper section .gallery-corporate a p, .homepage-wrapper section .gallery-events a p, .homepage-wrapper section .gallery-travel a p, .homepage-wrapper section .gallery-wedding a p {
+          padding: 13px 0; }
+        .homepage-wrapper section .gallery-corporate a .events, .homepage-wrapper section .gallery-events a .events, .homepage-wrapper section .gallery-travel a .events, .homepage-wrapper section .gallery-wedding a .events {
+          padding: 7px 0; } }
 
 footer {
   height: 50px;

@@ -52,9 +52,9 @@
 
 	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
 
-		<div id="container">
-			<header class="header desktop-header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
-				<div id="inner-header" class="wrap cf">
+		<div class="grid">
+			<header class="header desktop-header row" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+				<div class="inner-header">
  					<a class="desktop-logo" href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php bloginfo('template_url'); ?>/library/images/logo-128x72.png"/ class="logo" /></a>
 					<nav>
             <ul>

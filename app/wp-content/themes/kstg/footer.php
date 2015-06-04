@@ -1,4 +1,4 @@
-			<footer class="footer">
+			<footer class="footer row">
 
 				<div class="inner-footer">
           <ul class="navigation">

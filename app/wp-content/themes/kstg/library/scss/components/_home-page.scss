@@ -1,101 +1,130 @@
-section {
-  padding: 0 30px 100px 30px;;
+.homepage-wrapper {
   background-color: $light-grey;
-  .gallery-container {
-    margin: 60px 0;
-    display: inline-block;
-    div {
-      padding-right: 30px;
-    }
-    div:last-child {
-      padding-right: 0;
-    }
-    .gallery-corporate, .gallery-events, .gallery-travel, .gallery-wedding {
-      float: left;
-    }
-    a {
-      height: 45px;
-      margin-top: -2px;
-      display: block;
-      background-color: $purple;
-      p {
-        padding: 13px 0;
-        font-weight: 600;
-        color: $light-grey;
-        text-align: center;
+  section {
+    padding: 0 30px 100px 30px;
+    max-width: 1220px;
+    margin: 0 auto;
+    .gallery-container {
+      margin: 60px 0;
+      display: inline-block;
+      div {
+        padding-right: 30px;
       }
-    }
-  }
-  .about {
-    background-color: white;
-    padding: 70px 100px;
-    border: 1px solid #DDDDDD;
-    p {
-      margin-top: 20px;
-      line-height: 20px;
-      color: $dark-grey;
-    }
-    a {
-      width: 240px;
-      height: 45px;
-      margin-top: -2px;
-      display: block;
-      background-color: $purple;
-      p {
-        padding: 13px 0;
-        font-weight: 600;
-        color: $light-grey;
-        text-align: center;
+      div:last-child {
+        padding-right: 0;
       }
-    }
-  }
-}
-
-aside {
-  padding: 50px 0;
-  background-color: #CCCCCC;
-  display: inline-block;
-  width: 100%;
-  .newsletter, .contact-us {
-    float: left;
-    height: 185px;
-    width: 39.7%;
-  }
-  .newsletter {
-    padding-left: 130px;
-    h2 {
-      margin-bottom: 20px;
-    }
-    form {
-      label {
-        font-weight: 600;
+      .gallery-corporate, .gallery-events, .gallery-travel, .gallery-wedding {
+        float: left;
       }
-      input[type="email"] {
-        width: 380px;
+      a {
         height: 45px;
-        border: none;
-        margin: 10px 0;
+        margin-top: -2px;
+        display: block;
+        background-color: $purple;
+        p {
+          padding: 13px 0;
+          font-weight: 600;
+          color: $light-grey;
+          text-align: center;
+        }
       }
     }
-    button {
-      width: 140px;
-      height: 45px;
-      margin-top: 20px;
-      display: block;
-      background-color: $purple;
-      border: none;
-      color: $light-grey;
-      font-weight: 600;
-    }
-  }
-  .contact-us {
-    padding-right: 130px;
-    p {
-      line-height: 20px;
-      span {
-        font-weight: 600;
+    .about {
+      background-color: white;
+      padding: 70px 100px;
+      border: 1px solid #DDDDDD;
+      p {
+        margin-top: 20px;
+        line-height: 20px;
+        color: $dark-grey;
+      }
+      a {
+        width: 240px;
+        height: 45px;
+        margin-top: -2px;
+        display: block;
+        background-color: $purple;
+        p {
+          padding: 13px 0;
+          font-weight: 600;
+          color: $light-grey;
+          text-align: center;
+        }
       }
     }
   }
-
+  aside {
+    background-color: #CCCCCC;
+    .aside-wrapper {
+      max-width: 1220px;
+      margin: 0 auto;
+      padding: 50px 30px;
+      @include clearfix();
+      .newsletter, .contact-us {
+        float: left;
+        height: 185px;
+        width: 50%;
+      }
+      .newsletter {
+        h2 {
+          margin-bottom: 20px;
+        }
+        form {
+          label {
+            font-weight: 600;
+          }
+          input[type="email"] {
+            width: 380px;
+            height: 45px;
+            border: none;
+            margin: 10px 0;
+          }
+        }
+        button {
+          width: 140px;
+          height: 45px;
+          margin-top: 20px;
+          display: block;
+          background-color: $purple;
+          border: none;
+          color: $light-grey;
+          font-weight: 600;
+        }
+      }
+      .contact-us {
+        p {
+          line-height: 20px;
+          span {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+  /************/
+  /** MOBILE **/
+  /************/
+  @media only screen and (max-width: 460px) {
+    section {
+      padding: 20px 4% 40px;
+      .col-1-4 {
+        width: 50%;
+      }
+      .gallery-corporate, .gallery-events, .gallery-travel, .gallery-wedding {
+        img {
+          width: 136px;
+          height: 168px;
+        }
+        a {
+          width: 136px;
+          p {
+            padding: 13px 0;
+          }
+          .events {
+            padding: 7px 0;
+          }
+        }
+      }
+    }
+  }
 }

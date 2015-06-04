@@ -2,30 +2,33 @@ header {
   &.mobile-header {
     display: none;
   }
-  padding: $site-padding;
   height: 100px;
   position: relative;
   border-bottom: 1px solid $light-grey;
-  box-shadow: 0 5px 6px -6px $light-grey;
+  box-shadow: 0 5px 6px -6px $dark-grey;
+
+  .inner-header {
+  padding: $site-padding;
   max-width: 1220px;
   margin: 0 auto;
-  a {
-    img {
-      float: left;
-      margin: 15px 25px;
-      width: 138px;
-      height: 72px;
-    }
-  }
-  nav {
-    float: right;
-    padding: 42px 0;
     a {
-      float: left;
-      li {
-        padding-left: 4.5em;
-        p {
-          font-weight: bold;
+      img {
+        float: left;
+        margin: 15px 25px;
+        width: 138px;
+        height: 72px;
+      }
+    }
+    nav {
+      float: right;
+      padding: 42px 0;
+      a {
+        float: left;
+        li {
+          padding-left: 4.5em;
+          p {
+            font-weight: bold;
+          }
         }
       }
     }
@@ -33,7 +36,7 @@ header {
   /************/
   /** MOBILE **/
   /************/
-  @media only screen and (max-device-width: 480px) {
+  @media only screen and (max-width: 1000px) {
     &.desktop-header {
       display: none;
     }
