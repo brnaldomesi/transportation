@@ -1,0 +1,80 @@
+// // Initial styling for mobile view
+
+// @media only screen and (max-device-width: 480px) {
+//   h1, h2 {
+//     font-size: 60px;
+//     line-height: 70px;
+//   }
+
+//   h3, p, figcaption {
+//     font-size: 40px;
+//     line-height: 60px;
+//   }
+
+//   header {
+//     height: 300px;
+//     border-bottom: 2px solid $light-grey;
+//     box-shadow: 0px 1px 6px $light-grey;
+//     img {
+//       height: 250px;
+//     }
+//   }
+
+//   section.grid {
+//     margin: 0 60px;
+//   }
+
+//   .grid {
+//     .row {
+//       .col-1-4 {
+//         width: 50%;
+//       }
+//       .col-1-2 {
+//         width: 100%;
+//       }
+//     }
+//   }
+
+//   .headline-copy {
+//     margin: 50px 12%;
+//     text-align: center;
+//   }
+
+//   .banner-container {
+//     .banner.row {
+//       padding: 70px 10px;
+//     }
+//   }
+
+//   .fluid-images {
+//     width: 100%;
+//     height: auto;
+//   }
+
+//   #landing-page {
+//     .info-container {
+//       .jobs-container, .contact-container {
+//         height: 770px;
+//         padding: 90px 60px;
+//       }
+//       .contact-container {
+//         .social-media {
+//           img {
+//             height: 75px;
+//             width: 75px;
+//             padding: 0 10px
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   .jobs-container:first-child {
+//     border-right: none;
+//     border-bottom: 2px solid #FFFFFF;
+//   }
+
+//   footer {
+//     padding: 50px 0;
+//   }
+// }

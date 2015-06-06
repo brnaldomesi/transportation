@@ -3,32 +3,116 @@ footer {
   height: 50px;
   position: fixed;
   bottom: 0;
-  padding: 0 80px;
+  padding: 0 6%;
   background-color: $dark-grey;
-  .navigation {
+  p {
+    font-size: 12px;
+    color: $light-grey;
+    line-height: 17px;
+    margin: 16px 0;
+  }
+  .copyright {
+    width: 30%;
     float: left;
-    li:first-child {
-      border-left: none;
+    p {
+      padding: 0px 4%;
     }
-    li {
-      float: left;
-      border-left: 1px solid #E5E5E5;
-      line-height: 17px;
-      padding: 0px 16px;
-      margin: 16px 0;
-      p {
-        color: $light-grey;
+  }
+  nav {
+    width: 30%;
+    margin-top: 5px;
+    float: left;
+    ul {
+      li:first-child {
+        border-left: none;
+      }
+      margin: 10px 0;
+      li {
+        float: left;
+        border-left: 1px solid #CCCCCC;
+        padding: 0 5%;
+        p {
+          margin: 0;
+        }
       }
     }
   }
   .social {
+    width: 30%;
     float: right;
-    li {
-      float: left;
-      border-right: 1px solid $light-grey;
+    ul {
+
+      li {
+        float: left;
+
+        img {
+          width: 100%;
+          height: 100%;
+          border-right: 1px solid #CCCCCC;
+        }
+      }
+      li:first-child {
+        border-left: 1px solid #CCCCCC;
+      }
     }
-    li:first-child {
-      border-left: 1px solid $light-grey;
+  }
+
+  /************/
+  /** MOBILE **/
+  /************/
+  @media only screen and (max-device-width: 480px) {
+    width: 100%;
+    height: 132px;
+    padding: 0;
+    p {
+      margin: 10px 7%;
+      padding: 0;
+    }
+    .copyright {
+      width: 100%;
+      p {
+        text-align: center;
+      }
+    }
+    nav {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      .nav {
+        text-align: center;
+        li {
+          float: none;
+          display: inline;
+          a {
+            display: inline-block;
+          }
+        }
+      }
+    }
+    .social {
+      width: 100%;
+      margin-top: 10px;
+      border-top: 1px solid #CCCCCC;
+      float: none;
+      display: inline-block;
+      ul {
+        text-align: center;
+        overflow: hidden;
+        li {
+          width: 18.9%;
+          float: none;
+          display: inline-block;
+        }
+        li:first-child {
+          border: none;
+
+        }
+        li:last-child {
+          img {
+            border: none;
+          }
+        }
+      }
     }
   }
 }
