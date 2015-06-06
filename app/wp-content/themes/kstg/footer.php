@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-			<footer class="footer row">
-
-				<div class="inner-footer">
-          <ul class="navigation">
-=======
 			<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
         <div class="copyright">
           <p>© 2015 Kevin Smith Transportation Group</p>
@@ -26,7 +20,6 @@
            <li>
               <a href="https://www.facebook.com/kevinsmithgroup" target="_blank"><img src="<?php bloginfo('template_url'); ?>/library/images/icon-facebook.png" alt="Facebook" /></a>
             </li>
->>>>>>> master
             <li>
               <a href="https://www.twitter.com/Kevinsmithgrp" target="_blank"><img src="<?php bloginfo('template_url'); ?>/library/images/icon-twitter.png" alt="Twitter" /></a>
             </li>
@@ -41,20 +34,9 @@
             </li>
          </ul>
        </div>
-
      </footer>
-
-<<<<<<< HEAD
-   </div>
-
-   <?php // all js scripts are loaded in library/bones.php ?>
-   <?php wp_footer(); ?>
-=======
 		</div>
 		<?php // all js scripts are loaded in library/bones.php ?>
 		<?php wp_footer(); ?>
->>>>>>> 80797e2fc70abad273ba447e40fb33ef4ee91aec
-
  </body>
-
  </html> <!-- end of site. what a ride! -->

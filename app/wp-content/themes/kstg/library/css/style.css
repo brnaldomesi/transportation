@@ -328,7 +328,6 @@ header {
 footer {
   width: 88%;
   height: 50px;
-  position: fixed;
   bottom: 0;
   padding: 0 6%;
   background-color: #333333;
