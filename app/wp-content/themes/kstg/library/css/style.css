@@ -46,35 +46,25 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.grid .row {
-  margin: 5px 0; }
-  .grid .row:after {
-    content: "";
-    display: table;
-    clear: both; }
-  .grid .row:last-child {
-    margin-bottom: 0; }
-  .grid .row:first-child {
-    margin-top: 0; }
-  .grid .row [class*="col-"] {
-    padding: 5px;
-    box-sizing: border-box; }
-  @media all and (min-width: 600px) {
-    .grid .row .col-2-3 {
-      float: left;
-      width: 66.66%; }
-    .grid .row .col-1-2 {
-      float: left;
-      width: 50%; }
-    .grid .row .col-1-3 {
-      float: left;
-      width: 33.33%; }
-    .grid .row .col-1-4 {
-      float: left;
-      width: 25%; }
-    .grid .row .col-1-8 {
-      float: left;
-      width: 12.5%; } }
+.grid .row [class*="col-"] {
+  padding: 5px;
+  box-sizing: border-box; }
+@media all and (min-width: 600px) {
+  .grid .row .col-2-3 {
+    float: left;
+    width: 66.66%; }
+  .grid .row .col-1-2 {
+    float: left;
+    width: 50%; }
+  .grid .row .col-1-3 {
+    float: left;
+    width: 33.33%; }
+  .grid .row .col-1-4 {
+    float: left;
+    width: 25%; }
+  .grid .row .col-1-8 {
+    float: left;
+    width: 12.5%; } }
 
 a {
   text-decoration: none;
@@ -97,7 +87,7 @@ body {
   color: #333333; }
 
 h1 {
-  font-size: 30.5px;
+  font-size: 29px;
   font-weight: bold;
   text-align: center;
   color: #6A027B; }
@@ -115,6 +105,20 @@ p {
   font-size: 16px;
   color: #333333; }
 
+/************/
+/** MOBILE **/
+/************/
+@media only screen and (max-width: 460px) {
+  h1 {
+    align: left;
+    font-size: 17px;
+    line-height: 20px; }
+
+  h2 {
+    font-size: 17px; }
+
+  p {
+    font-size: 14px; } }
 header {
   height: 100px;
   position: relative;
@@ -214,7 +218,7 @@ header {
     max-width: 1220px;
     margin: 0 auto; }
     .homepage-wrapper section .gallery-container {
-      margin: 60px 0;
+      margin: 60px 20px 50px 20px;
       display: inline-block; }
       .homepage-wrapper section .gallery-container div {
         padding-right: 30px; }
@@ -222,18 +226,21 @@ header {
         padding-right: 0; }
       .homepage-wrapper section .gallery-container .gallery-corporate, .homepage-wrapper section .gallery-container .gallery-events, .homepage-wrapper section .gallery-container .gallery-travel, .homepage-wrapper section .gallery-container .gallery-wedding {
         float: left; }
+        .homepage-wrapper section .gallery-container .gallery-corporate img, .homepage-wrapper section .gallery-container .gallery-events img, .homepage-wrapper section .gallery-container .gallery-travel img, .homepage-wrapper section .gallery-container .gallery-wedding img {
+          padding-right: 5px; }
       .homepage-wrapper section .gallery-container a {
         height: 45px;
-        margin-top: -2px;
+        margin: -2px 5px 0 0;
         display: block;
         background-color: #652C90; }
         .homepage-wrapper section .gallery-container a p {
-          padding: 13px 0;
+          padding: 14px 0;
           font-weight: 600;
           color: #EEEEEE;
           text-align: center; }
     .homepage-wrapper section .about {
       background-color: white;
+      margin: 0 25px;
       padding: 70px 100px;
       border: 1px solid #DDDDDD; }
       .homepage-wrapper section .about p {
@@ -264,7 +271,8 @@ header {
       .homepage-wrapper aside .aside-wrapper .newsletter, .homepage-wrapper aside .aside-wrapper .contact-us {
         float: left;
         height: 185px;
-        width: 50%; }
+        width: 50%;
+        padding-left: 130px; }
       .homepage-wrapper aside .aside-wrapper .newsletter h2 {
         margin-bottom: 20px; }
       .homepage-wrapper aside .aside-wrapper .newsletter form label {
@@ -289,18 +297,33 @@ header {
           font-weight: 600; }
   @media only screen and (max-width: 460px) {
     .homepage-wrapper section {
-      padding: 20px 4% 40px; }
+      padding: 20px 0 40px; }
       .homepage-wrapper section .col-1-4 {
         width: 50%; }
-      .homepage-wrapper section .gallery-corporate img, .homepage-wrapper section .gallery-events img, .homepage-wrapper section .gallery-travel img, .homepage-wrapper section .gallery-wedding img {
-        width: 136px;
-        height: 168px; }
-      .homepage-wrapper section .gallery-corporate a, .homepage-wrapper section .gallery-events a, .homepage-wrapper section .gallery-travel a, .homepage-wrapper section .gallery-wedding a {
-        width: 136px; }
-        .homepage-wrapper section .gallery-corporate a p, .homepage-wrapper section .gallery-events a p, .homepage-wrapper section .gallery-travel a p, .homepage-wrapper section .gallery-wedding a p {
-          padding: 13px 0; }
-        .homepage-wrapper section .gallery-corporate a .events, .homepage-wrapper section .gallery-events a .events, .homepage-wrapper section .gallery-travel a .events, .homepage-wrapper section .gallery-wedding a .events {
-          padding: 7px 0; } }
+      .homepage-wrapper section .gallery-container {
+        margin: 15px 5.8% 30px 5.8%; }
+        .homepage-wrapper section .gallery-container .gallery-corporate img, .homepage-wrapper section .gallery-container .gallery-events img, .homepage-wrapper section .gallery-container .gallery-travel img, .homepage-wrapper section .gallery-container .gallery-wedding img {
+          width: 126px;
+          height: 158px; }
+        .homepage-wrapper section .gallery-container .gallery-corporate a, .homepage-wrapper section .gallery-container .gallery-events a, .homepage-wrapper section .gallery-container .gallery-travel a, .homepage-wrapper section .gallery-container .gallery-wedding a {
+          width: 126px; }
+          .homepage-wrapper section .gallery-container .gallery-corporate a p, .homepage-wrapper section .gallery-container .gallery-events a p, .homepage-wrapper section .gallery-container .gallery-travel a p, .homepage-wrapper section .gallery-container .gallery-wedding a p {
+            padding: 13px 0; }
+          .homepage-wrapper section .gallery-container .gallery-corporate a .events, .homepage-wrapper section .gallery-container .gallery-events a .events, .homepage-wrapper section .gallery-container .gallery-travel a .events, .homepage-wrapper section .gallery-container .gallery-wedding a .events {
+            padding: 7px 0; }
+      .homepage-wrapper section .about {
+        margin: 20px 0;
+        padding: 20px 8%; }
+        .homepage-wrapper section .about a {
+          width: 100%; }
+    .homepage-wrapper aside .aside-wrapper {
+      padding: 0 5%; }
+      .homepage-wrapper aside .aside-wrapper .newsletter, .homepage-wrapper aside .aside-wrapper .contact-us {
+        width: 100%;
+        margin: 30px 0;
+        padding-left: 0; }
+      .homepage-wrapper aside .aside-wrapper .newsletter form input[type="email"] {
+        width: 270px; } }
 
 footer {
   height: 50px;

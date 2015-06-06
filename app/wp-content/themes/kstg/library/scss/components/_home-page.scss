@@ -5,7 +5,7 @@
     max-width: 1220px;
     margin: 0 auto;
     .gallery-container {
-      margin: 60px 0;
+      margin: 60px 20px 50px 20px;
       display: inline-block;
       div {
         padding-right: 30px;
@@ -15,14 +15,17 @@
       }
       .gallery-corporate, .gallery-events, .gallery-travel, .gallery-wedding {
         float: left;
+        img {
+          padding-right: 5px;
+        }
       }
       a {
         height: 45px;
-        margin-top: -2px;
+        margin: -2px 5px 0 0;
         display: block;
         background-color: $purple;
         p {
-          padding: 13px 0;
+          padding: 14px 0;
           font-weight: 600;
           color: $light-grey;
           text-align: center;
@@ -31,6 +34,7 @@
     }
     .about {
       background-color: white;
+      margin: 0 25px;
       padding: 70px 100px;
       border: 1px solid #DDDDDD;
       p {
@@ -64,6 +68,7 @@
         float: left;
         height: 185px;
         width: 50%;
+        padding-left: 130px;
       }
       .newsletter {
         h2 {
@@ -106,22 +111,49 @@
   /************/
   @media only screen and (max-width: 460px) {
     section {
-      padding: 20px 4% 40px;
+      padding: 20px 0 40px;
       .col-1-4 {
         width: 50%;
       }
-      .gallery-corporate, .gallery-events, .gallery-travel, .gallery-wedding {
-        img {
-          width: 136px;
-          height: 168px;
-        }
-        a {
-          width: 136px;
-          p {
-            padding: 13px 0;
+      .gallery-container {
+        margin: 15px 5.8% 30px 5.8%;
+        .gallery-corporate, .gallery-events, .gallery-travel, .gallery-wedding {
+          img {
+            width: 126px;
+            height: 158px;
           }
-          .events {
-            padding: 7px 0;
+          a {
+            width: 126px;
+            p {
+              padding: 13px 0;
+            }
+            .events {
+              padding: 7px 0;
+            }
+          }
+        }
+      }
+      .about {
+        margin: 20px 0;
+        padding: 20px 8%;
+        a {
+          width: 100%;
+        }
+      }
+    }
+    aside {
+      .aside-wrapper {
+        padding: 0 5%;
+        .newsletter, .contact-us {
+          width: 100%;
+          margin: 30px 0;
+          padding-left: 0;
+        }
+        .newsletter {
+          form {
+            input[type="email"] {
+              width: 270px;
+            }
           }
         }
       }
