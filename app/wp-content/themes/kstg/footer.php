@@ -37,10 +37,16 @@
 
      </footer>
 
+<<<<<<< HEAD
    </div>
 
    <?php // all js scripts are loaded in library/bones.php ?>
    <?php wp_footer(); ?>
+=======
+		</div>
+		<?php // all js scripts are loaded in library/bones.php ?>
+		<?php wp_footer(); ?>
+>>>>>>> 80797e2fc70abad273ba447e40fb33ef4ee91aec
 
  </body>
 

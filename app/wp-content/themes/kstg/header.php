@@ -53,33 +53,10 @@
 	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
 
 		<div id="container">
-
-			<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
-
+			<header class="header desktop-header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 				<div id="inner-header" class="wrap cf">
-
-					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
-
- 					<a href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php bloginfo('template_url'); ?>/library/images/logo-128x72.png"/ class="logo" /></a>
-
-					<?php // if you'd like to use the site description you can un-comment it below ?>
-					<?php // bloginfo('description'); ?>
-
-
-					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
-						<?php wp_nav_menu(array(
-    					         'container' => true,                           // remove nav container
-    					         'container_class' => 'menu cf',                 // class of container (should you choose to use it)
-    					         'menu' => __( 'The Main Menu', 'bonestheme' ),  // nav name
-    					         'menu_class' => 'nav top-nav cf',               // adding custom nav class
-    					         'theme_location' => 'main-nav',                 // where it's located in the theme
-    					         'before' => '',                                 // before the menu
-        			               'after' => '',                                  // after the menu
-        			               'link_before' => '',                            // before each link
-        			               'link_after' => '',                             // after each link
-        			               'depth' => 0,                                   // limit the depth of the nav
-    					         'fallback_cb' => ''                             // fallback function (if there is one)
-						)); ?>
+ 					<a class="desktop-logo" href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php bloginfo('template_url'); ?>/library/images/logo-128x72.png"/ class="logo" /></a>
+					<nav>
             <ul>
               <a href=""><li><p>SERVICES</p></li></a>
               <a href=""><li><p>FLEET</p></li></a>
@@ -88,7 +65,22 @@
               <a href=""><li><p>CONTACT US</p></li></a>
             </ul>
 					</nav>
-
 				</div>
-
 			</header>
+
+      <header class="mobile-header">
+        <div class="banner-wrapper">
+          <a class="desktop-logo" href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php bloginfo('template_url'); ?>/library/images/logo-128x72.png"/ class="logo" /></a>
+          <a href="#home"  id="menu-button" class="dropdown" data-scroll><img src="<?php bloginfo('template_url'); ?>/library/images/icon-menu.png"/ class="logo" /></a>
+        </div>
+        <nav class="toggle-menu">
+          <ul>
+            <li class="menu-item active"><a href="#home">HOME</a></li>
+            <li class="menu-item"><a href="">SERVICE</a></li>
+            <li class="menu-item"><a href="">FLEET</a></li>
+            <li class="menu-item"><a href="">RATES</a></li>
+            <li class="menu-item"><a href="">ABOUT US</a></li>
+            <li class="menu-item"><a href="">CONTACT US</a></li>
+          </ul>
+        </nav>
+      </header>

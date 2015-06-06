@@ -1,259 +1,90 @@
-@charset "UTF-8";
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-body {
-  line-height: 1; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-.grid .row {
-  margin: 10px 0; }
-  .grid .row:after {
-    content: "";
-    display: table;
-    clear: both; }
-  .grid .row:last-child {
-    margin-bottom: 0; }
-  .grid .row:first-child {
-    margin-top: 0; }
-  .grid .row [class*="col-"] {
-    padding: 10px;
-    box-sizing: border-box; }
-  @media all and (min-width: 600px) {
-    .grid .row .col-2-3 {
-      float: left;
-      width: 66.66%; }
-    .grid .row .col-1-2 {
-      float: left;
-      width: 50%; }
-    .grid .row .col-1-3 {
-      float: left;
-      width: 33.33%; }
-    .grid .row .col-1-4 {
-      float: left;
-      width: 25%; }
-    .grid .row .col-1-8 {
-      float: left;
-      width: 12.5%; } }
-
-a {
-  text-decoration: none;
-  color: #333333; }
-
-a:hover {
-  text-decoration: underline;
-  color: #652C90; }
-
-a {
-  text-decoration: none;
-  color: #333333; }
-
-a:hover {
-  text-decoration: underline;
-  color: #652C90; }
-
-body {
-  font-family: 'Open Sans', sans-serif;
-  color: #333333; }
-
-h1 {
-  margin: 0 10%;
-  padding-bottom: 20px;
-  font-size: 26px;
-  font-weight: bold;
-  text-align: center;
-  line-height: 30px; }
-
-h2 {
-  font-size: 26px;
-  font-weight: bold; }
-
-h2.h2-center {
-  text-align: center; }
-
-h3 {
-  font-size: 16px;
-  font-weight: bold;
-  padding: 20px 0 3px 0; }
-
-p {
-  font-size: 14px; }
-
-header {
-  margin: 0 80px;
-  height: 100px;
-  width: auto;
-  position: relative;
-  border-bottom: 1px solid #E5E5E5;
-  box-shadow: 0 5px 6px -6px #E5E5E5; }
-  header a img {
-    float: left;
-    margin: 15px 25px; }
-  header nav {
-    float: right;
-    padding: 42px 0; }
-    header nav a {
-      float: left; }
-      header nav a li {
-        padding-left: 4.5em; }
-        header nav a li p {
-          font-weight: bold; }
-
-.header-logo img {
-  width: 138px;
-  height: 72px; }
-
-footer {
-  width: 88%;
-  height: 50px;
-  position: fixed;
-  bottom: 0;
-  padding: 0 6%;
-  background-color: #333333;
-  /************/
-  /** MOBILE **/
-  /************/ }
-  footer p {
-    font-size: 12px;
-    color: #E5E5E5;
-    line-height: 17px;
-    margin: 16px 0; }
-  footer .copyright {
-    width: 30%;
-    float: left; }
-    footer .copyright p {
-      padding: 0px 4%; }
-  footer nav {
-    width: 30%;
-    margin-top: 5px;
-    float: left; }
-    footer nav ul {
-      margin: 10px 0; }
-      footer nav ul li:first-child {
-        border-left: none; }
-      footer nav ul li {
-        float: left;
-        border-left: 1px solid #CCCCCC;
-        padding: 0 5%; }
-        footer nav ul li p {
-          margin: 0; }
-  footer .social {
-    width: 30%;
-    float: right; }
-    footer .social ul li {
-      float: left; }
-      footer .social ul li img {
-        width: 100%;
-        height: 100%;
-        border-right: 1px solid #CCCCCC; }
-    footer .social ul li:first-child {
-      border-left: 1px solid #CCCCCC; }
-  @media only screen and (max-device-width: 480px) {
-    footer {
-      width: 100%;
-      height: 132px;
-      padding: 0; }
-      footer p {
-        margin: 10px 7%;
-        padding: 0; }
-      footer .copyright {
-        width: 100%; }
-        footer .copyright p {
-          text-align: center; }
-      footer nav {
-        margin: 0;
-        padding: 0;
-        width: 100%; }
-        footer nav .nav {
-          text-align: center; }
-          footer nav .nav li {
-            float: none;
-            display: inline; }
-            footer nav .nav li a {
-              display: inline-block; }
-      footer .social {
-        width: 100%;
-        margin-top: 10px;
-        border-top: 1px solid #CCCCCC;
-        float: none;
-        display: inline-block; }
-        footer .social ul {
-          text-align: center;
-          overflow: hidden; }
-          footer .social ul li {
-            width: 18.9%;
-            float: none;
-            display: inline-block; }
-          footer .social ul li:first-child {
-            border: none; }
-          footer .social ul li:last-child img {
-            border: none; } }
-
 /*
-COLORS
-Purple:  #652c90 – CTA links hover color; also use underline
-Dark Purple:  #480a52 – not used currently; for button color later
-Light Gray: #e5e5e5 – background color
-Dark Grey:  #333333 – All text + footer bkgd
-FONTS
-Open Sans: https://www.google.com/fonts#UsePlace:use/Collection:Open+Sans
-– Weights used: Normal, Italic, Bold
-font-family: 'Open Sans', sans-serif;
-FONT SIZES  (regular desktop version)
-Headlines:  26pt
-Featured copy (“About Us” blurb & photo labels): 18 pt
-Main copy (bottom):  16pt
+Error: Invalid CSS after "=======": expected "{", was "}"
+        on line 31 of scss/components/_header.scss
+        from line 6 of scss/style.scss
+
+26:         p {
+27:           font-weight: bold;
+28:         }
+29: <<<<<<< HEAD
+30: =======
+31:       }
+32:     }
+33:   }
+34:   /************\/
+35:   /** MOBILE **\/
+36:   /************\/
+
+Backtrace:
+scss/components/_header.scss:31
+scss/style.scss:6
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/scss/parser.rb:1165:in `expected'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/scss/parser.rb:1101:in `expected'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/scss/parser.rb:1096:in `tok!'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/scss/parser.rb:641:in `block'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/scss/parser.rb:711:in `declaration_or_ruleset'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/scss/parser.rb:661:in `block_child'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/scss/parser.rb:653:in `block_contents'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/scss/parser.rb:642:in `block'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/scss/parser.rb:711:in `declaration_or_ruleset'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/scss/parser.rb:661:in `block_child'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/scss/parser.rb:653:in `block_contents'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/scss/parser.rb:642:in `block'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/scss/parser.rb:711:in `declaration_or_ruleset'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/scss/parser.rb:661:in `block_child'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/scss/parser.rb:653:in `block_contents'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/scss/parser.rb:642:in `block'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/scss/parser.rb:711:in `declaration_or_ruleset'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/scss/parser.rb:661:in `block_child'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/scss/parser.rb:653:in `block_contents'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/scss/parser.rb:642:in `block'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/scss/parser.rb:635:in `ruleset'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/scss/parser.rb:660:in `block_child'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/scss/parser.rb:650:in `block_contents'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/scss/parser.rb:117:in `stylesheet'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/scss/parser.rb:42:in `parse'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/engine.rb:393:in `_to_tree'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/engine.rb:299:in `to_tree'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:323:in `block in visit_import'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/stack.rb:88:in `block in with_import'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/stack.rb:88:in `with_import'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:328:in `block in watch'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/listen-2.7.9/lib/listen/listener.rb:276:in `call'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/listen-2.7.9/lib/listen/listener.rb:276:in `_process_changes'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/listen-2.7.9/lib/listen/listener.rb:233:in `block in _wait_for_changes'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/listen-2.7.9/lib/listen/listener.rb:216:in `loop'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/listen-2.7.9/lib/listen/listener.rb:216:in `_wait_for_changes'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/listen-2.7.9/lib/listen/listener.rb:312:in `block in _start_wait_thread'
 */
-body {
-  font-family: 'Open Sans', sans-serif;
-  color: #333333; }
-
-.max-width-content {
-  max-width: 1200px;
-  margin: 0 auto; }
-
-.fluid-images {
-  max-width: 100%;
-  height: auto; }
-
-/*# sourceMappingURL=style.css.map */
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"=======\": expected \"{\", was \"}\"\A         on line 31 of scss/components/_header.scss\A         from line 6 of scss/style.scss\A \A 26:         p {\A 27:           font-weight: bold;\A 28:         }\A 29: <<<<<<< HEAD\A 30: =======\A 31:       }\A 32:     }\A 33:   }\A 34:   /************/\A 35:   /** MOBILE **/\A 36:   /************/"; }

@@ -1,4 +1,7 @@
 header {
+  &.mobile-header {
+    display: none;
+  }
   margin: 0 80px;
   height: 100px;
   width: auto;
@@ -6,9 +9,11 @@ header {
   border-bottom: 1px solid $light-grey;
   box-shadow: 0 5px 6px -6px $light-grey;
   a {
-    img{
+    img {
       float: left;
       margin: 15px 25px;
+      width: 138px;
+      height: 72px;
     }
   }
   nav {
@@ -21,14 +26,91 @@ header {
         p {
           font-weight: bold;
         }
+<<<<<<< HEAD
+=======
+      }
+    }
+  }
+  /************/
+  /** MOBILE **/
+  /************/
+  @media only screen and (max-device-width: 480px) {
+    &.desktop-header {
+      display: none;
+    }
+    &.mobile-header {
+      display: block;
+    }
+    height: 70px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    a {
+      img {
+        margin: 8px 20px;
+        width: 91px;
+        height: 50px;
+      }
+    }
+    .dropdown {
+      float: right;
+      img {
+        width: 15px;
+        height: 10px;
+        margin: 30px 20px;
+      }
+    }
+    .banner-wrapper {
+      position: absolute;
+      z-index: 200;
+      background-color: white;
+      width: 100%;
+    }
+    nav {
+      width: 100%;
+      margin: 10px 0;
+      padding: 0;
+      float: none;
+      text-align: center;
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      z-index: 100;
+      &.open-menu {
+        ul {
+          top: 62px;
+          -webkit-transition: all .25s ease;
+             -moz-transition: all .25s ease;
+              -ms-transition: all .25s ease;
+               -o-transition: all .25s ease;
+                  transition: all .25s ease;
+        }
+      }
+      ul {
+        width: 100%;
+        top: -143px;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        -webkit-transition: all .25s ease;
+           -moz-transition: all .25s ease;
+            -ms-transition: all .25s ease;
+             -o-transition: all .25s ease;
+                transition: all .25s ease;
+        li {
+          padding: 9px 0;
+          border-bottom: 1px solid #CCCCCC;
+          background-color: white;
+          a {
+            font-weight: bold;
+            float: none;
+          }
+        }
+>>>>>>> 80797e2fc70abad273ba447e40fb33ef4ee91aec
       }
     }
   }
 }
 
-.header-logo {
-  img {
-    width: 138px;
-    height: 72px;
-  }
-}
+
+
