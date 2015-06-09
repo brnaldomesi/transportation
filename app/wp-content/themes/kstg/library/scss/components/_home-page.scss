@@ -5,23 +5,17 @@
     max-width: 1220px;
     margin: 0 auto;
     .gallery-container {
-      margin: 60px 20px 50px 20px;
+      margin: 60px 25px 50px -5px;
       display: inline-block;
       div {
-        padding-right: 30px;
-      }
-      div:last-child {
-        padding-right: 0;
+        padding-left: 30px;
       }
       .gallery-corporate, .gallery-events, .gallery-travel, .gallery-wedding {
         float: left;
-        img {
-          padding-right: 5px;
-        }
       }
       a {
         height: 45px;
-        margin: -2px 5px 0 0;
+        margin-top: -2px;
         display: block;
         background-color: $purple;
         p {

@@ -47,7 +47,6 @@ table {
   border-spacing: 0; }
 
 .grid .row [class*="col-"] {
-  padding: 5px;
   box-sizing: border-box; }
 @media all and (min-width: 600px) {
   .grid .row .col-2-3 {
@@ -74,6 +73,10 @@ a:hover {
   text-decoration: underline;
   color: #652C90; }
 
+.fluid-images {
+  max-width: 100%;
+  height: auto; }
+
 a {
   text-decoration: none;
   color: #333333; }
@@ -81,6 +84,10 @@ a {
 a:hover {
   text-decoration: underline;
   color: #652C90; }
+
+.fluid-images {
+  max-width: 100%;
+  height: auto; }
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -102,7 +109,7 @@ h3 {
   padding: 20px 0 10px 0; }
 
 p {
-  font-size: 16px;
+  font-size: 14px;
   color: #333333; }
 
 /************/
@@ -135,9 +142,7 @@ header {
     margin: 0 auto; }
     header .inner-header a img {
       float: left;
-      margin: 15px 25px;
-      width: 138px;
-      height: 72px; }
+      margin: 15px 25px; }
     header .inner-header nav {
       float: right;
       padding: 42px 0; }
@@ -218,19 +223,15 @@ header {
     max-width: 1220px;
     margin: 0 auto; }
     .homepage-wrapper section .gallery-container {
-      margin: 60px 20px 50px 20px;
+      margin: 60px 25px 50px -5px;
       display: inline-block; }
       .homepage-wrapper section .gallery-container div {
-        padding-right: 30px; }
-      .homepage-wrapper section .gallery-container div:last-child {
-        padding-right: 0; }
+        padding-left: 30px; }
       .homepage-wrapper section .gallery-container .gallery-corporate, .homepage-wrapper section .gallery-container .gallery-events, .homepage-wrapper section .gallery-container .gallery-travel, .homepage-wrapper section .gallery-container .gallery-wedding {
         float: left; }
-        .homepage-wrapper section .gallery-container .gallery-corporate img, .homepage-wrapper section .gallery-container .gallery-events img, .homepage-wrapper section .gallery-container .gallery-travel img, .homepage-wrapper section .gallery-container .gallery-wedding img {
-          padding-right: 5px; }
       .homepage-wrapper section .gallery-container a {
         height: 45px;
-        margin: -2px 5px 0 0;
+        margin-top: -2px;
         display: block;
         background-color: #652C90; }
         .homepage-wrapper section .gallery-container a p {
@@ -326,27 +327,26 @@ header {
         width: 270px; } }
 
 footer {
-  width: 88%;
-  height: 50px;
+  height: 59px;
   bottom: 0;
-  padding: 0 6%;
+  padding: 0 4%;
   background-color: #333333;
   /************/
-  /** MOBILE **/
-  /************/ }
+  /** MOBILE **/ }
   footer p {
     font-size: 12px;
     color: #EEEEEE;
     line-height: 17px;
     margin: 16px 0; }
   footer .copyright {
-    width: 30%;
-    float: left; }
+    width: 29%;
+    float: left;
+    margin-top: 7px; }
     footer .copyright p {
       padding: 0px 4%; }
   footer nav {
-    width: 30%;
-    margin-top: 5px;
+    width: 34%;
+    margin-top: 13px;
     float: left; }
     footer nav ul {
       margin: 10px 0; }
@@ -359,16 +359,30 @@ footer {
         footer nav ul li p {
           margin: 0; }
   footer .social {
-    width: 30%;
     float: right; }
     footer .social ul li {
+      border-right: 1px solid #CCCCCC;
       float: left; }
       footer .social ul li img {
-        width: 100%;
-        height: 100%;
-        border-right: 1px solid #CCCCCC; }
+        padding-top: 6px; }
     footer .social ul li:first-child {
       border-left: 1px solid #CCCCCC; }
+  @media only screen and (max-width: 1050px) {
+    footer {
+      height: 117px; }
+      footer .copyright {
+        width: 50%; }
+      footer nav {
+        width: 50%;
+        float: left; }
+        footer nav ul {
+          display: inline-block;
+          width: 100%; }
+      footer .social {
+        width: 100%;
+        float: none;
+        clear: both;
+        padding: 0 13%; } }
   @media only screen and (max-device-width: 480px) {
     footer {
       width: 100%;

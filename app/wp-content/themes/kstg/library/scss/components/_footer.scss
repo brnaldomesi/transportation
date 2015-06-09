@@ -1,8 +1,7 @@
 footer {
-  width: 88%;
-  height: 50px;
+  height: 59px;
   bottom: 0;
-  padding: 0 6%;
+  padding: 0 4%;
   background-color: $dark-grey;
   p {
     font-size: 12px;
@@ -11,15 +10,16 @@ footer {
     margin: 16px 0;
   }
   .copyright {
-    width: 30%;
+    width: 29%;
     float: left;
+    margin-top: 7px;
     p {
       padding: 0px 4%;
     }
   }
   nav {
-    width: 30%;
-    margin-top: 5px;
+    width: 34%;
+    margin-top: 13px;
     float: left;
     ul {
       li:first-child {
@@ -37,17 +37,13 @@ footer {
     }
   }
   .social {
-    width: 30%;
     float: right;
     ul {
-
       li {
+        border-right: 1px solid #CCCCCC;
         float: left;
-
         img {
-          width: 100%;
-          height: 100%;
-          border-right: 1px solid #CCCCCC;
+          padding-top: 6px;
         }
       }
       li:first-child {
@@ -58,7 +54,28 @@ footer {
 
   /************/
   /** MOBILE **/
-  /************/
+  // /************/
+  @media only screen and (max-width: 1050px) {
+    height: 117px;
+    .copyright {
+      width: 50%;
+    }
+    nav {
+      width: 50%;
+      float: left;
+      ul {
+        display: inline-block;
+        width: 100%;
+
+      }
+    }
+    .social {
+      width: 100%;
+      float: none;
+      clear: both;
+      padding: 0 13%;
+    }
+  }
   @media only screen and (max-device-width: 480px) {
     width: 100%;
     height: 132px;

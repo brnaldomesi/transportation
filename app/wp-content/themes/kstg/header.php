@@ -55,7 +55,7 @@
 		<div class="grid">
 			<header class="header desktop-header row" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 				<div class="inner-header">
- 					<a class="desktop-logo" href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php bloginfo('template_url'); ?>/library/images/logo-128x72.png"/ class="logo" /></a>
+ 					<a class="fluid-images desktop-logo" href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php bloginfo('template_url'); ?>/library/images/logo-128x72.png"/ class="logo" /></a>
 					<nav>
             <ul>
               <a href=""><li><p>SERVICES</p></li></a>
