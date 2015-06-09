@@ -276,13 +276,16 @@ header {
         padding-left: 130px; }
       .homepage-wrapper aside .aside-wrapper .newsletter h2 {
         margin-bottom: 20px; }
-      .homepage-wrapper aside .aside-wrapper .newsletter form label {
-        font-weight: 600; }
-      .homepage-wrapper aside .aside-wrapper .newsletter form input[type="email"] {
-        width: 380px;
+      .homepage-wrapper aside .aside-wrapper .newsletter a {
         height: 45px;
-        border: none;
-        margin: 10px 0; }
+        margin-top: -2px;
+        display: block;
+        background-color: #652C90; }
+        .homepage-wrapper aside .aside-wrapper .newsletter a p {
+          padding: 14px 0;
+          font-weight: 600;
+          color: #EEEEEE;
+          text-align: center; }
       .homepage-wrapper aside .aside-wrapper .newsletter button {
         width: 140px;
         height: 45px;

@@ -68,15 +68,16 @@
         h2 {
           margin-bottom: 20px;
         }
-        form {
-          label {
+        a {
+          height: 45px;
+          margin-top: -2px;
+          display: block;
+          background-color: $purple;
+          p {
+            padding: 14px 0;
             font-weight: 600;
-          }
-          input[type="email"] {
-            width: 380px;
-            height: 45px;
-            border: none;
-            margin: 10px 0;
+            color: $light-grey;
+            text-align: center;
           }
         }
         button {

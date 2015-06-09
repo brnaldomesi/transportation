@@ -31,12 +31,7 @@
 	<aside class="row">
 		<div class="aside-wrapper">
 			<div class="newsletter .col-1-2">
-				<h2>SIGN UP FOR OUR NEWSLETTER</h2>
-				<form action="" id="newsletter">
-					<label>Email Address</label><br />
-					<input type="email" name="email"><br />
-				</form>
-				<button type="submit" form_id="newsletter" value="submit">SUBMIT &#8594;<img src="" /></button>
+				<a href="http://eepurl.com/bpQp3T"><p>SIGN UP FOR OUR NEWSLETTER &#8594;</p></a>
 			</div>
 			<div class="contact-us .col-1-2">
 				<h2>CONTACT US</h2>
