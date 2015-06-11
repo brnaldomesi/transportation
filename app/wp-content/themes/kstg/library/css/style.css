@@ -1,449 +1,63 @@
-@charset "UTF-8";
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-body {
-  line-height: 1; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-.grid .row [class*="col-"] {
-  box-sizing: border-box; }
-@media all and (min-width: 600px) {
-  .grid .row .col-2-3 {
-    float: left;
-    width: 66.66%; }
-  .grid .row .col-1-2 {
-    float: left;
-    width: 50%; }
-  .grid .row .col-1-3 {
-    float: left;
-    width: 33.33%; }
-  .grid .row .col-1-4 {
-    float: left;
-    width: 25%; }
-  .grid .row .col-1-8 {
-    float: left;
-    width: 12.5%; } }
-
-a {
-  text-decoration: none;
-  color: #333333; }
-
-a:hover {
-  text-decoration: underline;
-  color: #652C90; }
-
-.fluid-images {
-  max-width: 100%;
-  height: auto; }
-
-a {
-  text-decoration: none;
-  color: #333333; }
-
-a:hover {
-  text-decoration: underline;
-  color: #652C90; }
-
-.fluid-images {
-  max-width: 100%;
-  height: auto; }
-
-body {
-  font-family: 'Open Sans', sans-serif;
-  color: #333333; }
-
-h1 {
-  font-size: 29px;
-  font-weight: bold;
-  text-align: center;
-  color: #6A027B; }
-
-h2 {
-  font-size: 20px;
-  font-weight: 700; }
-
-h3 {
-  font-size: 16px;
-  font-weight: bold;
-  padding: 20px 0 10px 0; }
-
-p {
-  font-size: 14px;
-  color: #333333; }
-
-/************/
-/** MOBILE **/
-/************/
-@media only screen and (max-width: 460px) {
-  h1 {
-    align: left;
-    font-size: 17px;
-    line-height: 20px; }
-
-  h2 {
-    font-size: 17px; }
-
-  p {
-    font-size: 14px; } }
-header {
-  height: 100px;
-  position: relative;
-  border-bottom: 1px solid #EEEEEE;
-  box-shadow: 0 5px 6px -6px #333333;
-  /************/
-  /** MOBILE **/
-  /************/ }
-  header.mobile-header {
-    display: none; }
-  header .inner-header {
-    padding: 0 30px;
-    max-width: 1220px;
-    margin: 0 auto; }
-    header .inner-header a img {
-      float: left;
-      margin: 15px 25px; }
-    header .inner-header nav {
-      float: right;
-      padding: 42px 0; }
-      header .inner-header nav a {
-        float: left; }
-        header .inner-header nav a li {
-          padding-left: 4.5em; }
-          header .inner-header nav a li p {
-            font-weight: bold; }
-  @media only screen and (max-width: 1000px) {
-    header {
-      height: 70px;
-      margin: 0;
-      padding: 0;
-      position: relative; }
-      header.desktop-header {
-        display: none; }
-      header.mobile-header {
-        display: block; }
-      header a img {
-        margin: 8px 20px;
-        width: 91px;
-        height: 50px; }
-      header .dropdown {
-        float: right; }
-        header .dropdown img {
-          width: 15px;
-          height: 10px;
-          margin: 30px 20px; }
-      header .banner-wrapper {
-        position: absolute;
-        z-index: 200;
-        background-color: white;
-        width: 100%; }
-      header nav {
-        width: 100%;
-        margin: 10px 0;
-        padding: 0;
-        float: none;
-        text-align: center;
-        display: inline-block;
-        position: absolute;
-        left: 0;
-        z-index: 100; }
-        header nav.open-menu ul {
-          top: 62px;
-          -webkit-transition: all .25s ease;
-          -moz-transition: all .25s ease;
-          -ms-transition: all .25s ease;
-          -o-transition: all .25s ease;
-          transition: all .25s ease; }
-        header nav ul {
-          width: 100%;
-          top: -143px;
-          display: inline-block;
-          position: absolute;
-          left: 0;
-          -webkit-transition: all .25s ease;
-          -moz-transition: all .25s ease;
-          -ms-transition: all .25s ease;
-          -o-transition: all .25s ease;
-          transition: all .25s ease; }
-          header nav ul li {
-            padding: 9px 0;
-            border-bottom: 1px solid #CCCCCC;
-            background-color: white; }
-            header nav ul li a {
-              font-weight: bold;
-              float: none; } }
-
-.homepage-wrapper {
-  background-color: #EEEEEE;
-  /************/
-  /** MOBILE **/
-  /************/ }
-  .homepage-wrapper section {
-    padding: 0 30px 100px 30px;
-    max-width: 1220px;
-    margin: 0 auto; }
-    .homepage-wrapper section .gallery-container {
-      margin: 60px 25px 50px -5px;
-      display: inline-block; }
-      .homepage-wrapper section .gallery-container div {
-        padding-left: 30px; }
-      .homepage-wrapper section .gallery-container .gallery-corporate, .homepage-wrapper section .gallery-container .gallery-events, .homepage-wrapper section .gallery-container .gallery-travel, .homepage-wrapper section .gallery-container .gallery-wedding {
-        float: left; }
-      .homepage-wrapper section .gallery-container a {
-        height: 45px;
-        margin-top: -2px;
-        display: block;
-        background-color: #652C90; }
-        .homepage-wrapper section .gallery-container a p {
-          padding: 14px 0;
-          font-weight: 600;
-          color: #EEEEEE;
-          text-align: center; }
-    .homepage-wrapper section .about {
-      background-color: white;
-      margin: 0 25px;
-      padding: 70px 100px;
-      border: 1px solid #DDDDDD; }
-      .homepage-wrapper section .about p {
-        margin-top: 20px;
-        line-height: 20px;
-        color: #333333; }
-      .homepage-wrapper section .about a {
-        width: 240px;
-        height: 45px;
-        margin-top: -2px;
-        display: block;
-        background-color: #652C90; }
-        .homepage-wrapper section .about a p {
-          padding: 13px 0;
-          font-weight: 600;
-          color: #EEEEEE;
-          text-align: center; }
-  .homepage-wrapper aside {
-    background-color: #CCCCCC; }
-    .homepage-wrapper aside .aside-wrapper {
-      max-width: 1220px;
-      margin: 0 auto;
-      padding: 50px 30px; }
-      .homepage-wrapper aside .aside-wrapper:after {
-        content: "";
-        display: table;
-        clear: both; }
-      .homepage-wrapper aside .aside-wrapper .newsletter, .homepage-wrapper aside .aside-wrapper .contact-us {
-        float: left;
-        height: 185px;
-        width: 50%;
-        padding-left: 130px; }
-      .homepage-wrapper aside .aside-wrapper .newsletter h2 {
-        margin-bottom: 20px; }
-      .homepage-wrapper aside .aside-wrapper .newsletter a {
-        height: 45px;
-        margin-top: -2px;
-        display: block;
-        background-color: #652C90; }
-        .homepage-wrapper aside .aside-wrapper .newsletter a p {
-          padding: 14px 0;
-          font-weight: 600;
-          color: #EEEEEE;
-          text-align: center; }
-      .homepage-wrapper aside .aside-wrapper .newsletter button {
-        width: 140px;
-        height: 45px;
-        margin-top: 20px;
-        display: block;
-        background-color: #652C90;
-        border: none;
-        color: #EEEEEE;
-        font-weight: 600; }
-      .homepage-wrapper aside .aside-wrapper .contact-us p {
-        line-height: 20px; }
-        .homepage-wrapper aside .aside-wrapper .contact-us p span {
-          font-weight: 600; }
-  @media only screen and (max-width: 460px) {
-    .homepage-wrapper section {
-      padding: 20px 0 40px; }
-      .homepage-wrapper section .col-1-4 {
-        width: 50%; }
-      .homepage-wrapper section .gallery-container {
-        margin: 15px 5.8% 30px 5.8%; }
-        .homepage-wrapper section .gallery-container .gallery-corporate img, .homepage-wrapper section .gallery-container .gallery-events img, .homepage-wrapper section .gallery-container .gallery-travel img, .homepage-wrapper section .gallery-container .gallery-wedding img {
-          width: 126px;
-          height: 158px; }
-        .homepage-wrapper section .gallery-container .gallery-corporate a, .homepage-wrapper section .gallery-container .gallery-events a, .homepage-wrapper section .gallery-container .gallery-travel a, .homepage-wrapper section .gallery-container .gallery-wedding a {
-          width: 126px; }
-          .homepage-wrapper section .gallery-container .gallery-corporate a p, .homepage-wrapper section .gallery-container .gallery-events a p, .homepage-wrapper section .gallery-container .gallery-travel a p, .homepage-wrapper section .gallery-container .gallery-wedding a p {
-            padding: 13px 0; }
-          .homepage-wrapper section .gallery-container .gallery-corporate a .events, .homepage-wrapper section .gallery-container .gallery-events a .events, .homepage-wrapper section .gallery-container .gallery-travel a .events, .homepage-wrapper section .gallery-container .gallery-wedding a .events {
-            padding: 7px 0; }
-      .homepage-wrapper section .about {
-        margin: 20px 0;
-        padding: 20px 8%; }
-        .homepage-wrapper section .about a {
-          width: 100%; }
-    .homepage-wrapper aside .aside-wrapper {
-      padding: 0 5%; }
-      .homepage-wrapper aside .aside-wrapper .newsletter, .homepage-wrapper aside .aside-wrapper .contact-us {
-        width: 100%;
-        margin: 30px 0;
-        padding-left: 0; }
-      .homepage-wrapper aside .aside-wrapper .newsletter form input[type="email"] {
-        width: 270px; } }
-
-footer {
-  height: 59px;
-  bottom: 0;
-  padding: 0 4%;
-  background-color: #333333;
-  /************/
-  /** MOBILE **/ }
-  footer p {
-    font-size: 12px;
-    color: #EEEEEE;
-    line-height: 17px;
-    margin: 16px 0; }
-  footer .copyright {
-    width: 29%;
-    float: left;
-    margin-top: 7px; }
-    footer .copyright p {
-      padding: 0px 4%; }
-  footer nav {
-    width: 34%;
-    margin-top: 13px;
-    float: left; }
-    footer nav ul {
-      margin: 10px 0; }
-      footer nav ul li:first-child {
-        border-left: none; }
-      footer nav ul li {
-        float: left;
-        border-left: 1px solid #CCCCCC;
-        padding: 0 5%; }
-        footer nav ul li p {
-          margin: 0; }
-  footer .social {
-    float: right; }
-    footer .social ul li {
-      border-right: 1px solid #CCCCCC;
-      float: left; }
-      footer .social ul li img {
-        padding-top: 6px; }
-    footer .social ul li:first-child {
-      border-left: 1px solid #CCCCCC; }
-  @media only screen and (max-width: 1050px) {
-    footer {
-      height: 117px; }
-      footer .copyright {
-        width: 50%; }
-      footer nav {
-        width: 50%;
-        float: left; }
-        footer nav ul {
-          display: inline-block;
-          width: 100%; }
-      footer .social {
-        width: 100%;
-        float: none;
-        clear: both;
-        padding: 0 13%; } }
-  @media only screen and (max-device-width: 480px) {
-    footer {
-      width: 100%;
-      height: 132px;
-      padding: 0; }
-      footer p {
-        margin: 10px 7%;
-        padding: 0; }
-      footer .copyright {
-        width: 100%; }
-        footer .copyright p {
-          text-align: center; }
-      footer nav {
-        margin: 0;
-        padding: 0;
-        width: 100%; }
-        footer nav .nav {
-          text-align: center; }
-          footer nav .nav li {
-            float: none;
-            display: inline; }
-            footer nav .nav li a {
-              display: inline-block; }
-      footer .social {
-        width: 100%;
-        margin-top: 10px;
-        border-top: 1px solid #CCCCCC;
-        float: none;
-        display: inline-block; }
-        footer .social ul {
-          text-align: center;
-          overflow: hidden; }
-          footer .social ul li {
-            width: 18.9%;
-            float: none;
-            display: inline-block; }
-          footer .social ul li:first-child {
-            border: none; }
-          footer .social ul li:last-child img {
-            border: none; } }
-
 /*
-COLORS
-Purple:  #652c90 – CTA links hover color; also use underline
-Dark Purple:  #480a52 – not used currently; for button color later
-Light Gray: #e5e5e5 – background color
-Dark Grey:  #333333 – All text + footer bkgd
-FONTS
-Open Sans: https://www.google.com/fonts#UsePlace:use/Collection:Open+Sans
-– Weights used: Normal, Italic, Bold
-font-family: 'Open Sans', sans-serif;
-FONT SIZES  (regular desktop version)
-Headlines:  26pt
-Featured copy (“About Us” blurb & photo labels): 18 pt
-Main copy (bottom):  16pt
-*/
-body {
-  font-family: 'Open Sans', sans-serif;
-  color: #333333; }
+Error: Invalid CSS after "  }": expected selector or at-rule, was "}"
+        on line 39 of scss/components/_grid.scss
+        from line 3 of scss/style.scss
 
-/*# sourceMappingURL=style.css.map */
+34:         float: left;
+35:         width: 12.5%;
+36:       }
+37:     }
+38:   }
+39: }
+
+Backtrace:
+scss/components/_grid.scss:39
+scss/style.scss:3
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/scss/parser.rb:1165:in `expected'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/scss/parser.rb:1101:in `expected'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/scss/parser.rb:43:in `parse'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/engine.rb:393:in `_to_tree'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/engine.rb:299:in `to_tree'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:323:in `block in visit_import'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/stack.rb:88:in `block in with_import'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/stack.rb:88:in `with_import'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:328:in `block in watch'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/listen-2.7.9/lib/listen/listener.rb:276:in `call'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/listen-2.7.9/lib/listen/listener.rb:276:in `_process_changes'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/listen-2.7.9/lib/listen/listener.rb:233:in `block in _wait_for_changes'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/listen-2.7.9/lib/listen/listener.rb:216:in `loop'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/listen-2.7.9/lib/listen/listener.rb:216:in `_wait_for_changes'
+/Users/sarahlshowers/.rvm/gems/ruby-2.0.0-p481/gems/listen-2.7.9/lib/listen/listener.rb:312:in `block in _start_wait_thread'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"  }\": expected selector or at-rule, was \"}\"\A         on line 39 of scss/components/_grid.scss\A         from line 3 of scss/style.scss\A \A 34:         float: left;\A 35:         width: 12.5%;\A 36:       }\A 37:     }\A 38:   }\A 39: }"; }
