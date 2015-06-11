@@ -1,5 +1,4 @@
 // This is the file for setting up the grid.
-
 @mixin clearfix() {
   &:after {
     content: "";
@@ -9,8 +8,8 @@
 }
 
 .grid {
+  .row {
     [class*="col-"] {
-      // padding: 5px;
       box-sizing: border-box;
     }
     @media all and ( min-width: 600px ) {
