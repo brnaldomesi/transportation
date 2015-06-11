@@ -18,7 +18,7 @@
 		<meta name="MobileOptimized" content="320">
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" src="<?php bloginfo('template_url'); ?>/library/scss/style.css"/ type="text/css" media="screen" />
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400, 600,700' rel='stylesheet' type='text/css'>
 
 		<?php // icons & favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) ?>
 		<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/library/images/apple-touch-icon.png">
@@ -52,10 +52,10 @@
 
 	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
 
-		<div id="container">
-			<header class="header desktop-header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
-				<div id="inner-header" class="wrap cf">
- 					<a class="desktop-logo" href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php bloginfo('template_url'); ?>/library/images/logo-128x72.png"/ class="logo" /></a>
+		<div class="grid">
+			<header class="header desktop-header row" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+				<div class="inner-header">
+ 					<a class="fluid-images desktop-logo" href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php bloginfo('template_url'); ?>/library/images/logo-128x72.png"/ class="logo" /></a>
 					<nav>
             <ul>
               <a href=""><li><p>SERVICES</p></li></a>
