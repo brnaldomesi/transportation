@@ -11,33 +11,35 @@ footer {
     line-height: 17px;
     margin: 16px 0;
   }
-  .copyright {
-    width: 29%;
-    float: left;
-    margin-top: 7px;
-    p {
-      padding: 0px 4%;
-    }
-  }
-  nav {
-    width: 34%;
-    margin-top: 13px;
-    float: left;
-    ul {
-      li:first-child {
-        border-left: none;
-      }
-      margin: 10px 0;
-      li {
-        float: left;
-        border-left: 1px solid #CCCCCC;
-        padding: 0 5%;
-        p {
-          margin: 0;
-        }
-      }
-    }
-  }
+  // .copyright {
+  //   width: 29%;
+  //   float: left;
+  //   margin-top: 7px;
+  //   nav {
+  //     width: 34%;
+  //     margin-top: 13px;
+  //     ul {
+  //       li:first-child {
+  //         border-left: none;
+  //         float: left;
+  //       }
+  //       margin: 10px 0;
+  //       li {
+  //         float: left;
+  //         border-left: 1px solid #CCCCCC;
+  //         padding: 0 5%;
+  //         p {
+  //           margin: 0;
+  //         }
+  //       }
+  //     }
+  //   }
+  //   p {
+  //     padding: 0px 4%;
+  //     float: left;
+  //   }
+  // }
+
   .social {
     float: right;
     ul {

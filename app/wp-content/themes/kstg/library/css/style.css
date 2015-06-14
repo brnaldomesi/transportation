@@ -139,7 +139,7 @@ header {
           padding-left: 4.5em; }
           header .inner-header nav a li p {
             font-weight: bold; }
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 920px) {
     header {
       height: 70px;
       margin: 0;
@@ -150,11 +150,12 @@ header {
       header.mobile-header {
         display: block; }
       header a img {
-        margin: 8px 20px;
+        margin: 12px 5%;
         width: 91px;
         height: 50px; }
       header .dropdown {
-        float: right; }
+        float: right;
+        margin: 2px 4%; }
         header .dropdown img {
           width: 15px;
           height: 10px;
@@ -212,26 +213,6 @@ footer {
     color: #EEEEEE;
     line-height: 17px;
     margin: 16px 0; }
-  footer .copyright {
-    width: 29%;
-    float: left;
-    margin-top: 7px; }
-    footer .copyright p {
-      padding: 0px 4%; }
-  footer nav {
-    width: 34%;
-    margin-top: 13px;
-    float: left; }
-    footer nav ul {
-      margin: 10px 0; }
-      footer nav ul li:first-child {
-        border-left: none; }
-      footer nav ul li {
-        float: left;
-        border-left: 1px solid #CCCCCC;
-        padding: 0 5%; }
-        footer nav ul li p {
-          margin: 0; }
   footer .social {
     float: right; }
     footer .social ul li {

@@ -1,20 +1,20 @@
 			<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
         <div class="copyright">
           <p>© 2015 Kevin Smith Transportation Group</p>
+           <nav>
+            <ul class="nav">
+              <li>
+               <a href=""><p>Legal</p></a>
+              </li>
+              <li>
+                <a href=""><p>Lorem Ipsum</p></a>
+              </li>
+              <li>
+                <a href=""><p>Lorem Ipsum</p></a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav>
-         <ul class="nav">
-           <li>
-            <a href=""><p>Legal</p></a>
-           </li>
-           <li>
-             <a href=""><p>Lorem Ipsum</p></a>
-           </li>
-           <li>
-             <a href=""><p>Lorem Ipsum</p></a>
-           </li>
-         </ul>
-       </nav>
        <div class="social">
          <ul>
            <li>
