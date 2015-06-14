@@ -31,7 +31,16 @@
 	<aside class="row">
 		<div class="aside-wrapper">
 			<div class="newsletter .col-1-2">
-				<a href="http://eepurl.com/bpQp3T"><p>SIGN UP FOR OUR NEWSLETTER &#8594;</p></a>
+				<form action="//kevinsmithgroup.us11.list-manage.com/subscribe/post?u=5fef121354fe7d660e5e70b73&amp;id=097e20dcdd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					<h2>Sign up for our newsletter</h2>
+					<label for="newsletter-email-addressL">Email Address</label>
+					<input type="email" value="" name="EMAIL" class="required email" id="newsletter-email-address">
+					<button value="Subscribe" name="subscribe" class="button">Submit &#8594;</button>
+
+					<!-- MailChimp's bot protection, leaving it alone -->
+					<div style="position: absolute; left: -5000px;"><input type="text" name="b_5fef121354fe7d660e5e70b73_097e20dcdd" tabindex="-1" value=""></div>
+					<!-- End MailChimp stuff -->
+				</form>
 			</div>
 			<div class="contact-us .col-1-2">
 				<h2>CONTACT US</h2>
