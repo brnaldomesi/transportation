@@ -67,25 +67,20 @@ table {
 body {
   font-family: 'Open Sans', sans-serif;
   color: #333333; }
-
-h1 {
-  font-size: 29px;
-  font-weight: bold;
-  text-align: center;
-  color: #6A027B; }
-
-h2 {
-  font-size: 20px;
-  font-weight: 700; }
-
-h3 {
-  font-size: 16px;
-  font-weight: bold;
-  padding: 20px 0 10px 0; }
-
-p {
-  font-size: 14px;
-  color: #333333; }
+  body h1 {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #6A027B;
+    margin-bottom: 25px; }
+  body h2 {
+    font-size: 1.2em;
+    font-weight: 700; }
+  body h3 {
+    font-size: 1em;
+    font-weight: bold; }
+  body p {
+    font-size: 1.125em;
+    color: #333333; }
 
 /************/
 /** MOBILE **/
@@ -159,7 +154,7 @@ header {
   header.mobile-header {
     display: none; }
   header .inner-header {
-    padding: 0 30px;
+    padding: 0 40px;
     max-width: 1220px;
     margin: 0 auto; }
     header .inner-header a img {
@@ -171,9 +166,10 @@ header {
       header .inner-header nav a {
         float: left; }
         header .inner-header nav a li {
-          padding-left: 4.5em; }
+          padding-left: 3.7em; }
           header .inner-header nav a li p {
-            font-weight: bold; }
+            font-weight: bold;
+            font-size: 1.2em; }
   @media only screen and (max-width: 1000px) {
     header {
       height: 70px;
@@ -339,7 +335,7 @@ footer {
   /** MOBILE **/
   /************/ }
   .homepage-wrapper section {
-    padding: 0 30px 100px 30px;
+    padding: 0 30px 70px 30px;
     max-width: 1220px;
     margin: 0 auto; }
     .homepage-wrapper section .gallery-container {
@@ -361,30 +357,32 @@ footer {
           text-align: center; }
     .homepage-wrapper section .about {
       background-color: #FFF;
-      margin: 0 25px;
-      padding: 70px 100px;
+      margin: 25px 10px;
+      padding: 65px 107px;
       border: 1px solid #DDDDDD; }
       .homepage-wrapper section .about p {
         margin-top: 20px;
-        line-height: 20px;
+        line-height: 25px;
         color: #333333; }
-      .homepage-wrapper section .about a {
-        width: 240px;
-        height: 45px;
-        margin-top: -2px;
-        display: block;
-        background-color: #480A52; }
-        .homepage-wrapper section .about a p {
-          padding: 13px 0;
-          font-weight: 600;
+      .homepage-wrapper section .about .button {
+        margin-right: 730px; }
+        .homepage-wrapper section .about .button p {
+          display: block;
+          padding: 13px 29px;
+          font-size: 1em;
+          background-color: #480A52;
           color: #EEEEEE;
-          text-align: center; }
+          border: none;
+          font-weight: 600;
+          cursor: pointer;
+          text-transform: uppercase;
+          margin-top: 20px; }
   .homepage-wrapper aside {
     background-color: #CCCCCC; }
     .homepage-wrapper aside .aside-wrapper {
       max-width: 1220px;
       margin: 0 auto;
-      padding: 50px 30px; }
+      padding: 45px 30px 75px; }
       .homepage-wrapper aside .aside-wrapper:after {
         content: "";
         display: table;
@@ -394,20 +392,22 @@ footer {
         float: left;
         height: 185px;
         width: 50%;
-        padding-left: 130px; }
-      .homepage-wrapper aside .aside-wrapper .newsletter h2 {
-        margin-bottom: 20px;
-        text-transform: capitalize; }
+        padding-left: 118px; }
+        .homepage-wrapper aside .aside-wrapper .newsletter h2,
+        .homepage-wrapper aside .aside-wrapper .contact-us h2 {
+          margin-bottom: 30px;
+          text-transform: uppercase; }
       .homepage-wrapper aside .aside-wrapper .newsletter label {
         display: block;
-        font-weight: bold;
-        margin-bottom: 5px; }
+        font-weight: 600;
+        margin-bottom: 10px; }
       .homepage-wrapper aside .aside-wrapper .newsletter input {
         display: inline-block;
         padding: 0 10px;
+        border: none;
         height: 50px;
-        width: 100%;
-        font-size: 16px; }
+        width: 74%;
+        font-size: 1em; }
         .homepage-wrapper aside .aside-wrapper .newsletter input.error {
           -webkit-animation-animation: shake 0.5s;
           -moz-animation-animation: shake 0.5s;
@@ -416,17 +416,17 @@ footer {
           border: 2px solid red; }
       .homepage-wrapper aside .aside-wrapper .newsletter button {
         display: block;
-        padding: 18px 35px;
-        font-size: 14px;
+        padding: 13px 29px;
+        font-size: 1em;
         background-color: #480A52;
         color: #EEEEEE;
         border: none;
         font-weight: 600;
         cursor: pointer;
         text-transform: uppercase;
-        margin-top: 30px; }
+        margin-top: 34px; }
       .homepage-wrapper aside .aside-wrapper .contact-us p {
-        line-height: 20px; }
+        line-height: 27px; }
         .homepage-wrapper aside .aside-wrapper .contact-us p span {
           font-weight: 600; }
   @media only screen and (max-width: 460px) {

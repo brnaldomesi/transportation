@@ -2,31 +2,30 @@
 body {
   font-family: 'Open Sans', sans-serif;
   color: $dark-grey;
+  h1 {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: $purple-text;
+    margin-bottom: 25px;
+  }
+  h2 {
+    font-size: 1.2em;
+    font-weight: 700;
+  }
+  h3 {
+    font-size: 1em;
+    font-weight: bold;
+  }
+  p {
+    font-size: 1.125em;
+    color: $dark-grey;
+  }
 }
 
-h1 {
-  font-size: 29px;
-  font-weight: bold;
-  text-align: center;
-  color: $purple-text;
-}
 
 //body headlines and navigation
-h2 {
-  font-size: 20px;
-  font-weight: 700;
-}
 
-h3 {
-  font-size: 16px;
-  font-weight: bold;
-  padding: 20px 0 10px 0;
-}
 
-p {
-  font-size: 14px;
-  color: $dark-grey;
-}
 
 // Headline 1  -  28 pt
 // Headeline 2  -  20 pt  (body headlines & navigation)
