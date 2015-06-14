@@ -113,6 +113,41 @@ a:hover {
   max-width: 100%;
   height: auto; }
 
+@-webkit-keyframes shake {
+  0%, 100% {
+    transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px); }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px); } }
+@-moz-keyframes shake {
+  0%, 100% {
+    transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px); }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px); } }
+@-o-keyframes shake {
+  0%, 100% {
+    transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px); }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px); } }
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px); }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px); } }
+/**
+ * Styles for anything related to form elements
+ * e.g form fields, select boxes, etc.
+ */
+/**
+ * Styles for all sorts of buttons
+ */
 header {
   height: 100px;
   position: relative;
@@ -361,26 +396,35 @@ footer {
         width: 50%;
         padding-left: 130px; }
       .homepage-wrapper aside .aside-wrapper .newsletter h2 {
-        margin-bottom: 20px; }
-      .homepage-wrapper aside .aside-wrapper .newsletter a {
-        height: 45px;
-        margin-top: -2px;
+        margin-bottom: 20px;
+        text-transform: capitalize; }
+      .homepage-wrapper aside .aside-wrapper .newsletter label {
         display: block;
-        background-color: #480A52; }
-        .homepage-wrapper aside .aside-wrapper .newsletter a p {
-          padding: 14px 0;
-          font-weight: 600;
-          color: #EEEEEE;
-          text-align: center; }
+        font-weight: bold;
+        margin-bottom: 5px; }
+      .homepage-wrapper aside .aside-wrapper .newsletter input {
+        display: inline-block;
+        padding: 0 10px;
+        height: 50px;
+        width: 100%;
+        font-size: 16px; }
+        .homepage-wrapper aside .aside-wrapper .newsletter input.error {
+          -webkit-animation-animation: shake 0.5s;
+          -moz-animation-animation: shake 0.5s;
+          -o-animation: shake 0.5s;
+          animation: shake 0.5s;
+          border: 2px solid red; }
       .homepage-wrapper aside .aside-wrapper .newsletter button {
-        width: 140px;
-        height: 45px;
-        margin-top: 20px;
         display: block;
+        padding: 18px 35px;
+        font-size: 14px;
         background-color: #480A52;
-        border: none;
         color: #EEEEEE;
-        font-weight: 600; }
+        border: none;
+        font-weight: 600;
+        cursor: pointer;
+        text-transform: uppercase;
+        margin-top: 30px; }
       .homepage-wrapper aside .aside-wrapper .contact-us p {
         line-height: 20px; }
         .homepage-wrapper aside .aside-wrapper .contact-us p span {

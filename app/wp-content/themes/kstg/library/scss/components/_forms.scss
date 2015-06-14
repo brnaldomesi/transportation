@@ -1,0 +1,16 @@
+/**
+ * Styles for anything related to form elements
+ * e.g form fields, select boxes, etc.
+ */
+
+@mixin text-field {
+  display: inline-block;
+  padding: 0 10px;
+  height: 50px;
+  width: 100%;
+  font-size: 16px;
+  &.error {
+    @include shake();
+    border: 2px solid red;
+  }
+}

@@ -68,28 +68,20 @@
       .newsletter {
         h2 {
           margin-bottom: 20px;
+          text-transform: capitalize;
         }
-        a {
-          height: 45px;
-          margin-top: -2px;
+        label {
           display: block;
-          background-color: $dark-purple;
-          p {
-            padding: 14px 0;
-            font-weight: 600;
-            color: $light-grey;
-            text-align: center;
-          }
+          font-weight: bold;
+          margin-bottom: 5px;
+        }
+        input {
+          @include text-field;
         }
         button {
-          width: 140px;
-          height: 45px;
-          margin-top: 20px;
-          display: block;
-          background-color: $dark-purple;
-          border: none;
-          color: $light-grey;
-          font-weight: 600;
+          @include standard-button;
+          text-transform: uppercase;
+          margin-top: 30px;
         }
       }
       .contact-us {
