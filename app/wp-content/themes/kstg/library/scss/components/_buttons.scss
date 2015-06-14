@@ -1,0 +1,14 @@
+/**
+ * Styles for all sorts of buttons
+ */
+
+@mixin standard-button {
+  display: block;
+  padding: 18px 35px;
+  font-size: 14px;
+  background-color: $dark-purple;
+  color: $light-grey;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
