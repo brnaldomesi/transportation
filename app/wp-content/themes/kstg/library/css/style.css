@@ -209,6 +209,9 @@ footer {
   background-color: #333333;
   /************/
   /** MOBILE **/ }
+  footer .inner-footer {
+    max-width: 1220px;
+    margin: 0 auto; }
   footer p {
     font-size: 12px;
     color: #EEEEEE;
