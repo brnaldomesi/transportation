@@ -202,8 +202,9 @@ header {
               float: none; } }
 
 footer {
-  height: 59px;
+  height: 63px;
   bottom: 0;
+  margin-top: -16px;
   padding: 0 4%;
   background-color: #333333;
   /************/
@@ -213,71 +214,75 @@ footer {
     color: #EEEEEE;
     line-height: 17px;
     margin: 16px 0; }
+  footer .copyright {
+    width: 50%;
+    float: left;
+    margin: 7px 0; }
+    footer .copyright p {
+      float: left; }
+    footer .copyright ul {
+      float: left;
+      width: 55%;
+      margin-left: 3%; }
+      footer .copyright ul li {
+        float: left;
+        margin: 0 5%; }
   footer .social {
     float: right; }
     footer .social ul li {
-      border-right: 1px solid #CCCCCC;
+      height: 63px;
       float: left; }
       footer .social ul li img {
-        padding-top: 6px; }
-    footer .social ul li:first-child {
-      border-left: 1px solid #CCCCCC; }
-  @media only screen and (max-width: 1050px) {
+        padding-top: 8px; }
+  @media only screen and (max-width: 1220px) {
     footer {
-      height: 117px; }
+      height: 115px; }
       footer .copyright {
-        width: 50%; }
-      footer nav {
-        width: 50%;
-        float: left; }
-        footer nav ul {
-          display: inline-block;
+        width: 35%; }
+        footer .copyright ul {
+          margin-left: 0;
           width: 100%; }
+          footer .copyright ul li {
+            margin-left: 0; }
       footer .social {
-        width: 100%;
-        float: none;
-        clear: both;
-        padding: 0 13%; } }
-  @media only screen and (max-device-width: 480px) {
-    footer {
-      width: 100%;
-      height: 132px;
-      padding: 0; }
-      footer p {
-        margin: 10px 7%;
-        padding: 0; }
-      footer .copyright {
-        width: 100%; }
-        footer .copyright p {
-          text-align: center; }
-      footer nav {
-        margin: 0;
-        padding: 0;
-        width: 100%; }
-        footer nav .nav {
-          text-align: center; }
-          footer nav .nav li {
-            float: none;
-            display: inline; }
-            footer nav .nav li a {
-              display: inline-block; }
-      footer .social {
-        width: 100%;
-        margin-top: 10px;
-        border-top: 1px solid #CCCCCC;
-        float: none;
-        display: inline-block; }
+        height: 100%; }
         footer .social ul {
-          text-align: center;
-          overflow: hidden; }
+          height: 100%; }
           footer .social ul li {
-            width: 18.9%;
-            float: none;
-            display: inline-block; }
-          footer .social ul li:first-child {
-            border: none; }
-          footer .social ul li:last-child img {
-            border: none; } }
+            height: 100%; }
+            footer .social ul li img {
+              padding-top: 50%; } }
+  @media only screen and (max-width: 768px) {
+    footer {
+      height: 170px;
+      margin-top: 0px;
+      padding: 0; }
+      footer .copyright,
+      footer .kstg,
+      footer nav,
+      footer .social {
+        width: 100%; }
+      footer .copyright {
+        position: relative; }
+        footer .copyright .kstg {
+          text-align: center; }
+        footer .copyright .nav {
+          position: absolute;
+          left: 50%;
+          top: 50px;
+          margin-left: -125px; }
+      footer .social {
+        position: relative;
+        height: auto; }
+        footer .social ul {
+          position: absolute;
+          top: 40px;
+          left: 50%;
+          margin-left: -160px; }
+          footer .social ul li {
+            height: 64px; }
+            footer .social ul li img {
+              padding-top: 0px; } }
 
 .homepage-wrapper {
   background-color: #EEEEEE;

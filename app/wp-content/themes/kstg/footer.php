@@ -1,7 +1,7 @@
 			<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
         <div class="copyright">
-          <p>© 2015 Kevin Smith Transportation Group</p>
            <nav>
+            <p class="kstg">© 2015 Kevin Smith Transportation Group</p>
             <ul class="nav">
               <li>
                <a href=""><p>Legal</p></a>
