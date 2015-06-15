@@ -58,11 +58,11 @@
  					<a class="fluid-images desktop-logo" href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php bloginfo('template_url'); ?>/library/images/logo-128x72.png"/ class="logo" /></a>
 					<nav>
             <ul>
-              <a href=""><li><p>SERVICES</p></li></a>
-              <a href=""><li><p>FLEET</p></li></a>
-              <a href=""><li><p>RATES</p></li></a>
-              <a href=""><li><p>ABOUT US</p></li></a>
-              <a href=""><li><p>CONTACT US</p></li></a>
+              <li><a href=""><p>SERVICES</p></a></li>
+              <li><a href=""><p>FLEET</p></a></li>
+              <li><a href=""><p>RATES</p></a></li>
+              <li><a href=""><p>ABOUT US</p></a></li>
+              <li><a href=""><p>CONTACT US</p></a></li>
             </ul>
 					</nav>
 				</div>

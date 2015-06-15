@@ -168,11 +168,11 @@ header {
     header .inner-header nav {
       float: right;
       padding: 42px 0; }
-      header .inner-header nav a {
+      header .inner-header nav li {
         float: left; }
-        header .inner-header nav a li {
+        header .inner-header nav li li {
           padding-left: 4.5em; }
-          header .inner-header nav a li p {
+          header .inner-header nav li li p {
             font-weight: bold; }
   @media only screen and (max-width: 1000px) {
     header {
