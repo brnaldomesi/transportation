@@ -24,7 +24,7 @@
 			<p>Kevin Smith Transportation Group is the Philadelphia region's newest luxury limousine and total transportation service. We hope to change the way you think about limousine, airport pickup, and towncar service by providing you with a customized experience you'll love.</p>
 			<p>A personal account manager and a hand-picked chauffeur will ensure you have a smooth journey with KSTG. From your wedding or prom to your airport pickup, you count on us for reliability, luxury, and professionalism. We do the little things that matter to you, because they matter to us. Service, different.</p>
 			<div class="button">
-				<a href=""><p>MAKE A RESERVATION &#8594;</p><img src="" /></a>
+				<a href=""><p>Make a reservation &#8594;</p></a>
 			</div>
 		</div>
 	</section>
@@ -32,7 +32,7 @@
 		<div class="aside-wrapper">
 			<div class="newsletter .col-1-2">
 				<form action="//kevinsmithgroup.us11.list-manage.com/subscribe/post?u=5fef121354fe7d660e5e70b73&amp;id=097e20dcdd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-					<h2>Sign up for our newsletter</h2>
+					<h2>Sign up for our Newsletter</h2>
 					<label for="newsletter-email-addressL">Email Address</label>
 					<input type="email" value="" name="EMAIL" class="required email" id="newsletter-email-address">
 					<button value="Subscribe" name="subscribe" class="button">Submit &#8594;</button>
@@ -43,7 +43,7 @@
 				</form>
 			</div>
 			<div class="contact-us .col-1-2">
-				<h2>CONTACT US</h2>
+				<h2>Contact Us</h2>
 				<h3>Kevin Smith Transportation Group</h3>
 				<p>123 Main Street</p>
 				<p>Anywhere, PA 12345</p>

@@ -6,9 +6,10 @@
 @mixin text-field {
   display: inline-block;
   padding: 0 10px;
+  border: none;
   height: 50px;
-  width: 100%;
-  font-size: 16px;
+  width: 74%;
+  font-size: 1em;
   &.error {
     @include shake();
     border: 2px solid red;
