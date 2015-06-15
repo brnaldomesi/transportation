@@ -14,7 +14,7 @@ footer {
     margin: 16px 0;
   }
   .copyright {
-    width: 50%;
+    width: 60%;
     float: left;
     margin: 7px 0;
     p {
@@ -22,7 +22,7 @@ footer {
     }
     ul {
       float: left;
-      width: 55%;
+      width: 45%;
       margin-left: 3%;
       li {
         float: left;
@@ -46,32 +46,7 @@ footer {
   /************/
   /** MOBILE **/
   // /************/
-  @media only screen and (max-width: 1220px) {
-    height: 115px;
-    .copyright {
-      width: 35%;
-      ul {
-        margin-left: 0;
-        width: 100%;
-        li {
-          margin-left: 0;
-        }
-      }
-    }
-    .social {
-      height: 100%;
-      ul {
-        height: 100%;
-        li {
-          height: 100%;
-          img {
-            padding-top: 50%;
-          }
-        }
-      }
-    }
-  }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1030px) {
     height: 170px;
     margin-top: 0px;
     padding: 0;

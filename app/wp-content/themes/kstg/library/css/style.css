@@ -248,14 +248,14 @@ footer {
     line-height: 17px;
     margin: 16px 0; }
   footer .copyright {
-    width: 50%;
+    width: 60%;
     float: left;
     margin: 7px 0; }
     footer .copyright p {
       float: left; }
     footer .copyright ul {
       float: left;
-      width: 55%;
+      width: 45%;
       margin-left: 3%; }
       footer .copyright ul li {
         float: left;
@@ -267,25 +267,7 @@ footer {
       float: left; }
       footer .social ul li img {
         padding-top: 8px; }
-  @media only screen and (max-width: 1220px) {
-    footer {
-      height: 115px; }
-      footer .copyright {
-        width: 35%; }
-        footer .copyright ul {
-          margin-left: 0;
-          width: 100%; }
-          footer .copyright ul li {
-            margin-left: 0; }
-      footer .social {
-        height: 100%; }
-        footer .social ul {
-          height: 100%; }
-          footer .social ul li {
-            height: 100%; }
-            footer .social ul li img {
-              padding-top: 50%; } }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1030px) {
     footer {
       height: 170px;
       margin-top: 0px;
