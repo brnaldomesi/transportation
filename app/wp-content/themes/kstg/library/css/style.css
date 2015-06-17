@@ -163,13 +163,14 @@ header {
     header .inner-header nav {
       float: right;
       padding: 42px 0; }
-      header .inner-header nav li {
-        float: left; }
-        header .inner-header nav li li {
-          padding-left: 3.7em; }
-          header .inner-header nav li li p {
-            font-weight: bold;
-            font-size: 1.2em; }
+      header .inner-header nav ul li {
+        float: left;
+        padding-left: 3.7em; }
+        header .inner-header nav ul li p {
+          font-weight: bold;
+          font-size: 1.2em; }
+        header .inner-header nav ul li p:hover {
+          color: #652C90; }
   @media only screen and (max-width: 920px) {
     header {
       height: 70px;
