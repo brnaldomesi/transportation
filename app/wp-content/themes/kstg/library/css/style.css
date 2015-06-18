@@ -465,4 +465,34 @@ footer {
       .homepage-wrapper aside .aside-wrapper .newsletter form input[type="email"] {
         width: 270px; } }
 
+.fleet {
+  padding: 7%;
+  background-color: #EEEEEE; }
+  .fleet h2 {
+    font-size: 1.6em;
+    margin-bottom: 15px; }
+  .fleet .fleet-hero {
+    width: 100%;
+    position: relative; }
+    .fleet .fleet-hero img {
+      width: 100%;
+      height: auto; }
+    .fleet .fleet-hero .special-feature {
+      color: #FFF;
+      position: aboslute; }
+  .fleet .about {
+    background-color: #FFF;
+    margin: 25px 10px;
+    padding: 65px 107px;
+    border: 1px solid #DDDDDD; }
+    .fleet .about .button {
+      display: block;
+      padding: 13px 29px;
+      font-size: 1em;
+      background-color: #480A52;
+      color: #EEEEEE;
+      border: none;
+      font-weight: 600;
+      cursor: pointer; }
+
 /*# sourceMappingURL=style.css.map */

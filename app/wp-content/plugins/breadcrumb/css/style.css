@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*Admin CSS*/
+.breadcrumb-container {
+  font-size: 13px;
+}
+.breadcrumb-container ul {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.breadcrumb-container li {
+  display: inline-block;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.breadcrumb-container li a {
+  padding: 0 10px;
+}
+
+
+
+
+
+
+
+
+
+

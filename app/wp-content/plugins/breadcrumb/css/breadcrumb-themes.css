@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*Breadcrumb Themes CSS*/
+
+
+.breadcrumb-container.theme1 a {
+  background: none repeat scroll 0 0 rgba(221, 221, 221, 0);
+  display: inline-block;
+  margin: 0 5px;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.breadcrumb-container.theme1 a:hover {
+  background: none repeat scroll 0 0 rgba(221, 221, 221, 0.6);
+
+}
+
+
+
+
+/* Theme 2*/
+
+
+
+.breadcrumb-container.theme2 a {
+  background: none repeat scroll 0 0 rgba(221, 221, 221, 0.4);
+  border-bottom: 1px solid rgb(139, 139, 139);
+  border-top: 1px solid rgba(255, 255, 255, 0);
+  display: inline-block;
+  margin: 0 5px;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.breadcrumb-container.theme2 a:hover {
+  background: none repeat scroll 0 0 rgba(221, 221, 221, 0.6);
+  border-top: 1px solid rgb(139, 139, 139);
+
+}
+
+
+
+
+/* Theme 3*/
+
+
+
+.breadcrumb-container.theme3 a {
+  background: none repeat scroll 0 0 rgba(221, 221, 221, 0.4);
+  border-top: 1px solid rgb(139, 139, 139);
+  border-bottom: 1px solid rgba(355, 355, 355, 0);
+  display: inline-block;
+  margin: 0 5px;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.breadcrumb-container.theme3 a:hover {
+  background: none repeat scroll 0 0 rgba(221, 221, 221, 0.6);
+  border-bottom: 1px solid rgb(139, 139, 139);
+
+}

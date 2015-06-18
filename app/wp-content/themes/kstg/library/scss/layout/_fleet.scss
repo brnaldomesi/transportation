@@ -1,0 +1,27 @@
+.fleet {
+  padding: 7%;
+  background-color: $light-grey;
+  h2 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+  }
+  .fleet-hero {
+    width: 100%;
+    position: relative;
+    img {
+      width: 100%;
+      height: auto;
+    }
+    .special-feature {
+      color: $white;
+      position: aboslute;
+    }
+  }
+  .about {
+    @include white-container;
+    .button {
+      @include standard-button;
+    }
+  }
+
+}
