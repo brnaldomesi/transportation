@@ -19,8 +19,28 @@
   }
   .about {
     @include white-container;
+    .carousel {
+      button,
+      .carousel-images {
+        float: left;
+      }
+      button {
+        height: 37px;
+        width: 37px;
+        border: none;
+        background: url(../images/carousel-nav-sprite.svg);
+      }
+    }
+    .carousel-images {
+      li {
+        float: left;
+      }
+    }
     .button {
       @include standard-button;
+    }
+    p {
+      clear: both;
     }
   }
 

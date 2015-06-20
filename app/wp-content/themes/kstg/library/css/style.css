@@ -350,7 +350,7 @@ footer {
           text-align: center; }
     .homepage-wrapper section .about {
       background-color: #FFF;
-      margin: 25px 10px;
+      margin: 25px 0px;
       padding: 65px 107px;
       border: 1px solid #DDDDDD; }
       .homepage-wrapper section .about p {
@@ -482,9 +482,19 @@ footer {
       position: aboslute; }
   .fleet .about {
     background-color: #FFF;
-    margin: 25px 10px;
+    margin: 25px 0px;
     padding: 65px 107px;
     border: 1px solid #DDDDDD; }
+    .fleet .about .carousel button,
+    .fleet .about .carousel .carousel-images {
+      float: left; }
+    .fleet .about .carousel button {
+      height: 37px;
+      width: 37px;
+      border: none;
+      background: url(../images/carousel-nav-sprite.svg); }
+    .fleet .about .carousel-images li {
+      float: left; }
     .fleet .about .button {
       display: block;
       padding: 13px 29px;
@@ -494,5 +504,7 @@ footer {
       border: none;
       font-weight: 600;
       cursor: pointer; }
+    .fleet .about p {
+      clear: both; }
 
 /*# sourceMappingURL=style.css.map */

@@ -18,15 +18,15 @@
   </div>
   <div class="about">
     <div class="carousel">
-      <img class="fluid-images" src="<?php bloginfo('template_url'); ?>/library/images/chevron-l-grey.svg" alt="" width="37px" height="37px" />
-      <img class="fluid-images" src="<?php bloginfo('template_url'); ?>/library/images/chevron-l-purple.svg" alt="" width="37px" height="37px" />
+      <button></button>
       <div class="carousel-images">
-        <img src="<?php echo $image['url'] ?>" width="200px" height="100px" />
-        <img src="<?php echo $image['url'] ?>" width="200px" height="100px" />
-        <img src="<?php echo $image['url'] ?>" width="200px" height="100px" />
+        <ul>
+          <li><img src="<?php echo $image['url'] ?>" width="200px" height="100px" /></li>
+          <li><img src="<?php echo $image['url'] ?>" width="200px" height="100px" /></li>
+          <li><img src="<?php echo $image['url'] ?>" width="200px" height="100px" /></li>
+        </ul>
       </div>
-      <img class="fluid-images" src="<?php bloginfo('template_url'); ?>/library/images/chevron-r-grey.svg" alt="" width="37px" height="37px" />
-      <img class="fluid-images" src="<?php bloginfo('template_url'); ?>/library/images/chevron-r-purple.svg" alt="" width="37px" height="37px" />
+      <button></button>
     </div>
     <p><?php the_field('vehicle_description'); ?></p>
     <div class="button">

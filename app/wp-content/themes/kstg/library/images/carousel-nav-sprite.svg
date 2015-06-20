@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="133px" height="37px" viewBox="0 0 133 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Group" sketch:type="MSLayerGroup">
+            <g id="chevron-l-purple" transform="translate(36.000000, 0.000000)" fill="#471952" sketch:type="MSShapeGroup">
+                <path d="M25.0716418,30.3179104 L13.2537313,18.5 L25.0716418,6.68208955 L18.6656716,0.220895522 L0.386567164,18.5 L18.6656716,36.7791045 L25.0716418,30.3179104 Z" id="chevron"></path>
+            </g>
+            <g id="chevron-l-grey" fill="#CCCCCC" sketch:type="MSShapeGroup">
+                <path d="M25.0716418,30.3179104 L13.2537313,18.5 L25.0716418,6.68208955 L18.6656716,0.220895522 L0.386567164,18.5 L18.6656716,36.7791045 L25.0716418,30.3179104 Z" id="chevron"></path>
+            </g>
+            <g id="chevron-r-purple" transform="translate(72.000000, 0.000000)" fill="#471952" sketch:type="MSShapeGroup">
+                <path d="M0,6.46119403 L11.8179104,18.2791045 L0,30.0970149 L6.35074627,36.558209 L24.6850746,18.2791045 L6.35074627,0 L0,6.46119403 Z" id="chevron"></path>
+            </g>
+            <g id="chevron-r-grey" transform="translate(107.447761, 0.000000)" fill="#CCCCCC" sketch:type="MSShapeGroup">
+                <path d="M0.386567164,6.90298507 L12.2044776,18.7208955 L0.386567164,30.538806 L6.73731343,37 L25.0716418,18.7208955 L6.73731343,0.441791045 L0.386567164,6.90298507 Z" id="chevron"></path>
+            </g>
+        </g>
+    </g>
+</svg>
