@@ -466,11 +466,11 @@ footer {
         width: 270px; } }
 
 .fleet {
-  padding: 7%;
+  padding: 3.3%;
   background-color: #EEEEEE; }
   .fleet h2 {
     font-size: 1.6em;
-    margin-bottom: 15px; }
+    margin: 25px 0; }
   .fleet .fleet-hero {
     width: 100%;
     position: relative; }
@@ -479,32 +479,68 @@ footer {
       height: auto; }
     .fleet .fleet-hero .special-feature {
       color: #FFF;
-      position: aboslute; }
+      position: aboslute;
+      display: none; }
   .fleet .about {
     background-color: #FFF;
     margin: 25px 0px;
     padding: 65px 107px;
-    border: 1px solid #DDDDDD; }
-    .fleet .about .carousel button,
-    .fleet .about .carousel .carousel-images {
-      float: left; }
-    .fleet .about .carousel button {
-      height: 37px;
-      width: 37px;
-      border: none;
-      background: url(../images/carousel-nav-sprite.svg); }
-    .fleet .about .carousel-images li {
-      float: left; }
+    border: 1px solid #DDDDDD;
+    margin-top: -2px;
+    padding: 22px 8.5%; }
+    .fleet .about .carousel {
+      padding: 0 15%;
+      display: inline-block; }
+      .fleet .about .carousel button,
+      .fleet .about .carousel .carousel-images {
+        float: left; }
+        .fleet .about .carousel button li,
+        .fleet .about .carousel .carousel-images li {
+          float: left;
+          margin-left: 10px; }
+        .fleet .about .carousel button li:first-child,
+        .fleet .about .carousel .carousel-images li:first-child {
+          margin-left: 0; }
+      .fleet .about .carousel button {
+        height: 37px;
+        width: 37px;
+        border: none;
+        background: url(../images/carousel-nav-sprite.svg); }
+        .fleet .about .carousel button.prev {
+          background-position: 0 0;
+          margin: 32px 0; }
+        .fleet .about .carousel button.next {
+          background-position: 70px 0;
+          margin: 32px -1px; }
+    .fleet .about p.description {
+      clear: both;
+      margin: 57px 0 15px;
+      line-height: 23px; }
     .fleet .about .button {
-      display: block;
-      padding: 13px 29px;
-      font-size: 1em;
-      background-color: #480A52;
-      color: #EEEEEE;
-      border: none;
-      font-weight: 600;
-      cursor: pointer; }
-    .fleet .about p {
-      clear: both; }
+      float: left;
+      margin-right: 1%; }
+      .fleet .about .button p {
+        display: block;
+        padding: 13px 29px;
+        font-size: 1em;
+        background-color: #480A52;
+        color: #EEEEEE;
+        border: none;
+        font-weight: 600;
+        cursor: pointer;
+        padding: 13px 19px;
+        text-transform: uppercase;
+        margin-top: 20px; }
+    .fleet .about .youtube-video {
+      clear: both;
+      margin-top: 130px;
+      border-top: 1px solid #CCCCCC;
+      padding-top: 50px; }
+      .fleet .about .youtube-video h3 {
+        margin-bottom: 30px; }
+      .fleet .about .youtube-video .video {
+        margin: 40px 0; }
+        .fleet .about .youtube-video .video iframe {
+          width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
