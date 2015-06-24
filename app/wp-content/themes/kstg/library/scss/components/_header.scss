@@ -20,13 +20,16 @@ header {
     nav {
       float: right;
       padding: 42px 0;
-      li {
-        float: left;
+      ul {
         li {
+          float: left;
           padding-left: 3.7em;
           p {
             font-weight: bold;
             font-size: 1.2em;
+          }
+          p:hover {
+            color: $purple;
           }
         }
       }
