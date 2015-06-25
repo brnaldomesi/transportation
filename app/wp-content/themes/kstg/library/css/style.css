@@ -516,8 +516,14 @@ footer {
         width: 37px;
         border: none;
         background: url(../images/carousel-nav-sprite.svg); }
-        .fleet .about .carousel button.prev {
+        .fleet .about .carousel button:disabled, .fleet .about .carousel button.prev {
           background-position: 0 0;
+          margin: 32px 0; }
+        .fleet .about .carousel button:active, .fleet .about .carousel button.prev {
+          background-position: -35px 0;
+          margin: 32px 0; }
+        .fleet .about .carousel button:disabled, .fleet .about .carousel button.next {
+          background-position: 37px 0;
           margin: 32px 0; }
         .fleet .about .carousel button.next {
           background-position: 70px 0;
