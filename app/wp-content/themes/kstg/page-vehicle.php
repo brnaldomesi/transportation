@@ -8,25 +8,15 @@
  ?>
 
  <?php $heroimage = get_field('hero_image'); ?>
- <?php $image1 = get_field('image_carousel_1'); ?>
- <?php $image2 = get_field('image_carousel_2'); ?>
- <?php $image3 = get_field('image_carousel_3'); ?>
- <?php $image4 = get_field('image_carousel_4'); ?>
- <?php $image5 = get_field('image_carousel_5'); ?>
- <?php $image6 = get_field('image_carousel_6'); ?>
+<?php $image1 = get_field('image_carousel_1'); ?>
+<?php $image2 = get_field('image_carousel_2'); ?>
+<?php $image3 = get_field('image_carousel_3'); ?>
+<?php $image4 = get_field('image_carousel_4'); ?>
+<?php $image5 = get_field('image_carousel_5'); ?>
+<?php $image6 = get_field('image_carousel_6'); ?>
 
- <?php
-    $image4 = "./sidebar.php";
-    if (file_exists($file)){
-        echo "The file $file exists.";
-    }else{
-        echo "The file $file does not exist.";
-    }
-    clearstatcache();
-?>
-
- <?php get_header(); ?>
- <div id="fleet" class="fleet">
+<?php get_header(); ?>
+<div id="fleet" class="fleet">
   <h2><?php the_field('vehicle_type'); ?></h2>
   <div class="fleet-hero">
     <img src="<?php echo $heroimage['url'] ?>" />
@@ -37,16 +27,24 @@
       <button class="prev"></button>
       <div class="carousel-images">
         <ul>
-
-
-
-
-          <li><img src="<?php echo $image1['url'] ?>" width="200px" height="100px" /></li>
-          <li><img src="<?php echo $image2['url'] ?>" width="200px" height="100px" /></li>
-          <li><img src="<?php echo $image3['url'] ?>" width="200px" height="100px" /></li>
-          <li><img src="<?php echo $image4['url'] ?>" width="200px" height="100px" /></li>
-          <li><img src="<?php echo $image5['url'] ?>" width="200px" height="100px" /></li>
-          <li><img src="<?php echo $image6['url'] ?>" width="200px" height="100px" /></li>
+          <?php if( !empty($image1) ): ?>
+            <li><img src="<?php echo $image1['url']; ?>" alt="<?php echo $image1['alt']; ?>" width="200px" height="100px" /></li>
+          <?php endif; ?>
+          <?php if( !empty($image2) ): ?>
+            <li><img src="<?php echo $image2['url']; ?>" alt="<?php echo $image2['alt']; ?>" width="200px" height="100px" /></li>
+          <?php endif; ?>
+          <?php if( !empty($image3) ): ?>
+            <li><img src="<?php echo $image3['url']; ?>" alt="<?php echo $image3['alt']; ?>" width="200px" height="100px" /></li>
+          <?php endif; ?>
+          <?php if( !empty($image4) ): ?>
+            <li><img src="<?php echo $image4['url']; ?>" alt="<?php echo $image4['alt']; ?>" width="200px" height="100px" /></li>
+          <?php endif; ?>
+          <?php if( !empty($image5) ): ?>
+            <li><img src="<?php echo $image5['url']; ?>" alt="<?php echo $image5['alt']; ?>" width="200px" height="100px" /></li>
+          <?php endif; ?>
+          <?php if( !empty($image6) ): ?>
+            <li><img src="<?php echo $image6['url']; ?>" alt="<?php echo $image6['alt']; ?>" width="200px" height="100px" /></li>
+          <?php endif; ?>
         </ul>
       </div>
       <button class="next"></button>
