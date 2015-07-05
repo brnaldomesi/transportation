@@ -511,23 +511,26 @@ footer {
             display: block;
             width: 200px;
             height: 100px; }
+            .fleet .about .carousel button ul li:first-child,
+            .fleet .about .carousel .carousel-images ul li:first-child {
+              margin-left: 0; }
       .fleet .about .carousel button {
         height: 37px;
         width: 37px;
         border: none;
         background: url(../images/carousel-nav-sprite.svg); }
-        .fleet .about .carousel button:disabled, .fleet .about .carousel button.prev {
-          background-position: 0 0;
-          margin: 32px 0; }
-        .fleet .about .carousel button:active, .fleet .about .carousel button.prev {
-          background-position: -35px 0;
-          margin: 32px 0; }
-        .fleet .about .carousel button:disabled, .fleet .about .carousel button.next {
-          background-position: 37px 0;
-          margin: 32px 0; }
-        .fleet .about .carousel button:active, .fleet .about .carousel button.next {
+        .fleet .about .carousel button.next {
           background-position: 70px 0;
           margin: 32px -1px; }
+          .fleet .about .carousel button.next:disabled {
+            background-position: 37px 0;
+            margin: 32px -1px; }
+        .fleet .about .carousel button.prev {
+          background-position: -35px 0;
+          margin: 32px 0; }
+          .fleet .about .carousel button.prev:disabled {
+            background-position: 1px 0;
+            margin: 32px 0; }
     .fleet .about p.description {
       clear: both;
       margin: 57px 0 15px;

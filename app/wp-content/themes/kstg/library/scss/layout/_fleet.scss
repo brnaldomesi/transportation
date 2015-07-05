@@ -43,6 +43,9 @@
             display: block;
             width: 200px;
             height: 100px;
+            &:first-child {
+              margin-left: 0;
+            }
           }
         }
       }
@@ -51,21 +54,21 @@
         width: 37px;
         border: none;
         background: url(../images/carousel-nav-sprite.svg);
-        &:disabled, &.prev {
-          background-position: 0 0;
-          margin: 32px 0;
-        }
-        &:active, &.prev {
-          background-position: -35px 0;
-          margin: 32px 0;
-        }
-        &:disabled, &.next {
-          background-position: 37px 0;
-          margin: 32px 0;
-        }
-        &:active, &.next {
+        &.next {
           background-position: 70px 0;
           margin: 32px -1px;
+          &:disabled {
+            background-position: 37px 0;
+            margin: 32px -1px;
+          }
+        }
+        &.prev {
+          background-position: -35px 0;
+          margin: 32px 0;
+          &:disabled {
+            background-position: 1px 0;
+            margin: 32px 0;
+          }
         }
       }
     }

@@ -142,7 +142,7 @@ function bones_scripts_and_styles() {
 
 		//adding scripts file in the footer
     wp_register_script( 'validation-js', get_stylesheet_directory_uri() . '/library/js/validation.js', '', '', true );
-    wp_register_script( 'fleet-js', get_template_directory_uri() . '/library/js/fleet.js', array('jquery'), true);
+    wp_register_script( 'fleet-js', get_template_directory_uri() . '/library/js/fleet.js', array('jquery'), '', true);
     wp_register_script( 'bones-js', get_stylesheet_directory_uri() . '/library/js/scripts.js', array( 'jquery' ), '', true );
 
     // page specific js
@@ -150,23 +150,25 @@ function bones_scripts_and_styles() {
     if( is_home() ) {
       wp_enqueue_script( 'homepage-js' );
     }
+    if ( is_page_template( 'page-vehicle.php' ) ) {
+      wp_enqueue_script( 'fleet-js' );
+    }
 
 
-		// enqueue styles and scripts
-		wp_enqueue_script( 'bones-modernizr' );
-		wp_enqueue_style( 'bones-stylesheet' );
-		wp_enqueue_style( 'bones-ie-only' );
+    // enqueue styles and scripts
+    wp_enqueue_script( 'bones-modernizr' );
+    wp_enqueue_style( 'bones-stylesheet' );
+    wp_enqueue_style( 'bones-ie-only' );
 
-		$wp_styles->add_data( 'bones-ie-only', 'conditional', 'lt IE 9' ); // add conditional wrapper around ie stylesheet
+    $wp_styles->add_data( 'bones-ie-only', 'conditional', 'lt IE 9' ); // add conditional wrapper around ie stylesheet
 
-		/*
-		I recommend using a plugin to call jQuery
-		using the google cdn. That way it stays cached
-		and your site will load faster.
-		*/
-		wp_enqueue_script( 'jquery' );
+    /*
+    I recommend using a plugin to call jQuery
+    using the google cdn. That way it stays cached
+    and your site will load faster.
+    */
+    wp_enqueue_script( 'jquery' );
     wp_enqueue_script( 'validation-js' );
-    wp_enqueue_script( 'fleet-js' );
 		wp_enqueue_script( 'bones-js' );
 
 	}

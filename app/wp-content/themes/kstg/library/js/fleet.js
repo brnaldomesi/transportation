@@ -1,46 +1,62 @@
-var galleryImages = document.querySelectorAll('.carousel-images ul li');
-//Initialize counter at 0
+(function($) {
+var $galleryImages = $('.carousel-images ul li');
+var $prev = $('.carousel .prev');
+var $next = $('.carousel .next');
 var counter = 0;
 
-// if gallery image === [0]
-  //disable button
-  //change position of image sprite '.prev' (0)
-//else active button
-  //change position of image sprite .prev (-35px)
-
-//if gallery image[3] === galleryImages.length
-  //disable button
-  //change position of image sprite '.next' (37px)
-//else active button
-  //change position of image sprite .prev (70px)
-
-
-
-
-(function($) {
   $(document).ready(function() {
-    console.log( "ready!" );
+    function changeActiveClassNext() {
+      $next.eq(counter + 3).removeClass('active');
+      $next.eq(counter).addClass('active');
+      $next.eq(counter - 1).addClass('active');
+      $next.eq(counter - 2).addClass('active');
+    }
+
+    function changeActiveClassPrev() {
+      $prev.eq(counter - 1).removeClass('active');
+      $prev.eq(counter).addClass('active');
+      $prev.eq(counter + 1).addClass('active');
+      $prev.eq(counter + 2).addClass('active');
+    }
+
+    function changeButtonState() {
+      if (counter === 0) {
+        $prev.prop('disabled', true);
+      } else {
+        $prev.prop('disabled', false);
+      }
+      if ($galleryImages.length === counter + 3) {
+        $('.next').prop('disabled', true);
+      } else {
+        $('.next').prop('disabled', false);
+      }
+    }
+
     $('.next').on('click', function() {
+      console.log(counter);
       counter++;
       changeActiveClassNext();
       changeButtonState();
-      console.log('clicked!');
       $('ul').animate({
         left: '-=210'
       }, 500);
     });
+
     $('.prev').on('click', function() {
       counter--;
       changeActiveClassPrev();
       changeButtonState();
-      console.log('clicked!');
+      if (counter === 0) {
+        $(this).prop('disabled', true);
+      } else {
+        $(this).prop('disabled', false);
+      }
       $('ul').animate({
         left: '+=210'
       }, 500);
     });
+  changeButtonState()
   });
 
-  changeActiveClassNext()
-  changeButtonState()
 })(jQuery);
 
