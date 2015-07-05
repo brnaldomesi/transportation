@@ -525,7 +525,7 @@ footer {
         .fleet .about .carousel button:disabled, .fleet .about .carousel button.next {
           background-position: 37px 0;
           margin: 32px 0; }
-        .fleet .about .carousel button.next {
+        .fleet .about .carousel button:active, .fleet .about .carousel button.next {
           background-position: 70px 0;
           margin: 32px -1px; }
     .fleet .about p.description {

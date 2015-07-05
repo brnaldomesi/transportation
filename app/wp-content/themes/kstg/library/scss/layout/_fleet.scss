@@ -63,7 +63,7 @@
           background-position: 37px 0;
           margin: 32px 0;
         }
-        &.next {
+        &:active, &.next {
           background-position: 70px 0;
           margin: 32px -1px;
         }
