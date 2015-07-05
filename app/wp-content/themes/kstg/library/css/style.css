@@ -565,6 +565,7 @@ footer {
       .fleet .about .youtube-video .video {
         margin: 40px 0; }
         .fleet .about .youtube-video .video iframe {
-          width: 100%; }
+          width: 100%;
+          height: 560px; }
 
 /*# sourceMappingURL=style.css.map */
