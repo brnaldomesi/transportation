@@ -58,7 +58,7 @@
     </div>
     <div class="youtube-video">
       <h3>Video Vehicle Tour</h3>
-      <p>Lorem ipsum</p>
+      <p><?php the_field('video_description'); ?></p>
       <div class="video">
         <?php the_field('youtube_embed_code'); ?>
       </div>
