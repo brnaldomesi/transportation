@@ -8,25 +8,24 @@ footer {
   padding: 0 4%;
   background-color: $dark-grey;
   p {
-    font-size: 12px;
+    font-size: 0.75em;
     color: $light-grey;
     line-height: 17px;
     margin: 16px 0;
   }
   .copyright {
-    width: 60%;
+    width: 75%;
     float: left;
-    margin: 7px 0;
+    margin: 20px 0;
     p {
-      float: left;
+      display: inline;
     }
     ul {
-      float: left;
-      width: 45%;
-      margin-left: 3%;
+      display: inline;
+      margin-left: 9%;
       li {
-        float: left;
-        margin: 0 5%;
+        display: inline;
+        margin: 0 2%;
       }
     }
   }
@@ -34,10 +33,13 @@ footer {
     float: right;
     ul {
       li {
-        height: 63px;
-        float: left;
+        display: inline;
         img {
-          padding-top: 8px;
+          margin: 14px 0;
+          padding: 0px 3px;
+          height: 29px;
+          width: 29px;
+          display: inline-block;
         }
       }
     }
@@ -46,7 +48,7 @@ footer {
   /************/
   /** MOBILE **/
   // /************/
-  @media only screen and (max-width: 1030px) {
+  @media only screen and (max-width: 850px) {
     height: 170px;
     margin-top: 0px;
     padding: 0;
@@ -57,29 +59,35 @@ footer {
       width: 100%;
     }
     .copyright {
+      font-size: 1.2em;
+      margin: 10px 0 0 0;
       position: relative;
       .kstg {
         text-align: center;
+        display: block;
       }
       .nav {
         position: absolute;
         left: 50%;
         top: 50px;
-        margin-left: -125px;
+        margin-left: -130px;
       }
     }
     .social {
       position: relative;
       height: auto;
+      bottom: 8px;
       ul {
         position: absolute;
         top: 40px;
         left: 50%;
-        margin-left: -160px;
+        margin-left: -140px;
         li {
           height: 64px;
           img {
             padding-top: 0px;
+            height: 45px;
+            width: 45px;
           }
         }
       }
@@ -88,7 +96,7 @@ footer {
   @media only screen and (max-width: 414px) {
     .copyright {
       .nav {
-        margin-left: -110px;
+        margin-left: -130px;
       }
     }
   }
