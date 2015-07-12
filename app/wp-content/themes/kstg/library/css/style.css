@@ -345,7 +345,8 @@ footer {
         line-height: 25px;
         color: #333333; }
       .homepage-wrapper section .about .button {
-        margin-right: 730px; }
+        margin-right: 730px;
+        width: 255px; }
         .homepage-wrapper section .about .button p {
           display: block;
           padding: 13px 29px;
@@ -440,8 +441,10 @@ footer {
       .homepage-wrapper section .about {
         margin: 20px 0;
         padding: 20px 8%; }
-        .homepage-wrapper section .about a {
+        .homepage-wrapper section .about .button {
           width: 100%; }
+          .homepage-wrapper section .about .button p {
+            text-align: center; }
     .homepage-wrapper aside .aside-wrapper {
       padding: 0 5%; }
       .homepage-wrapper aside .aside-wrapper .newsletter,

@@ -43,6 +43,7 @@
       }
       .button {
           margin-right: 730px;
+          width: 255px;
         p {
           @include standard-button;
           margin-top: 20px;
@@ -125,8 +126,11 @@
       .about {
         margin: 20px 0;
         padding: 20px 8%;
-        a {
+        .button {
           width: 100%;
+          p {
+            text-align: center;
+          }
         }
       }
     }
