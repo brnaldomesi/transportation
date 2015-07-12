@@ -146,6 +146,9 @@ a:hover {
 .no-underline a:hover {
   text-decoration: none; }
 
+p.uppercase {
+  text-transform: uppercase; }
+
 header {
   height: 100px;
   position: relative;
@@ -534,6 +537,7 @@ footer {
         border: none;
         font-weight: 600;
         cursor: pointer;
+        text-transform: uppercase;
         padding: 13px 19px;
         text-transform: uppercase;
         margin-top: 20px; }

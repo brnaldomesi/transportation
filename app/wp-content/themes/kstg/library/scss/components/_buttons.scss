@@ -11,10 +11,18 @@
   border: none;
   font-weight: 600;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
+//Overrides for edgecases "look like button" type elements
 .no-underline {
     a:hover {
     text-decoration: none;
+  }
+}
+
+p {
+  &.uppercase {
+   text-transform: uppercase;
   }
 }

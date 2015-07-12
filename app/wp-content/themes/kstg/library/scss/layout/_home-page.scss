@@ -45,7 +45,6 @@
           margin-right: 730px;
         p {
           @include standard-button;
-          text-transform: uppercase;
           margin-top: 20px;
         }
       }
@@ -80,7 +79,6 @@
         }
         button {
           @include standard-button;
-          text-transform: uppercase;
           margin-top: 34px;
         }
       }

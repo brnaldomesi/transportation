@@ -4,19 +4,19 @@
 		<div class="gallery-container row">
 			<div class="gallery-corporate col-1-4  no-underline">
 				<img class="fluid-images" src="<?php bloginfo('template_url'); ?>/library/images/corporate.png" alt="corporate services" width="280" height="350" />
-				<a href=""><p>CORPORATE &#8594;</p></a>
+				<a href=""><p class="uppercase">Corporate &#8594;</p></a>
 			</div>
 			<div class="gallery-events col-1-4  no-underline">
 				<img class="fluid-images" src="<?php bloginfo('template_url'); ?>/library/images/personal.png" alt="personal services and events" width="280" height="350" />
-				<a href=""><p class="events">PERSONAL & EVENTS &#8594;</p></a>
+				<a href=""><p class="events uppercase">Personal &amp; Events &#8594;</p></a>
 			</div>
 			<div class="gallery-travel col-1-4  no-underline">
 				<img class="fluid-images" src="<?php bloginfo('template_url'); ?>/library/images/travel.png" alt="travel services" width="280" height="350" />
-				<a href=""><p>TRAVEL &#8594;</p></a>
+				<a href=""><p class="uppercase">Travel &#8594;</p></a>
 			</div>
 			<div class="gallery-wedding col-1-4 no-underline">
 				<img class="fluid-images" src="<?php bloginfo('template_url'); ?>/library/images/wedding.png" alt="personal services and events" alt="wedding services" width="280" height="350" />
-				<a href=""><p>WEDDING &#8594;</p></a>
+				<a href=""><p class="uppercase">Wedding &#8594;</p></a>
 			</div>
 		</div>
 		<div class="about">
