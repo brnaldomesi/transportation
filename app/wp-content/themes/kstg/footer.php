@@ -11,19 +11,19 @@
     <div class="social">
       <ul>
         <li>
-          <a href="https://www.facebook.com/kevinsmithgroup" target="_blank"><img class="fluid-images" src="<?php bloginfo('template_url'); ?>/library/images/icon-facebook.svg" alt="Facebook" /></a>
+          <a href="<?php the_field('social_facebook', get_page_by_title( 'Homepage/Global' )); ?>" target="_blank"><img class="fluid-images" src="<?php bloginfo('template_url'); ?>/library/images/icon-facebook.svg" alt="Facebook" /></a>
         </li>
         <li>
-          <a href="https://www.twitter.com/Kevinsmithgrp" target="_blank"><img class="fluid-images" src="<?php bloginfo('template_url'); ?>/library/images/icon-twitter.svg" alt="Twitter" /></a>
+          <a href="<?php the_field('social_twitter', get_page_by_title( 'Homepage/Global' )); ?>" target="_blank"><img class="fluid-images" src="<?php bloginfo('template_url'); ?>/library/images/icon-twitter.svg" alt="Twitter" /></a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/company/kevin-smith-transportation-group" target="_blank"><img class="fluid-images" src="<?php bloginfo('template_url'); ?>/library/images/icon-linkedin.svg" alt="LinkedIn" /></a>
+          <a href="<?php the_field('social_linkedin', get_page_by_title( 'Homepage/Global' )); ?>" target="_blank"><img class="fluid-images" src="<?php bloginfo('template_url'); ?>/library/images/icon-linkedin.svg" alt="LinkedIn" /></a>
         </li>
         <li>
-          <a href="https://www.youtube.com/channel/UCMeEufGeiAWaxOsIS0Lwegg" target="_blank"><img class="fluid-images" src="<?php bloginfo('template_url'); ?>/library/images/icon-youtube.svg" alt="YouTube" /></a>
+          <a href="<?php the_field('social_youtube', get_page_by_title( 'Homepage/Global' )); ?>" target="_blank"><img class="fluid-images" src="<?php bloginfo('template_url'); ?>/library/images/icon-youtube.svg" alt="YouTube" /></a>
         </li>
         <li>
-          <a href="https://plus.google.com/b/115066308991397006542/115066308991397006542/posts" target="_blank"><img class="fluid-images" src="<?php bloginfo('template_url'); ?>/library/images/icon-gplus.svg" alt="Google Plus" /></a>
+          <a href="<?php the_field('social_googleplus', get_page_by_title( 'Homepage/Global' )); ?>" target="_blank"><img class="fluid-images" src="<?php bloginfo('template_url'); ?>/library/images/icon-gplus.svg" alt="Google Plus" /></a>
         </li>
       </ul>
     </div>
