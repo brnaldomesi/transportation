@@ -23,7 +23,9 @@
     margin-top: -2px;
     padding: 22px 8.5%;
     .carousel {
-      padding: 0 15%;
+      position: relative;
+      left: 50%;
+      margin-left: -340px;
       display: inline-block;
       button,
       .carousel-images {
@@ -115,41 +117,7 @@
   /************/
   /** MOBILE **/
   /************/
-  @media only screen and (max-width: 900px) {
-    .about {
-      padding: 22px 1.5% 0;
-      .carousel {
-        padding: 0 4%;
-        position: relative;
-        left: 50%;
-        margin-left: -255px;
-        button {
-          display: none;
-        }
-        .carousel-images {
-          width: 470px;
-          ul {
-            li {
-              width: 150px;
-              height: 75px;
-              img {
-                width: 150px;
-                height: 75px;
-              }
-            }
-          }
-        }
-      }
-      .youtube-video {
-        .video {
-          iframe {
-            height: 340px;
-          }
-        }
-      }
-    }
-  }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 800px) {
     padding: 3.3% 0;
     h2 {
       margin: 25px 20px;
@@ -157,23 +125,7 @@
     .about {
       padding: 22px 1.5% 0;
       .carousel {
-        margin-left: -170px;
-        button {
-          display: none;
-        }
-        .carousel-images{
-          width: 310px;
-          ul {
-            li {
-              width: 150px;
-              height: 75px;
-              img {
-                width: 150px;
-                height: 75px;
-              }
-            }
-          }
-        }
+        display: none;
       }
       p {
         &.description {
