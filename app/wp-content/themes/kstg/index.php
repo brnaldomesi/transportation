@@ -30,7 +30,7 @@
 	</section>
 	<aside class="row">
 		<div class="aside-wrapper">
-			<div class="newsletter .col-1-2">
+			<div class="newsletter col-1-2">
 				<form action="//kevinsmithgroup.us11.list-manage.com/subscribe/post?u=5fef121354fe7d660e5e70b73&amp;id=097e20dcdd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 					<h2>Sign up for our Newsletter</h2>
 					<label for="newsletter-email-addressL">Email Address</label>
@@ -42,7 +42,7 @@
 					<!-- End MailChimp stuff -->
 				</form>
 			</div>
-			<div class="contact-us .col-1-2">
+			<div class="contact-us col-1-2">
 				<h2>Contact Us</h2>
 				<h3>Kevin Smith Transportation Group</h3>
 				<p>123 Main Street</p>

@@ -60,10 +60,8 @@
       @include clearfix();
       .newsletter,
       .contact-us {
-        float: left;
+        display: inline-block;
         height: 185px;
-        width: 50%;
-        padding-left: 118px;
         h2 {
           margin-bottom: 30px;
           text-transform: uppercase;
@@ -97,7 +95,7 @@
   /************/
   /** MOBILE **/
   /************/
-  @media only screen and (max-width: 460px) {
+  @media only screen and (max-width: 700px) {
     section {
       padding: 20px 0 40px;
       .col-1-4 {
@@ -144,7 +142,7 @@
         .newsletter {
           form {
             input[type="email"] {
-              width: 270px;
+              width: 95%;
             }
           }
         }
