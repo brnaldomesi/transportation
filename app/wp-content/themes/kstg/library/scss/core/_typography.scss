@@ -2,6 +2,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   color: $dark-grey;
+  font-size: 16px;
   h1 {
     font-size: 1.8em;
     font-weight: bold;
@@ -18,41 +19,16 @@ body {
 
   }
   p {
-    font-size: 1.125em;
+    font-size: 1em;
     color: $dark-grey;
   }
-}
-
-
-//body headlines and navigation
-
-
-
-// Headline 1  -  28 pt
-// Headeline 2  -  20 pt  (body headlines & navigation)
-// Body copy  -  18 pt
-// Dropdown menu copy - 16 pt
-// Footer copy  - 14 pt
-// Breadcrumb  -  12 pt
-//MOBILE
-// Headline 1 - 18 pt
-// Headline 2 - 18 pt (body headlines)
-// Body copy - 16 pt
-// Navigation menu & footer copy - 14 pt
-
-/************/
-/** MOBILE **/
-/************/
-@media only screen and (max-width: 400px) {
-  h1 {
-    align: left;
-    font-size: 1.3em;
-    line-height: 30px;
+  //tablet
+  @media (max-width: 1024px)
+  and (min-width: 737px) {
+    font-size: 12px;
   }
-  h2 {
-    font-size: 17px;
-  }
-  p {
-    font-size: 14px;
+  //phone
+  @media (max-width: 736px) {
+    font-size: 12px;
   }
 }
