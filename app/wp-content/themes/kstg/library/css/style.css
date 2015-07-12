@@ -259,7 +259,10 @@ footer {
       margin-left: 9%; }
       footer .copyright ul li {
         display: inline;
-        margin: 0 2%; }
+        padding: 0 2%;
+        border-right: solid 1px #EEEEEE; }
+        footer .copyright ul li:last-child {
+          border-right: none; }
   footer .social {
     float: right; }
     footer .social ul li {
@@ -281,9 +284,11 @@ footer {
       footer .social {
         width: 100%; }
       footer .copyright {
-        font-size: 1.2em;
+        font-size: 1.1em;
         margin: 10px 0 0 0;
         position: relative; }
+        footer .copyright ul li {
+          padding: 0 5%; }
         footer .copyright .kstg {
           text-align: center;
           display: block; }
@@ -291,7 +296,7 @@ footer {
           position: absolute;
           left: 50%;
           top: 50px;
-          margin-left: -130px; }
+          margin-left: -145px; }
       footer .social {
         position: relative;
         height: auto;
@@ -309,7 +314,7 @@ footer {
               width: 45px; } }
   @media only screen and (max-width: 414px) {
     footer .copyright .nav {
-      margin-left: -130px; } }
+      margin-left: -145px; } }
 
 .homepage-wrapper {
   background-color: #EEEEEE;

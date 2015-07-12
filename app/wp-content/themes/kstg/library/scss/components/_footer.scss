@@ -25,7 +25,11 @@ footer {
       margin-left: 9%;
       li {
         display: inline;
-        margin: 0 2%;
+        padding: 0 2%;
+        border-right: solid 1px $light-grey;
+        &:last-child {
+          border-right: none;
+          }
       }
     }
   }
@@ -59,9 +63,15 @@ footer {
       width: 100%;
     }
     .copyright {
-      font-size: 1.2em;
+      font-size: 1.1em;
       margin: 10px 0 0 0;
       position: relative;
+
+      ul {
+        li {
+        padding: 0 5%;
+        }
+      }
       .kstg {
         text-align: center;
         display: block;
@@ -70,7 +80,7 @@ footer {
         position: absolute;
         left: 50%;
         top: 50px;
-        margin-left: -130px;
+        margin-left: -145px;
       }
     }
     .social {
@@ -96,7 +106,7 @@ footer {
   @media only screen and (max-width: 414px) {
     .copyright {
       .nav {
-        margin-left: -130px;
+        margin-left: -145px;
       }
     }
   }
