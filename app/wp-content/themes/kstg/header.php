@@ -56,15 +56,11 @@
 			<header class="header desktop-header row" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 				<div class="inner-header">
  					<a class="fluid-images desktop-logo" href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php bloginfo('template_url'); ?>/library/images/logo-128x72.png"/ class="logo" /></a>
-					<nav>
-            <ul>
-              <li><a href=""><p>SERVICES</p></a></li>
-              <li><a href=""><p>FLEET</p></a></li>
-              <li><a href=""><p>RATES</p></a></li>
-              <li><a href=""><p>ABOUT US</p></a></li>
-              <li><a href=""><p>CONTACT US</p></a></li>
-            </ul>
-					</nav>
+            <?php wp_nav_menu( array(
+              'theme_location' => 'main-nav',
+              'container' => 'nav',
+              'depth' => 1
+            )); ?>
 				</div>
 			</header>
 
@@ -73,14 +69,10 @@
           <a class="desktop-logo" href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php bloginfo('template_url'); ?>/library/images/logo-128x72.png"/ class="logo" /></a>
           <a href="#home"  id="menu-button" class="dropdown" data-scroll><img src="<?php bloginfo('template_url'); ?>/library/images/icon-menu.png"/ class="logo" /></a>
         </div>
-        <nav class="toggle-menu">
-          <ul>
-            <li class="menu-item active"><a href="#home">HOME</a></li>
-            <li class="menu-item"><a href="">SERVICE</a></li>
-            <li class="menu-item"><a href="">FLEET</a></li>
-            <li class="menu-item"><a href="">RATES</a></li>
-            <li class="menu-item"><a href="">ABOUT US</a></li>
-            <li class="menu-item"><a href="">CONTACT US</a></li>
-          </ul>
-        </nav>
+          <?php wp_nav_menu( array(
+            'theme_location' => 'main-nav',
+            'container' => 'nav',
+            'container-class' => 'toggle-menu',
+            'depth' => 1
+          )); ?>
       </header>
