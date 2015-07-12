@@ -21,19 +21,19 @@
       ?>
       <div class="gallery-corporate col-1-4">
         <img class="fluid-images" src="<?php echo $image1['url'] ?>" alt="<?php echo $image1['alt'] ?>" width="280" height="350" />
-        <a href=""><p><?php echo $image1['title'] ?> &#8594;</p></a>
+        <a href="<?php the_field('hero_image_1_destination'); ?>"><p><?php echo $image1['title'] ?> &#8594;</p></a>
       </div>
       <div class="gallery-events col-1-4">
         <img class="fluid-images" src="<?php echo $image2['url'] ?>" alt="<?php echo $image2['alt'] ?>" width="280" height="350" />
-        <a href=""><p class="events"><?php echo $image2['title'] ?> &#8594;</p></a>
+        <a href="<?php the_field('hero_image_2_destination'); ?>"><p class="events"><?php echo $image2['title'] ?> &#8594;</p></a>
       </div>
       <div class="gallery-travel col-1-4">
         <img class="fluid-images" src="<?php echo $image3['url'] ?>" alt="<?php echo $image3['alt'] ?>" width="280" height="350" />
-        <a href=""><p><?php echo $image3['title'] ?> &#8594;</p></a>
+        <a href="<?php the_field('hero_image_3_destination'); ?>"><p><?php echo $image3['title'] ?> &#8594;</p></a>
       </div>
       <div class="gallery-wedding col-1-4">
         <img class="fluid-images" src="<?php echo $image4['url'] ?>" alt="<?php echo $image4['alt'] ?>" alt="personal services and events" alt="wedding services" width="280" height="350" />
-        <a href=""><p><?php echo $image4['title'] ?> &#8594;</p></a>
+        <a href="<?php the_field('hero_image_4_destination'); ?>"><p><?php echo $image4['title'] ?> &#8594;</p></a>
       </div>
     </div>
     <div class="about">
