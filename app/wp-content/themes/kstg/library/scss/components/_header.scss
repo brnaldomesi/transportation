@@ -24,11 +24,12 @@ header {
         li {
           float: left;
           padding-left: 3.7em;
-          p {
+          a {
             font-weight: bold;
             font-size: 1.2em;
+            text-transform: uppercase;
           }
-          p:hover {
+          a:hover {
             color: $purple;
           }
         }
