@@ -11,5 +11,10 @@
   border: none;
   font-weight: 600;
   cursor: pointer;
+}
 
+.no-underline {
+    a:hover {
+    text-decoration: none;
+  }
 }

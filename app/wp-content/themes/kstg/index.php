@@ -2,19 +2,19 @@
 <div class="homepage-wrapper">
 	<section class="main">
 		<div class="gallery-container row">
-			<div class="gallery-corporate col-1-4">
+			<div class="gallery-corporate col-1-4  no-underline">
 				<img class="fluid-images" src="<?php bloginfo('template_url'); ?>/library/images/corporate.png" alt="corporate services" width="280" height="350" />
 				<a href=""><p>CORPORATE &#8594;</p></a>
 			</div>
-			<div class="gallery-events col-1-4">
+			<div class="gallery-events col-1-4  no-underline">
 				<img class="fluid-images" src="<?php bloginfo('template_url'); ?>/library/images/personal.png" alt="personal services and events" width="280" height="350" />
 				<a href=""><p class="events">PERSONAL & EVENTS &#8594;</p></a>
 			</div>
-			<div class="gallery-travel col-1-4">
+			<div class="gallery-travel col-1-4  no-underline">
 				<img class="fluid-images" src="<?php bloginfo('template_url'); ?>/library/images/travel.png" alt="travel services" width="280" height="350" />
 				<a href=""><p>TRAVEL &#8594;</p></a>
 			</div>
-			<div class="gallery-wedding col-1-4">
+			<div class="gallery-wedding col-1-4 no-underline">
 				<img class="fluid-images" src="<?php bloginfo('template_url'); ?>/library/images/wedding.png" alt="personal services and events" alt="wedding services" width="280" height="350" />
 				<a href=""><p>WEDDING &#8594;</p></a>
 			</div>
@@ -23,7 +23,7 @@
 			<h1>The Philadelphia Region's Newest Luxury Transportation Company</h1>
 			<p>Kevin Smith Transportation Group is the Philadelphia region's newest luxury limousine and total transportation service. We hope to change the way you think about limousine, airport pickup, and towncar service by providing you with a customized experience you'll love.</p>
 			<p>A personal account manager and a hand-picked chauffeur will ensure you have a smooth journey with KSTG. From your wedding or prom to your airport pickup, you count on us for reliability, luxury, and professionalism. We do the little things that matter to you, because they matter to us. Service, different.</p>
-			<div class="button">
+			<div class="button no-underline" >
 				<a href=""><p>Make a reservation &#8594;</p></a>
 			</div>
 		</div>

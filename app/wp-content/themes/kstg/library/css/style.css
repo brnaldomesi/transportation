@@ -143,6 +143,9 @@ a:hover {
 /**
  * Styles for all sorts of buttons
  */
+.no-underline a:hover {
+  text-decoration: none; }
+
 header {
   height: 100px;
   position: relative;
