@@ -1,26 +1,12 @@
 <footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
   <div class="inner-footer">
     <div class="copyright">
-      <nav>
-        <p class="kstg">© 2015 Kevin Smith Transportation Group</p>
-        <ul class="nav">
-          <li>
-            <a href="">
-              <p>Legal</p>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <p>Lorem Ipsum</p>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <p>Lorem Ipsum</p>
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <p class="kstg">© 2015 Kevin Smith Transportation Group</p>
+      <?php wp_nav_menu( array(
+        'theme_location' => 'footer-links',
+        'container' => 'nav',
+        'depth' => 1
+      )); ?>
     </div>
     <div class="social">
       <ul>

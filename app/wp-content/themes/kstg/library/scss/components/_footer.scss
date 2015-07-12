@@ -7,17 +7,22 @@ footer {
   bottom: 0;
   padding: 0 4%;
   background-color: $dark-grey;
-  p {
+  p,
+  a {
     font-size: 0.75em;
     color: $light-grey;
     line-height: 17px;
     margin: 16px 0;
   }
+  nav {
+    display: inline;
+  }
   .copyright {
     width: 75%;
     float: left;
     margin: 20px 0;
-    p {
+    p,
+    a {
       display: inline;
     }
     ul {
