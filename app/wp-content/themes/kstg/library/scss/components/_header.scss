@@ -4,6 +4,7 @@ header {
   }
   height: 100px;
   position: relative;
+  background-color: $white;
   border-bottom: 1px solid $light-grey;
   box-shadow: 0 5px 6px -6px $dark-grey;
 
@@ -24,11 +25,12 @@ header {
         li {
           float: left;
           padding-left: 3.7em;
-          p {
+          a {
             font-weight: bold;
             font-size: 1.2em;
+            text-transform: uppercase;
           }
-          p:hover {
+          a:hover {
             color: $purple;
           }
         }
@@ -68,8 +70,8 @@ header {
     .banner-wrapper {
       position: absolute;
       z-index: 200;
-      background-color: $white;
       width: 100%;
+      background-color: #FFF;
     }
     nav {
       width: 100%;

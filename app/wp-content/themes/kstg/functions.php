@@ -10,6 +10,7 @@ sidebars, comments, ect.
 
 // LOAD BONES CORE (if you remove this, the theme will break)
 require_once( 'library/bones.php' );
+require_once( 'library/kstg-functions.php');
 
 // CUSTOMIZE THE WORDPRESS ADMIN (off by default)
 // require_once( 'library/admin.php' );
@@ -28,7 +29,7 @@ function bones_ahoy() {
   load_theme_textdomain( 'bonestheme', get_template_directory() . '/library/translation' );
 
   // USE THIS TEMPLATE TO CREATE CUSTOM POST TYPES EASILY
-  // require_once( 'library/custom-post-type.php' );
+  require_once( 'library/faq-post-type.php' );
 
   // launching operation cleanup
   add_action( 'init', 'bones_head_cleanup' );
