@@ -9,7 +9,9 @@
 
 <?php get_header(); ?>
 
-<h1><?php the_title() ?></h1>
+<div class="container">
+  <h1><?php the_title() ?></h1>
+</div>
 
 <?php
 
@@ -19,8 +21,10 @@ $faqs = get_posts( array(
 
 if ($faqs) : foreach ( $faqs as $post ) : setup_postdata( $post ); ?>
 
-  <h2><?php the_field('question'); ?></h2>
-  <p><?php the_field('answer'); ?></p>
+  <div class="container content">
+    <h2><?php the_field('question'); ?></h2>
+    <p><?php the_field('answer'); ?></p>
+  </div>
 
 <?php
   wp_reset_postdata();
