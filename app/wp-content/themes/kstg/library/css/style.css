@@ -146,6 +146,7 @@ a:hover {
 header {
   height: 100px;
   position: relative;
+  background-color: #FFF;
   border-bottom: 1px solid #EEEEEE;
   box-shadow: 0 5px 6px -6px #333333;
   /************/
@@ -166,10 +167,11 @@ header {
       header .inner-header nav ul li {
         float: left;
         padding-left: 3.7em; }
-        header .inner-header nav ul li p {
+        header .inner-header nav ul li a {
           font-weight: bold;
-          font-size: 1.2em; }
-        header .inner-header nav ul li p:hover {
+          font-size: 1.2em;
+          text-transform: uppercase; }
+        header .inner-header nav ul li a:hover {
           color: #652C90; }
   @media only screen and (max-width: 920px) {
     header {
@@ -195,8 +197,8 @@ header {
       header .banner-wrapper {
         position: absolute;
         z-index: 200;
-        background-color: #FFF;
-        width: 100%; }
+        width: 100%;
+        background-color: #FFF; }
       header nav {
         width: 100%;
         margin: 10px 0;
@@ -243,16 +245,20 @@ footer {
   footer .inner-footer {
     max-width: 1220px;
     margin: 0 auto; }
-  footer p {
+  footer p,
+  footer a {
     font-size: 0.75em;
     color: #EEEEEE;
     line-height: 17px;
     margin: 16px 0; }
+  footer nav {
+    display: inline; }
   footer .copyright {
     width: 75%;
     float: left;
     margin: 20px 0; }
-    footer .copyright p {
+    footer .copyright p,
+    footer .copyright a {
       display: inline; }
     footer .copyright ul {
       display: inline;
@@ -341,7 +347,8 @@ footer {
           padding: 14px 0;
           font-weight: 600;
           color: #EEEEEE;
-          text-align: center; }
+          text-align: center;
+          text-transform: uppercase; }
     .homepage-wrapper section .about {
       background-color: #FFF;
       margin: 25px 0px;
@@ -561,5 +568,25 @@ footer {
         .fleet .about .youtube-video .video iframe {
           width: 100%;
           height: 560px; }
+
+.page-template-page-text,
+.page-template-page-faqs {
+  background-color: #EEEEEE; }
+  .page-template-page-text h1,
+  .page-template-page-faqs h1 {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #333333; }
+  .page-template-page-text .container,
+  .page-template-page-faqs .container {
+    max-width: 1220px;
+    width: 95%;
+    margin: 25px auto;
+    box-sizing: border-box; }
+    .page-template-page-text .container.content,
+    .page-template-page-faqs .container.content {
+      padding: 50px 5%;
+      background-color: #FFF;
+      border: 1px solid #CCCCCC; }
 
 /*# sourceMappingURL=style.css.map */
