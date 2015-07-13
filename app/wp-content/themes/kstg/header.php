@@ -72,7 +72,13 @@
           <?php wp_nav_menu( array(
             'theme_location' => 'main-nav',
             'container' => 'nav',
-            'container-class' => 'toggle-menu',
+            'container_class' => 'toggle-menu',
             'depth' => 1
           )); ?>
       </header>
+
+      <?php if (!is_front_page()) : ?>
+        <div class="breadcrumbs">
+          <?php bcn_display() ?>
+        </div>
+      <?php endif; ?>
