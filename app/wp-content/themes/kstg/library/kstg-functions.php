@@ -35,6 +35,12 @@ function kstg_beep_beep() {
     </style>
   <?php }
   add_action( 'login_enqueue_scripts', 'kstg_login_logo' );
+
+  // change the login page link
+  function loginpage_custom_link() {
+    return 'http://kevinsmithgroup.com';
+  }
+  add_filter('login_headerurl','loginpage_custom_link');
 }
 
 add_action( 'after_setup_theme', 'kstg_beep_beep' );
