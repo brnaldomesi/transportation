@@ -1,4 +1,4 @@
-var customConfig = require('./grunt-config');
+var localConfig = require('./grunt-local-config');
 
 module.exports = function(grunt) {
 
@@ -14,7 +14,7 @@ module.exports = function(grunt) {
     config: {
       paths: paths
     },
-    customConfig: customConfig,
+    localConfig: localConfig,
     sass: {
       dist: {
         files: {
@@ -44,7 +44,7 @@ module.exports = function(grunt) {
         'user': 'root',
         'host': '127.0.0.1',
         'url': 'http://localhost:9000',
-        'path': '<%= customConfig.local_repo_path %>/app'
+        'path': '<%= localConfig.local_repo_path %>/app'
       },
       staging: {
         'title': 'staging',
@@ -54,15 +54,15 @@ module.exports = function(grunt) {
         'host': 'localhost',
         'url': 'http://kstg.dev.derrickshowers.com',
         'path': '/var/www/sites/kstg',
-        'ssh_host': '<%= customConfig.server_user %>@dev.derrickshowers.com'
+        'ssh_host': '<%= localConfig.server_user %>@dev.derrickshowers.com'
       }
     },
     rsync: {
       pull_uploads: {
         options: {
           args: ['--verbose', '--progress', '-rlt', '--compress', '--omit-dir-times'],
-          src: '<%= customConfig.server_user %>@dev.derrickshowers.com:/var/www/sites/kstg/wp-content/uploads/',
-          dest: '<%= customConfig.local_repo_path %>/app/wp-content/uploads/',
+          src: '<%= localConfig.server_user %>@dev.derrickshowers.com:/var/www/sites/kstg/wp-content/uploads/',
+          dest: '<%= localConfig.local_repo_path %>/app/wp-content/uploads/',
           ssh: true,
           delete: true
         }
@@ -70,8 +70,8 @@ module.exports = function(grunt) {
       pull_plugins: {
         options: {
           args: ['--verbose', '--progress', '-rlt', '--compress', '--omit-dir-times'],
-          src: '<%= customConfig.server_user %>@dev.derrickshowers.com:/var/www/sites/kstg/wp-content/plugins/',
-          dest: '<%= customConfig.local_repo_path %>/app/wp-content/plugins/',
+          src: '<%= localConfig.server_user %>@dev.derrickshowers.com:/var/www/sites/kstg/wp-content/plugins/',
+          dest: '<%= localConfig.local_repo_path %>/app/wp-content/plugins/',
           ssh: true,
           delete: true
         }
@@ -79,8 +79,8 @@ module.exports = function(grunt) {
       push_uploads: {
         options: {
           args: ['--verbose', '--progress', '-rlt', '--compress', '--omit-dir-times'],
-          src: '<%= customConfig.local_repo_path %>/app/wp-content/uploads/',
-          dest: '<%= customConfig.server_user %>@dev.derrickshowers.com:/var/www/sites/kstg/wp-content/uploads/',
+          src: '<%= localConfig.local_repo_path %>/app/wp-content/uploads/',
+          dest: '<%= localConfig.server_user %>@dev.derrickshowers.com:/var/www/sites/kstg/wp-content/uploads/',
           ssh: true,
           delete: true
         }
@@ -88,8 +88,8 @@ module.exports = function(grunt) {
       push_plugins: {
         options: {
           args: ['--verbose', '--progress', '-rlt', '--compress', '--omit-dir-times'],
-          src: '<%= customConfig.local_repo_path %>/app/wp-content/plugins/',
-          dest: '<%= customConfig.server_user %>@dev.derrickshowers.com:/var/www/sites/kstg/wp-content/plugins/',
+          src: '<%= localConfig.local_repo_path %>/app/wp-content/plugins/',
+          dest: '<%= localConfig.server_user %>@dev.derrickshowers.com:/var/www/sites/kstg/wp-content/plugins/',
           ssh: true,
           delete: true
         }
@@ -98,8 +98,8 @@ module.exports = function(grunt) {
         options: {
           args: ['--verbose', '--progress', '-rlt', '--compress', '--omit-dir-times'],
           exclude: ['scss','.sass-cache'],
-          src: '<%= customConfig.local_repo_path %>/app/wp-content/themes/kstg/',
-          dest: '<%= customConfig.server_user %>@dev.derrickshowers.com:/var/www/sites/kstg/wp-content/themes/kstg/',
+          src: '<%= localConfig.local_repo_path %>/app/wp-content/themes/kstg/',
+          dest: '<%= localConfig.server_user %>@dev.derrickshowers.com:/var/www/sites/kstg/wp-content/themes/kstg/',
           ssh: true,
           delete: true
         }

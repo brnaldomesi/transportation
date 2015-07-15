@@ -31,4 +31,5 @@ node_modules
 style.scss.map
 
 # grunt
+grunt-local-config.js
 backups/
