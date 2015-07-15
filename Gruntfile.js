@@ -55,14 +55,52 @@ module.exports = function(grunt) {
       }
     },
     rsync: {
-      update_uploads: {
+      pull_uploads: {
         options: {
-          args: ['--verbose', '--progress', '-rlpt', '--compress', '--omit-dir-times'],
+          args: ['--verbose', '--progress', '-rlt', '--compress', '--omit-dir-times'],
           src: 'dshowers@dev.derrickshowers.com:/var/www/sites/kstg/wp-content/uploads/',
           dest: '/Users/dshowers/Development/kevin-smith-transpotation-group/app/wp-content/uploads/',
-          ssh: true
+          ssh: true,
+          delete: true
         }
-      }
+      },
+      pull_plugins: {
+        options: {
+          args: ['--verbose', '--progress', '-rlt', '--compress', '--omit-dir-times'],
+          src: 'dshowers@dev.derrickshowers.com:/var/www/sites/kstg/wp-content/plugins/',
+          dest: '/Users/dshowers/Development/kevin-smith-transpotation-group/app/wp-content/plugins/',
+          ssh: true,
+          delete: true
+        }
+      },
+      push_uploads: {
+        options: {
+          args: ['--verbose', '--progress', '-rlt', '--compress', '--omit-dir-times'],
+          src: '/Users/dshowers/Development/kevin-smith-transpotation-group/app/wp-content/uploads/',
+          dest: 'dshowers@dev.derrickshowers.com:/var/www/sites/kstg/wp-content/uploads/',
+          ssh: true,
+          delete: true
+        }
+      },
+      push_plugins: {
+        options: {
+          args: ['--verbose', '--progress', '-rlt', '--compress', '--omit-dir-times'],
+          src: '/Users/dshowers/Development/kevin-smith-transpotation-group/app/wp-content/plugins/',
+          dest: 'dshowers@dev.derrickshowers.com:/var/www/sites/kstg/wp-content/plugins/',
+          ssh: true,
+          delete: true
+        }
+      },
+      deploy_theme: {
+        options: {
+          args: ['--verbose', '--progress', '-rlt', '--compress', '--omit-dir-times'],
+          exclude: ['scss','.sass-cache'],
+          src: '/Users/dshowers/Development/kevin-smith-transpotation-group/app/wp-content/themes/kstg/',
+          dest: 'dshowers@dev.derrickshowers.com:/var/www/sites/kstg/wp-content/themes/kstg/',
+          ssh: true,
+          delete: true
+        }
+      },
     }
   });
 
@@ -74,6 +112,8 @@ module.exports = function(grunt) {
 
   // tasks
   grunt.registerTask('dev', ['watch']);
-  grunt.registerTask('update', ['pull_db']);
+  grunt.registerTask('pull', ['pull_db', 'rsync:pull_uploads', 'rsync:pull_plugins']);
+  grunt.registerTask('push', ['push_db', 'rsync:push_uploads', 'rsync:push_plugins']);
+  grunt.registerTask('deploy_theme', ['rsync:deploy_theme']);
 
 };
