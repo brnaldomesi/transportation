@@ -100,7 +100,28 @@ module.exports = function(grunt) {
           ssh: true,
           delete: true
         }
-      },
+      }
+    },
+    prompt: {
+      git_master: {
+        options: {
+          questions: [
+            {
+              config: 'continue',
+              type: 'confirm',
+              message: 'You are about to deploy the kstg theme to staging. Are you sure you\'re on master?',
+              default: false
+            }
+          ],
+          then: function(results, done) {
+            if (results.continue) {
+              done();
+            } else {
+              grunt.fail.warn('Please make sure you\'re deploying master');
+            }
+          }
+        }
+      }
     }
   });
 
@@ -108,12 +129,13 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-wordpress-deploy');
-  grunt.loadNpmTasks("grunt-rsync");
+  grunt.loadNpmTasks('grunt-rsync');
+  grunt.loadNpmTasks('grunt-prompt');
 
   // tasks
   grunt.registerTask('dev', ['watch']);
   grunt.registerTask('pull', ['pull_db', 'rsync:pull_uploads', 'rsync:pull_plugins']);
   grunt.registerTask('push', ['push_db', 'rsync:push_uploads', 'rsync:push_plugins']);
-  grunt.registerTask('deploy_theme', ['rsync:deploy_theme']);
+  grunt.registerTask('deploy_theme', ['prompt:git_master', 'rsync:deploy_theme']);
 
 };
