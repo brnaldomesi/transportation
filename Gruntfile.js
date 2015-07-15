@@ -53,6 +53,16 @@ module.exports = function(grunt) {
         'path': '/var/www/sites/kstg',
         'ssh_host': 'dshowers@dev.derrickshowers.com'
       }
+    },
+    rsync: {
+      update_uploads: {
+        options: {
+          args: ['--verbose', '--progress', '-rlpt', '--compress', '--omit-dir-times'],
+          src: 'dshowers@dev.derrickshowers.com:/var/www/sites/kstg/wp-content/uploads/',
+          dest: '/Users/dshowers/Development/kevin-smith-transpotation-group/app/wp-content/uploads/',
+          ssh: true
+        }
+      }
     }
   });
 
@@ -60,6 +70,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-wordpress-deploy');
+  grunt.loadNpmTasks("grunt-rsync");
 
   // tasks
   grunt.registerTask('dev', ['watch']);
