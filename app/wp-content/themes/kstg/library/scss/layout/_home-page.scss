@@ -43,10 +43,10 @@
         color: $dark-grey;
       }
       .button {
-        width: 253px;
+          margin-right: 730px;
+          width: 255px;
         p {
           @include standard-button;
-          text-transform: uppercase;
           margin-top: 20px;
         }
       }
@@ -79,7 +79,6 @@
         }
         button {
           @include standard-button;
-          text-transform: uppercase;
           margin-top: 34px;
         }
       }
@@ -110,24 +109,14 @@
         }
       }
       .about {
-        margin: 20px 0 0;
-        padding: 50px 8%;
-      }
-      aside {
-        .aside-wrapper {
-          padding: 0 8%;
-          .newsletter,
-          .contact-us {
-            width: 100%;
-            margin: 30px 0;
-            padding-left: 0;
-          }
-          .newsletter {
-            form {
-              input[type="email"] {
-                width: 95%;
-              }
-            }
+
+        margin: 20px 0;
+        padding: 20px 8%;
+        .button {
+          width: 100%;
+          p {
+            text-align: center;
+
           }
         }
       }

@@ -136,6 +136,12 @@ a:hover {
 /**
  * Styles for all sorts of buttons
  */
+.no-underline a:hover {
+  text-decoration: none; }
+
+p.uppercase {
+  text-transform: uppercase; }
+
 header {
   height: 100px;
   position: relative;
@@ -354,7 +360,8 @@ footer {
         line-height: 25px;
         color: #333333; }
       .homepage-wrapper section .about .button {
-        width: 253px; }
+        margin-right: 730px;
+        width: 255px; }
         .homepage-wrapper section .about .button p {
           display: block;
           padding: 13px 29px;
@@ -427,17 +434,12 @@ footer {
           .homepage-wrapper section .gallery-container div:nth-child(2n) {
             float: right; }
       .homepage-wrapper section .about {
-        margin: 20px 0 0;
-        padding: 50px 8%; }
-      .homepage-wrapper section aside .aside-wrapper {
-        padding: 0 8%; }
-        .homepage-wrapper section aside .aside-wrapper .newsletter,
-        .homepage-wrapper section aside .aside-wrapper .contact-us {
-          width: 100%;
-          margin: 30px 0;
-          padding-left: 0; }
-        .homepage-wrapper section aside .aside-wrapper .newsletter form input[type="email"] {
-          width: 95%; } }
+        margin: 20px 0;
+        padding: 20px 8%; }
+        .homepage-wrapper section .about .button {
+          width: 100%; }
+          .homepage-wrapper section .about .button p {
+            text-align: center; } }
   @media (max-width: 414px) {
     .homepage-wrapper .homepage-wrapper section {
       padding: 20px 0 0 0; }
@@ -543,6 +545,7 @@ footer {
         border: none;
         font-weight: 600;
         cursor: pointer;
+        text-transform: uppercase;
         padding: 13px 19px;
         text-transform: uppercase;
         margin-top: 20px; }
