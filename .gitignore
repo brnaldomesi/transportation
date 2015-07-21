@@ -22,3 +22,14 @@ readme.html
 license.txt
 .log
 .DS_Store
+
+# npm
+node_modules
+
+# sass
+.sass-cache
+style.scss.map
+
+# grunt
+grunt-local-config.js
+backups/

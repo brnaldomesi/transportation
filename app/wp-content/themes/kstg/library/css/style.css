@@ -66,7 +66,8 @@ table {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  color: #333333; }
+  color: #333333;
+  font-size: 16px; }
   body h1 {
     font-size: 1.8em;
     font-weight: bold;
@@ -79,23 +80,15 @@ body {
     font-size: 1em;
     font-weight: bold; }
   body p {
-    font-size: 1.125em;
+    font-size: 1em;
     color: #333333; }
+  @media (max-width: 1024px) and (min-width: 737px) {
+    body {
+      font-size: 12px; } }
+  @media (max-width: 736px) {
+    body {
+      font-size: 12px; } }
 
-/************/
-/** MOBILE **/
-/************/
-@media only screen and (max-width: 460px) {
-  h1 {
-    align: left;
-    font-size: 17px;
-    line-height: 20px; }
-
-  h2 {
-    font-size: 17px; }
-
-  p {
-    font-size: 14px; } }
 a {
   text-decoration: none;
   color: #333333; }
@@ -152,6 +145,7 @@ p.uppercase {
 header {
   height: 100px;
   position: relative;
+  background-color: #FFF;
   border-bottom: 1px solid #EEEEEE;
   box-shadow: 0 5px 6px -6px #333333;
   /************/
@@ -172,14 +166,15 @@ header {
       header .inner-header nav ul li {
         float: left;
         padding-left: 3.7em; }
-        header .inner-header nav ul li p {
+        header .inner-header nav ul li a {
           font-weight: bold;
-          font-size: 1.2em; }
-        header .inner-header nav ul li p:hover {
+          font-size: 1.2em;
+          text-transform: uppercase; }
+        header .inner-header nav ul li a:hover {
           color: #652C90; }
-  @media only screen and (max-width: 920px) {
+  @media only screen and (max-width: 1024px) {
     header {
-      height: 70px;
+      height: 95px;
       margin: 0;
       padding: 0;
       position: relative; }
@@ -189,20 +184,20 @@ header {
         display: block; }
       header a img {
         margin: 12px 5%;
-        width: 91px;
-        height: 50px; }
+        width: 125px;
+        height: 63px; }
       header .dropdown {
         float: right;
         margin: 2px 4%; }
         header .dropdown img {
-          width: 15px;
-          height: 10px;
-          margin: 30px 20px; }
+          width: 25px;
+          height: 17px;
+          margin: 35px 20px; }
       header .banner-wrapper {
         position: absolute;
         z-index: 200;
-        background-color: #FFF;
-        width: 100%; }
+        width: 100%;
+        background-color: #FFF; }
       header nav {
         width: 100%;
         margin: 10px 0;
@@ -214,7 +209,7 @@ header {
         left: 0;
         z-index: 100; }
         header nav.open-menu ul {
-          top: 62px;
+          top: 83px;
           -webkit-transition: all .25s ease;
           -moz-transition: all .25s ease;
           -ms-transition: all .25s ease;
@@ -235,6 +230,8 @@ header {
             padding: 9px 0;
             border-bottom: 1px solid #CCCCCC;
             background-color: #FFF; }
+            header nav ul li:first-child {
+              border-top: 1px solid #CCCCCC; }
             header nav ul li a {
               font-weight: bold;
               float: none; } }
@@ -249,32 +246,41 @@ footer {
   footer .inner-footer {
     max-width: 1220px;
     margin: 0 auto; }
-  footer p {
-    font-size: 12px;
+  footer p,
+  footer a {
+    font-size: 0.75em;
     color: #EEEEEE;
     line-height: 17px;
     margin: 16px 0; }
+  footer nav {
+    display: inline; }
   footer .copyright {
-    width: 60%;
+    width: 75%;
     float: left;
-    margin: 7px 0; }
-    footer .copyright p {
-      float: left; }
+    margin: 20px 0; }
+    footer .copyright p,
+    footer .copyright a {
+      display: inline; }
     footer .copyright ul {
-      float: left;
-      width: 45%;
-      margin-left: 3%; }
+      display: inline;
+      margin-left: 9%; }
       footer .copyright ul li {
-        float: left;
-        margin: 0 5%; }
+        display: inline;
+        padding: 0 2%;
+        border-right: solid 1px #EEEEEE; }
+        footer .copyright ul li:last-child {
+          border-right: none; }
   footer .social {
     float: right; }
     footer .social ul li {
-      height: 63px;
-      float: left; }
+      display: inline; }
       footer .social ul li img {
-        padding-top: 8px; }
-  @media only screen and (max-width: 1030px) {
+        margin: 14px 0;
+        padding: 0px 3px;
+        height: 29px;
+        width: 29px;
+        display: inline-block; }
+  @media only screen and (max-width: 850px) {
     footer {
       height: 170px;
       margin-top: 0px;
@@ -285,29 +291,37 @@ footer {
       footer .social {
         width: 100%; }
       footer .copyright {
+        font-size: 1.1em;
+        margin: 10px 0 0 0;
         position: relative; }
+        footer .copyright ul li {
+          padding: 0 5%; }
         footer .copyright .kstg {
-          text-align: center; }
+          text-align: center;
+          display: block; }
         footer .copyright .nav {
           position: absolute;
           left: 50%;
           top: 50px;
-          margin-left: -125px; }
+          margin-left: -145px; }
       footer .social {
         position: relative;
-        height: auto; }
+        height: auto;
+        bottom: 8px; }
         footer .social ul {
           position: absolute;
           top: 40px;
           left: 50%;
-          margin-left: -160px; }
+          margin-left: -140px; }
           footer .social ul li {
             height: 64px; }
             footer .social ul li img {
-              padding-top: 0px; } }
+              padding-top: 0px;
+              height: 45px;
+              width: 45px; } }
   @media only screen and (max-width: 414px) {
     footer .copyright .nav {
-      margin-left: -110px; } }
+      margin-left: -145px; } }
 
 .homepage-wrapper {
   background-color: #EEEEEE;
@@ -334,7 +348,8 @@ footer {
           padding: 14px 0;
           font-weight: 600;
           color: #EEEEEE;
-          text-align: center; }
+          text-align: center;
+          text-transform: uppercase; }
     .homepage-wrapper section .about {
       background-color: #FFF;
       margin: 25px 0px;
@@ -370,10 +385,8 @@ footer {
         clear: both; }
       .homepage-wrapper aside .aside-wrapper .newsletter,
       .homepage-wrapper aside .aside-wrapper .contact-us {
-        float: left;
-        height: 185px;
-        width: 50%;
-        padding-left: 118px; }
+        display: inline-block;
+        height: 185px; }
         .homepage-wrapper aside .aside-wrapper .newsletter h2,
         .homepage-wrapper aside .aside-wrapper .contact-us h2 {
           margin-bottom: 30px;
@@ -410,50 +423,42 @@ footer {
         line-height: 27px; }
         .homepage-wrapper aside .aside-wrapper .contact-us p span {
           font-weight: 600; }
-  @media only screen and (max-width: 460px) {
+  @media (max-width: 600px) and (min-width: 415px) {
     .homepage-wrapper section {
-      padding: 20px 0 40px; }
-      .homepage-wrapper section .col-1-4 {
-        width: 50%; }
+      padding: 20px 0 0 0; }
       .homepage-wrapper section .gallery-container {
-        margin: 15px 5.8% 30px 5.8%; }
-        .homepage-wrapper section .gallery-container .gallery-corporate img,
-        .homepage-wrapper section .gallery-container .gallery-events img,
-        .homepage-wrapper section .gallery-container .gallery-travel img,
-        .homepage-wrapper section .gallery-container .gallery-wedding img {
-          width: 126px;
-          height: 158px; }
-        .homepage-wrapper section .gallery-container .gallery-corporate a,
-        .homepage-wrapper section .gallery-container .gallery-events a,
-        .homepage-wrapper section .gallery-container .gallery-travel a,
-        .homepage-wrapper section .gallery-container .gallery-wedding a {
-          width: 126px; }
-          .homepage-wrapper section .gallery-container .gallery-corporate a p,
-          .homepage-wrapper section .gallery-container .gallery-events a p,
-          .homepage-wrapper section .gallery-container .gallery-travel a p,
-          .homepage-wrapper section .gallery-container .gallery-wedding a p {
-            padding: 13px 0; }
-          .homepage-wrapper section .gallery-container .gallery-corporate a .events,
-          .homepage-wrapper section .gallery-container .gallery-events a .events,
-          .homepage-wrapper section .gallery-container .gallery-travel a .events,
-          .homepage-wrapper section .gallery-container .gallery-wedding a .events {
-            padding: 7px 0; }
+        margin: 15px 5%; }
+        .homepage-wrapper section .gallery-container div {
+          width: 47.5%;
+          padding: 10px 0; }
+          .homepage-wrapper section .gallery-container div:nth-child(2n) {
+            float: right; }
       .homepage-wrapper section .about {
         margin: 20px 0;
         padding: 20px 8%; }
         .homepage-wrapper section .about .button {
           width: 100%; }
           .homepage-wrapper section .about .button p {
-            text-align: center; }
-    .homepage-wrapper aside .aside-wrapper {
-      padding: 0 5%; }
-      .homepage-wrapper aside .aside-wrapper .newsletter,
-      .homepage-wrapper aside .aside-wrapper .contact-us {
-        width: 100%;
-        margin: 30px 0;
-        padding-left: 0; }
-      .homepage-wrapper aside .aside-wrapper .newsletter form input[type="email"] {
-        width: 270px; } }
+            text-align: center; } }
+  @media (max-width: 414px) {
+    .homepage-wrapper .homepage-wrapper section {
+      padding: 20px 0 0 0; }
+      .homepage-wrapper .homepage-wrapper section .gallery-container {
+        margin: 15px 5%; }
+        .homepage-wrapper .homepage-wrapper section .gallery-container div {
+          width: 47.5%;
+          padding: 10px 0; }
+          .homepage-wrapper .homepage-wrapper section .gallery-container div:nth-child(2n) {
+            float: right; }
+      .homepage-wrapper .homepage-wrapper section .about {
+        margin: 20px 0 0;
+        padding: 50px 8%; }
+        .homepage-wrapper .homepage-wrapper section .about h1 {
+          margin-bottom: 20px;
+          line-height: 25px; }
+        .homepage-wrapper .homepage-wrapper section .about .button {
+          width: 100%;
+          text-align: center; } }
 
 .fleet {
   padding: 3.3%;
@@ -558,5 +563,25 @@ footer {
         .fleet .about .youtube-video .video iframe {
           width: 100%;
           height: 560px; }
+
+.page-template-page-text,
+.page-template-page-faqs {
+  background-color: #EEEEEE; }
+  .page-template-page-text h1,
+  .page-template-page-faqs h1 {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #333333; }
+  .page-template-page-text .container,
+  .page-template-page-faqs .container {
+    max-width: 1220px;
+    width: 95%;
+    margin: 25px auto;
+    box-sizing: border-box; }
+    .page-template-page-text .container.content,
+    .page-template-page-faqs .container.content {
+      padding: 50px 5%;
+      background-color: #FFF;
+      border: 1px solid #CCCCCC; }
 
 /*# sourceMappingURL=style.css.map */
