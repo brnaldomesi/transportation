@@ -101,6 +101,11 @@ a:hover {
   max-width: 100%;
   height: auto; }
 
+.breadcrumbs {
+  font-size: 0.8em;
+  position: absolute;
+  margin: 8px 0px 0px 30px; }
+
 @-webkit-keyframes shake {
   0%, 100% {
     transform: translateX(0); }
