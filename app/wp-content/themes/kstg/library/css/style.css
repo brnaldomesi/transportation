@@ -84,10 +84,14 @@ body {
     color: #333333; }
   @media (max-width: 1024px) and (min-width: 737px) {
     body {
-      font-size: 12px; } }
+      font-size: 12px; }
+      body .footer {
+        font-size: 14px; } }
   @media (max-width: 736px) {
     body {
-      font-size: 12px; } }
+      font-size: 12px; }
+      body .footer {
+        font-size: 14px; } }
 
 a {
   text-decoration: none;
@@ -248,12 +252,15 @@ footer {
     margin: 0 auto; }
   footer p,
   footer a {
-    font-size: 0.75em;
+    font-size: 0.85em;
     color: #EEEEEE;
     line-height: 17px;
     margin: 16px 0; }
   footer nav {
-    display: inline; }
+    display: inline;
+    position: relative;
+    left: 50%;
+    margin-left: -210px; }
   footer .copyright {
     width: 75%;
     float: left;
@@ -262,8 +269,7 @@ footer {
     footer .copyright a {
       display: inline; }
     footer .copyright ul {
-      display: inline;
-      margin-left: 9%; }
+      display: inline; }
       footer .copyright ul li {
         display: inline;
         padding: 0 2%;
@@ -291,26 +297,23 @@ footer {
       footer .social {
         width: 100%; }
       footer .copyright {
-        font-size: 1.1em;
         margin: 10px 0 0 0;
         position: relative; }
         footer .copyright ul li {
-          padding: 0 5%; }
+          padding: 0 2%;
+          top: 20px; }
         footer .copyright .kstg {
           text-align: center;
           display: block; }
-        footer .copyright .nav {
-          position: absolute;
-          left: 50%;
-          top: 50px;
-          margin-left: -145px; }
+        footer .copyright nav {
+          margin-left: -125px; }
       footer .social {
         position: relative;
         height: auto;
         bottom: 8px; }
         footer .social ul {
           position: absolute;
-          top: 40px;
+          top: 20px;
           left: 50%;
           margin-left: -140px; }
           footer .social ul li {
@@ -320,8 +323,8 @@ footer {
               height: 45px;
               width: 45px; } }
   @media only screen and (max-width: 414px) {
-    footer .copyright .nav {
-      margin-left: -145px; } }
+    footer .copyright nav {
+      margin-left: -115px; } }
 
 .homepage-wrapper {
   background-color: #EEEEEE;

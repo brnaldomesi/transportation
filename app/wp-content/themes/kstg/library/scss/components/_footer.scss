@@ -9,13 +9,16 @@ footer {
   background-color: $dark-grey;
   p,
   a {
-    font-size: 0.75em;
+    font-size: 0.85em;
     color: $light-grey;
     line-height: 17px;
     margin: 16px 0;
   }
   nav {
     display: inline;
+    position: relative;
+    left: 50%;
+    margin-left: -210px;
   }
   .copyright {
     width: 75%;
@@ -27,7 +30,6 @@ footer {
     }
     ul {
       display: inline;
-      margin-left: 9%;
       li {
         display: inline;
         padding: 0 2%;
@@ -68,24 +70,21 @@ footer {
       width: 100%;
     }
     .copyright {
-      font-size: 1.1em;
+      // font-size: 1.1em;
       margin: 10px 0 0 0;
       position: relative;
-
       ul {
         li {
-        padding: 0 5%;
+        padding: 0 2%;
+        top: 20px;
         }
       }
       .kstg {
         text-align: center;
         display: block;
       }
-      .nav {
-        position: absolute;
-        left: 50%;
-        top: 50px;
-        margin-left: -145px;
+      nav {
+        margin-left: -125px;
       }
     }
     .social {
@@ -94,7 +93,7 @@ footer {
       bottom: 8px;
       ul {
         position: absolute;
-        top: 40px;
+        top: 20px;
         left: 50%;
         margin-left: -140px;
         li {
@@ -110,8 +109,8 @@ footer {
   }
   @media only screen and (max-width: 414px) {
     .copyright {
-      .nav {
-        margin-left: -145px;
+      nav {
+        margin-left: -115px;
       }
     }
   }
