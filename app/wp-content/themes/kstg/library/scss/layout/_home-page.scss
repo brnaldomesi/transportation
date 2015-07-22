@@ -95,7 +95,7 @@
   /************/
   /** MOBILE **/
   /************/
-  @media (max-width: 600px) and (min-width: 415px)  {
+  @media (max-width: 600px) {
     section {
       padding: 20px 0 0 0;
       .gallery-container {
@@ -109,46 +109,18 @@
         }
       }
       .about {
-
         margin: 20px 0;
         padding: 20px 8%;
         .button {
           width: 100%;
           p {
             text-align: center;
-
           }
         }
       }
     }
-  }
-  @media (max-width: 414px) {
-    .homepage-wrapper {
-      section {
-        padding: 20px 0 0 0;
-        .gallery-container {
-          margin: 15px 5%;
-          div {
-            width: 47.5%;
-            padding: 10px 0;
-            &:nth-child(2n) {
-              float: right;
-            }
-          }
-        }
-        .about {
-          margin: 20px 0 0;
-          padding: 50px 8%;
-          h1 {
-           margin-bottom: 20px;
-           line-height: 25px;
-          }
-         .button {
-          width: 100%;
-          text-align: center;
-          }
-        }
-      }
+    .contact-us {
+      padding-top: 50px;
     }
   }
 }
