@@ -23,7 +23,9 @@
     margin-top: -2px;
     padding: 22px 8.5%;
     .carousel {
-      padding: 0 15%;
+      position: relative;
+      left: 50%;
+      margin-left: -340px;
       display: inline-block;
       button,
       .carousel-images {
@@ -112,4 +114,45 @@
       }
     }
   }
+  /************/
+  /** MOBILE **/
+  /************/
+  @media only screen and (max-width: 800px) {
+    padding: 3.3% 0;
+    h2 {
+      margin: 25px 20px;
+    }
+    .about {
+      padding: 22px 1.5% 0;
+      .carousel {
+        display: none;
+      }
+      p {
+        &.description {
+          margin: 19px 0 15px;
+          padding: 0 3%;
+        }
+      }
+      .button {
+        width: 94%;
+        padding: 0 3%;
+        p {
+          text-align: center;
+        }
+      }
+      .youtube-video {
+        margin: 180px 5% 0;
+        padding-top: 35px;
+        h3 {
+          margin-bottom: 20px
+        }
+        .video {
+          iframe {
+            height: 216px;
+          }
+        }
+      }
+    }
+  }
 }
+
