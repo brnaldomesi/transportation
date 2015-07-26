@@ -46,17 +46,15 @@ if( $childPages ): ?>
 
         if( $vehiclePages ): ?>
 
-          <!-- any markup for the vehicles goes here -->
           <ul>
             <?php foreach( $vehiclePages as $post): ?>
               <?php setup_postdata($post); ?>
-              <li>
+              <a href="<?php echo wp_get_shortlink(); ?>"><li>
                 <h4><?php the_field('vehicle_type'); ?></h4>
                 <img src="<?php echo get_field('hero_image')['url']; ?>" height="200" width="500" />
-              </li>
+              </li></a>
             <?php endforeach; ?>
           </ul>
-          <!-- end of vehicle area -->
 
           <?php wp_reset_postdata(); //reset the context ?>
         <?php endif; // end of vehicle area, php style ?>
