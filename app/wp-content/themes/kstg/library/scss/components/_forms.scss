@@ -14,4 +14,7 @@
     @include shake();
     border: 2px solid red;
   }
+  @media (max-width: 600px) {
+    width: 156%;
+  }
 }

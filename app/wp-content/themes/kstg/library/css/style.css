@@ -72,7 +72,8 @@ body {
     font-size: 1.8em;
     font-weight: bold;
     color: #6A027B;
-    margin-bottom: 25px; }
+    margin-bottom: 25px;
+    line-height: 1.5em; }
   body h2 {
     font-size: 1.2em;
     font-weight: 700; }
@@ -171,7 +172,7 @@ header {
       margin: 15px 25px; }
     header .inner-header nav {
       float: right;
-      padding: 42px 0; }
+      padding: 42px 2% 42px 0; }
       header .inner-header nav ul li {
         float: left;
         padding-left: 3.7em; }
@@ -352,6 +353,8 @@ footer {
         margin-top: -2px;
         display: block;
         background-color: #480A52; }
+        .homepage-wrapper section .gallery-container a:hover {
+          text-decoration: none; }
         .homepage-wrapper section .gallery-container a p {
           padding: 14px 0;
           font-weight: 600;
@@ -360,7 +363,7 @@ footer {
           text-transform: uppercase; }
     .homepage-wrapper section .about {
       background-color: #FFF;
-      margin: 25px 0px;
+      margin: 25px 20px;
       padding: 65px 107px;
       border: 1px solid #DDDDDD; }
       .homepage-wrapper section .about p {
@@ -386,7 +389,7 @@ footer {
     .homepage-wrapper aside .aside-wrapper {
       max-width: 1220px;
       margin: 0 auto;
-      padding: 45px 30px 75px; }
+      padding: 45px 50px 75px; }
       .homepage-wrapper aside .aside-wrapper:after {
         content: "";
         display: table;
@@ -416,6 +419,9 @@ footer {
           -o-animation: shake 0.5s;
           animation: shake 0.5s;
           border: 2px solid red; }
+        @media (max-width: 600px) {
+          .homepage-wrapper aside .aside-wrapper .newsletter input {
+            width: 156%; } }
       .homepage-wrapper aside .aside-wrapper .newsletter button {
         display: block;
         padding: 13px 29px;
@@ -426,7 +432,7 @@ footer {
         font-weight: 600;
         cursor: pointer;
         text-transform: uppercase;
-        margin-top: 34px; }
+        margin-top: 20px; }
       .homepage-wrapper aside .aside-wrapper .contact-us p {
         line-height: 27px; }
         .homepage-wrapper aside .aside-wrapper .contact-us p span {
@@ -441,14 +447,18 @@ footer {
           padding: 10px 0; }
           .homepage-wrapper section .gallery-container div:nth-child(2n) {
             float: right; }
+          .homepage-wrapper section .gallery-container div p {
+            padding: 17px 0; }
       .homepage-wrapper section .about {
         margin: 20px 0;
-        padding: 20px 8%; }
+        padding: 20px 5%; }
         .homepage-wrapper section .about .button {
           width: 100%; }
           .homepage-wrapper section .about .button p {
             text-align: center; }
-    .homepage-wrapper .contact-us {
+    .homepage-wrapper aside .aside-wrapper {
+      padding: 45px 20px 35px; }
+    .homepage-wrapper aside .contact-us {
       padding-top: 50px; } }
 
 .fleet {
@@ -472,7 +482,7 @@ footer {
       display: none; }
   .fleet .about {
     background-color: #FFF;
-    margin: 25px 0px;
+    margin: 25px 20px;
     padding: 65px 107px;
     border: 1px solid #DDDDDD;
     margin-top: -2px;

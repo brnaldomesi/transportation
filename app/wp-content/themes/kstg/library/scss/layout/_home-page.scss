@@ -1,7 +1,7 @@
 //white container
 @mixin white-container {
   background-color: #FFF;
-  margin: 25px 0px;
+  margin: 25px 20px;
   padding: 65px 107px;
   border: 1px solid #DDDDDD;
 }
@@ -26,6 +26,9 @@
         margin-top: -2px;
         display: block;
         background-color: $dark-purple;
+        &:hover {
+          text-decoration: none;
+        }
         p {
           padding: 14px 0;
           font-weight: 600;
@@ -57,7 +60,7 @@
     .aside-wrapper {
       max-width: 1220px;
       margin: 0 auto;
-      padding: 45px 30px 75px;
+      padding: 45px 50px 75px;
       @include clearfix();
       .newsletter,
       .contact-us {
@@ -79,7 +82,7 @@
         }
         button {
           @include standard-button;
-          margin-top: 34px;
+          margin-top: 20px;
         }
       }
       .contact-us {
@@ -106,11 +109,14 @@
           &:nth-child(2n) {
             float: right;
           }
+          p {
+            padding: 17px 0;
+          }
         }
       }
       .about {
         margin: 20px 0;
-        padding: 20px 8%;
+        padding: 20px 5%;
         .button {
           width: 100%;
           p {
@@ -119,8 +125,13 @@
         }
       }
     }
-    .contact-us {
-      padding-top: 50px;
+    aside {
+      .aside-wrapper {
+        padding: 45px 20px 35px;
+      }
+      .contact-us {
+        padding-top: 50px;
+      }
     }
   }
 }
