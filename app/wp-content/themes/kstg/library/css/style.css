@@ -431,7 +431,7 @@ footer {
         line-height: 27px; }
         .homepage-wrapper aside .aside-wrapper .contact-us p span {
           font-weight: 600; }
-  @media (max-width: 600px) and (min-width: 415px) {
+  @media (max-width: 600px) {
     .homepage-wrapper section {
       padding: 20px 0 0 0; }
       .homepage-wrapper section .gallery-container {
@@ -447,26 +447,9 @@ footer {
         .homepage-wrapper section .about .button {
           width: 100%; }
           .homepage-wrapper section .about .button p {
-            text-align: center; } }
-  @media (max-width: 414px) {
-    .homepage-wrapper .homepage-wrapper section {
-      padding: 20px 0 0 0; }
-      .homepage-wrapper .homepage-wrapper section .gallery-container {
-        margin: 15px 5%; }
-        .homepage-wrapper .homepage-wrapper section .gallery-container div {
-          width: 47.5%;
-          padding: 10px 0; }
-          .homepage-wrapper .homepage-wrapper section .gallery-container div:nth-child(2n) {
-            float: right; }
-      .homepage-wrapper .homepage-wrapper section .about {
-        margin: 20px 0 0;
-        padding: 50px 8%; }
-        .homepage-wrapper .homepage-wrapper section .about h1 {
-          margin-bottom: 20px;
-          line-height: 25px; }
-        .homepage-wrapper .homepage-wrapper section .about .button {
-          width: 100%;
-          text-align: center; } }
+            text-align: center; }
+    .homepage-wrapper .contact-us {
+      padding-top: 50px; } }
 
 .fleet {
   padding: 3.3%;
