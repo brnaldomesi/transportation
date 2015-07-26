@@ -421,7 +421,7 @@ footer {
           border: 2px solid red; }
         @media (max-width: 600px) {
           .homepage-wrapper aside .aside-wrapper .newsletter input {
-            width: 156%; } }
+            width: 96%; } }
       .homepage-wrapper aside .aside-wrapper .newsletter button {
         display: block;
         padding: 13px 29px;
@@ -458,6 +458,8 @@ footer {
             text-align: center; }
     .homepage-wrapper aside .aside-wrapper {
       padding: 45px 20px 35px; }
+      .homepage-wrapper aside .aside-wrapper .col-1-2 {
+        width: 100%; }
     .homepage-wrapper aside .contact-us {
       padding-top: 50px; } }
 
