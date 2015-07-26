@@ -60,7 +60,7 @@
     .aside-wrapper {
       max-width: 1220px;
       margin: 0 auto;
-      padding: 45px 50px 75px;
+      padding: 45px 13% 75px;
       @include clearfix();
       .newsletter,
       .contact-us {
@@ -86,6 +86,7 @@
         }
       }
       .contact-us {
+        padding-left:100px;
         p {
           line-height: 27px;
           span {
@@ -131,9 +132,9 @@
         .col-1-2 {
           width: 100%;
         }
-      }
-      .contact-us {
-        padding-top: 50px;
+        .contact-us {
+          padding: 50px 0 0 0;
+        }
       }
     }
   }

@@ -389,7 +389,7 @@ footer {
     .homepage-wrapper aside .aside-wrapper {
       max-width: 1220px;
       margin: 0 auto;
-      padding: 45px 50px 75px; }
+      padding: 45px 13% 75px; }
       .homepage-wrapper aside .aside-wrapper:after {
         content: "";
         display: table;
@@ -433,10 +433,12 @@ footer {
         cursor: pointer;
         text-transform: uppercase;
         margin-top: 20px; }
-      .homepage-wrapper aside .aside-wrapper .contact-us p {
-        line-height: 27px; }
-        .homepage-wrapper aside .aside-wrapper .contact-us p span {
-          font-weight: 600; }
+      .homepage-wrapper aside .aside-wrapper .contact-us {
+        padding-left: 100px; }
+        .homepage-wrapper aside .aside-wrapper .contact-us p {
+          line-height: 27px; }
+          .homepage-wrapper aside .aside-wrapper .contact-us p span {
+            font-weight: 600; }
   @media (max-width: 600px) {
     .homepage-wrapper section {
       padding: 20px 0 0 0; }
@@ -460,8 +462,8 @@ footer {
       padding: 45px 20px 35px; }
       .homepage-wrapper aside .aside-wrapper .col-1-2 {
         width: 100%; }
-    .homepage-wrapper aside .contact-us {
-      padding-top: 50px; } }
+      .homepage-wrapper aside .aside-wrapper .contact-us {
+        padding: 50px 0 0 0; } }
 
 .fleet {
   padding: 3.3%;
