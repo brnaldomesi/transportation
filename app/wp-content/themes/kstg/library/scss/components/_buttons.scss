@@ -15,8 +15,8 @@
 }
 
 //Overrides for edgecases "look like button" type elements
-.no-underline {
-    a:hover {
+a:hover {
+  &.no-underline {
     text-decoration: none;
   }
 }

@@ -146,7 +146,7 @@ a:hover {
 /**
  * Styles for all sorts of buttons
  */
-.no-underline a:hover {
+a:hover.no-underline {
   text-decoration: none; }
 
 p.uppercase {
@@ -353,8 +353,6 @@ footer {
         margin-top: -2px;
         display: block;
         background-color: #480A52; }
-        .homepage-wrapper section .gallery-container a:hover {
-          text-decoration: none; }
         .homepage-wrapper section .gallery-container a p {
           padding: 14px 0;
           font-weight: 600;
