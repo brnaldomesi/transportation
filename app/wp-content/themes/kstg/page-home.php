@@ -64,7 +64,7 @@
         <p><?php the_field('mailing_address'); ?></p>
         <br />
         <p><?php the_field('phone_number'); ?></p>
-        <p><?php the_field('email_address'); ?></p>
+        <a href="mailto:<?php the_field('email_address'); ?>"><p><?php the_field('email_address'); ?></p></a>
       </div>
     </div>
   </aside>
