@@ -420,7 +420,7 @@ footer {
           -o-animation: shake 0.5s;
           animation: shake 0.5s;
           border: 2px solid red; }
-        @media (max-width: 600px) {
+        @media (max-width: 768px) {
           .homepage-wrapper aside .aside-wrapper .newsletter input {
             width: 96%; } }
       .homepage-wrapper aside .aside-wrapper .newsletter button {
@@ -440,7 +440,7 @@ footer {
           line-height: 27px; }
           .homepage-wrapper aside .aside-wrapper .contact-us p span {
             font-weight: 600; }
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     .homepage-wrapper section {
       padding: 20px 0 0 0; }
       .homepage-wrapper section .gallery-container {
@@ -460,7 +460,7 @@ footer {
           .homepage-wrapper section .about .button p {
             text-align: center; }
     .homepage-wrapper aside .aside-wrapper {
-      padding: 45px 20px 35px; }
+      padding: 45px 20px 55px; }
       .homepage-wrapper aside .aside-wrapper .col-1-2 {
         width: 100%; }
       .homepage-wrapper aside .aside-wrapper .contact-us {

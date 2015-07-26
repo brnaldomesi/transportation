@@ -96,7 +96,7 @@
   /************/
   /** MOBILE **/
   /************/
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     section {
       padding: 20px 0 0 0;
       .gallery-container {
@@ -125,7 +125,7 @@
     }
     aside {
       .aside-wrapper {
-        padding: 45px 20px 35px;
+        padding: 45px 20px 55px;
         .col-1-2 {
           width: 100%;
         }
