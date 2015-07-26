@@ -22,13 +22,20 @@ body {
     font-size: 1em;
     color: $dark-grey;
   }
+
   //tablet
   @media (max-width: 1024px)
   and (min-width: 737px) {
     font-size: 12px;
+    .footer {
+      font-size: 14px;
+    }
   }
   //phone
   @media (max-width: 736px) {
     font-size: 12px;
+    .footer {
+      font-size: 14px;
+    }
   }
 }
