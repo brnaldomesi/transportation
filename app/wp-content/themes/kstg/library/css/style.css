@@ -274,6 +274,9 @@ footer {
     footer .copyright p,
     footer .copyright a {
       display: inline; }
+      footer .copyright p:hover,
+      footer .copyright a:hover {
+        color: #EEEEEE; }
     footer .copyright ul {
       display: inline; }
       footer .copyright ul li {
