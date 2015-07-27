@@ -7,7 +7,7 @@
 */
  ?>
 
- <?php $heroimage = get_field('hero_image'); ?>
+<?php $heroimage = get_field('hero_image'); ?>
 <?php $image1 = get_field('image_carousel_1'); ?>
 <?php $image2 = get_field('image_carousel_2'); ?>
 <?php $image3 = get_field('image_carousel_3'); ?>
@@ -16,9 +16,9 @@
 <?php $image6 = get_field('image_carousel_6'); ?>
 
 <?php get_header(); ?>
-<div id="fleet" class="fleet">
+<div id="vehicle" class="vehicle">
   <h2><?php the_field('vehicle_type'); ?></h2>
-  <div class="fleet-hero">
+  <div class="vehicle-hero">
     <img src="<?php echo $heroimage['url'] ?>" />
     <div class="special-feature"><?php the_field('special_feature'); ?></div>
   </div>
