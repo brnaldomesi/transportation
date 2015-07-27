@@ -1,6 +1,8 @@
 .fleet {
   background-color: $light-grey;
+  clear: both;
   h2 {
+    padding: 50px 2% 0;
     font-size: 1.2em;
     font-weight: 700;
     color: $dark-grey;
@@ -16,4 +18,5 @@
       border: 1px solid $medium-grey;
     }
   }
+
 }

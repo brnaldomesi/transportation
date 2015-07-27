@@ -32,7 +32,7 @@
       ?>
 
       <!-- any markup for the subcats goes here (e.g. the heading) -->
-      <h1><?php the_title(); ?></h1>
+      <h3 class="uppercase purple-text"><?php the_title(); ?></h3>
 
         <?php
         // now, we need the actual vehicles, all pages that are a child of the
@@ -47,8 +47,8 @@
           <?php foreach( $vehiclePages as $post): ?>
           <?php setup_postdata($post); ?>
           <a href="<?php echo wp_get_shortlink(); ?>"><li>
-            <h3><?php the_field('vehicle_type'); ?></h3>
             <img src="<?php echo get_field('hero_image')['url']; ?>" height="200" width="500" />
+            <h4 class="uppercase"><?php the_field('vehicle_type'); ?></h4>
           </li></a>
           <?php endforeach; ?>
         </ul>
