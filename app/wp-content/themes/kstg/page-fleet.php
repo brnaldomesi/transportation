@@ -47,7 +47,7 @@
           <?php foreach( $vehiclePages as $post): ?>
           <?php setup_postdata($post); ?>
           <a href="<?php echo wp_get_shortlink(); ?>"><li>
-            <img src="<?php echo get_field('hero_image')['url']; ?>" height="200" width="500" />
+            <img class="fluid-images" src="<?php echo get_field('hero_image')['url']; ?>" height="200" width="500" />
             <h4 class="uppercase"><?php the_field('vehicle_type'); ?></h4>
           </li></a>
           <?php endforeach; ?>
