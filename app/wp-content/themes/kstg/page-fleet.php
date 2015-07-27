@@ -46,10 +46,10 @@
         <ul>
           <?php foreach( $vehiclePages as $post): ?>
           <?php setup_postdata($post); ?>
-          <a href="<?php echo wp_get_shortlink(); ?>"><li>
-            <img class="fluid-images" src="<?php echo get_field('hero_image')['url']; ?>" height="200" width="500" />
+          <li><a href="<?php echo wp_get_shortlink(); ?>">
+            <img class="fluid-images" src="<?php echo get_field('hero_image')['url']; ?>" />
             <h4 class="uppercase"><?php the_field('vehicle_type'); ?> &#8594;</h4>
-          </li></a>
+          </a></li>
           <?php endforeach; ?>
         </ul>
 

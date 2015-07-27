@@ -12,6 +12,8 @@ body {
   h2 {
     font-size: 1.2em;
     font-weight: 700;
+    padding: 50px 2.5% 0;
+    color: $dark-grey;
   }
   h3 {
     font-size: 1em;
@@ -37,6 +39,9 @@ body {
   @media (max-width: 1024px)
   and (min-width: 737px) {
     font-size: 12px;
+    h2 {
+      padding: 30px 6.5% 0;
+    }
     .footer {
       font-size: 14px;
     }
@@ -44,6 +49,9 @@ body {
   //phone
   @media (max-width: 736px) {
     font-size: 12px;
+    h2 {
+      padding: 30px 6.5% 0;
+    }
     .footer {
       font-size: 14px;
     }

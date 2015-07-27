@@ -20,5 +20,13 @@ a:hover {
 .breadcrumbs {
   font-size: 0.8em;
   position: absolute;
-  margin: 8px 0px 0px 30px;
+  margin: 20px 0px 0px 7%;
+}
+/************/
+/** MOBILE **/
+/************/
+@media (max-width: 1024px) {
+  .breadcrumbs {
+    display: none;
+  }
 }
