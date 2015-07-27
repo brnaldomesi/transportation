@@ -48,7 +48,7 @@
           <?php setup_postdata($post); ?>
           <a href="<?php echo wp_get_shortlink(); ?>"><li>
             <img class="fluid-images" src="<?php echo get_field('hero_image')['url']; ?>" height="200" width="500" />
-            <h4 class="uppercase"><?php the_field('vehicle_type'); ?></h4>
+            <h4 class="uppercase"><?php the_field('vehicle_type'); ?> &#8594;</h4>
           </li></a>
           <?php endforeach; ?>
         </ul>
