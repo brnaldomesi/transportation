@@ -1,7 +1,7 @@
 //white container
 @mixin white-container {
   background-color: #FFF;
-  margin: 25px 0px;
+  margin: 25px 20px;
   padding: 65px 107px;
   border: 1px solid #DDDDDD;
 }
@@ -57,7 +57,7 @@
     .aside-wrapper {
       max-width: 1220px;
       margin: 0 auto;
-      padding: 45px 30px 75px;
+      padding: 45px 13% 75px;
       @include clearfix();
       .newsletter,
       .contact-us {
@@ -79,10 +79,11 @@
         }
         button {
           @include standard-button;
-          margin-top: 34px;
+          margin-top: 20px;
         }
       }
       .contact-us {
+        padding-left:100px;
         p {
           line-height: 27px;
           span {
@@ -95,7 +96,7 @@
   /************/
   /** MOBILE **/
   /************/
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     section {
       padding: 20px 0 0 0;
       .gallery-container {
@@ -106,11 +107,14 @@
           &:nth-child(2n) {
             float: right;
           }
+          p {
+            padding: 17px 0;
+          }
         }
       }
       .about {
         margin: 20px 0;
-        padding: 20px 8%;
+        padding: 20px 5%;
         .button {
           width: 100%;
           p {
@@ -119,8 +123,16 @@
         }
       }
     }
-    .contact-us {
-      padding-top: 50px;
+    aside {
+      .aside-wrapper {
+        padding: 45px 20px 55px;
+        .col-1-2 {
+          width: 100%;
+        }
+        .contact-us {
+          padding: 50px 0 0 0;
+        }
+      }
     }
   }
 }
