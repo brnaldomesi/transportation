@@ -1,0 +1,82 @@
+.services {
+  padding: 0 5% 80px;
+  background-color: $light-grey;
+  clear: both;
+  .container {
+    max-width: 1220px;
+    width: 95%;
+    margin: 0 auto 0;
+    box-sizing: border-box;
+    &.content {
+      padding:  80px 8% 25px;
+      background-color: #FFF;
+      border: 1px solid $medium-grey;
+    }
+  }
+  .services-hero {
+    width: 95%;
+    position: relative;
+    margin: 25px auto 0;
+    img {
+      width: 100%;
+    }
+  }
+  p {
+    &.description {
+      clear: both;
+      margin: 25px 0 55px;
+      line-height: 23px;
+    }
+  }
+  ul {
+    @include clearfix();
+    margin: 20px 0 50px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    padding-bottom: 35px;
+    border-bottom: 2px $medium-grey solid;
+    li {
+      float: left;
+      width: 32%;
+      padding-right: 2%;
+      &:nth-child(3n) {
+        padding-right: 0;
+      }
+    }
+  }
+  .quote-form {
+    padding-top: 30px;
+    ul {
+      border-bottom: 0;
+      li {
+        &.form-layout {
+          padding-top: 45px;
+        }
+      }
+    }
+  }
+  label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  input,
+  textarea {
+    @include text-field;
+    border: 1px solid $medium-grey;
+  }
+  input {
+    height: 40px;
+    margin-bottom: 15px;
+  }
+  textarea {
+    height: 140px;
+    width: 95%;
+  }
+  button {
+    @include standard-button;
+    margin-top: 20px;
+  }
+
+}
