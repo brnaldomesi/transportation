@@ -11,6 +11,13 @@
     img {
       width: 100%;
       height: auto;
+      &.callout {
+        display: none;
+        width: 110px;
+        position: absolute;
+        top: 0;
+        right: 75px;
+      }
     }
     .special-feature {
       color: $white;
