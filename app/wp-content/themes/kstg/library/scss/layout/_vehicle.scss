@@ -2,17 +2,6 @@
   padding: 0 5% 80px;
   background-color: $light-grey;
   clear: both;
-  .container {
-    max-width: 1220px;
-    width: 95%;
-    margin: 0 auto;
-    box-sizing: border-box;
-    &.content {
-      padding:  80px 8% 45px;
-      background-color: #FFF;
-      border: 1px solid $medium-grey;
-    }
-  }
   .vehicle-hero {
     width: 95%;
     position: relative;
