@@ -3,14 +3,14 @@ var $galleryImages = $('.carousel-images ul li');
 var $prev = $('.carousel .prev');
 var $next = $('.carousel .next');
 var counter = 0;
-var $calloutValue = $('.specialFeature').text();
+var calloutValue = $('.specialFeature').text();
 
   $(document).ready(function() {
 
     function displayCallout() {
-      if ($calloutValue === 'Most popular') {
+      if (calloutValue === 'Most popular') {
         $('#popular').css('display', 'block');
-      } else if ($calloutValue === 'New arrival') {
+      } else if (calloutValue === 'New arrival') {
         $('#new').css('display', 'block');
       }
     }
