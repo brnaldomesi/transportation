@@ -25,13 +25,23 @@ header {
         li {
           float: left;
           padding-left: 3.7em;
+          &.current_page_item {
+            a {
+              color: $purple-text;
+              text-decoration: underline;
+            }
+          }
           a {
             font-weight: bold;
             font-size: 1.2em;
             text-transform: uppercase;
-          }
-          a:hover {
-            color: $purple;
+            &:hover {
+              color: $purple;
+            }
+            &:active {
+              color: $purple-text;
+              text-decoration: underline;
+            }
           }
         }
       }
