@@ -7,14 +7,9 @@
     color: $dark-grey;
   }
   .container {
-    max-width: 1220px;
-    width: 95%;
     margin: 25px auto;
-    box-sizing: border-box;
     &.content {
       padding:  50px 5%;
-      background-color: #FFF;
-      border: 1px solid $medium-grey;
     }
   }
 }
