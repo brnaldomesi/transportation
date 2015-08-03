@@ -120,6 +120,15 @@ header {
     }
   }
 }
+.breadcrumbs {
+  span {
+    &:last-child {
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+}
 
 
 

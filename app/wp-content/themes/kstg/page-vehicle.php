@@ -18,7 +18,7 @@
 <?php get_header(); ?>
 <div id="vehicle" class="vehicle">
   <h2><?php the_field('vehicle_type'); ?></h2>
-  <div class="vehicle-hero">
+  <div class="vehicle-hero container">
     <img src="<?php echo $heroimage['url'] ?>" />
     <div>
       <div class="specialFeature"><?php the_field('special_feature'); ?></div>
@@ -55,13 +55,13 @@
     </div>
     <p class="description"><?php the_field('vehicle_description'); ?></p>
     <div class="button">
-      <a href=""><p>Get a quote &#8594;</p></a>
+      <a href=""><p class="uppercase">Get a quote &#8594;</p></a>
     </div>
     <div class="button">
-      <a href=""><p>Make a reservation &#8594;</p></a>
+      <a href=""><p class="uppercase">Make a reservation &#8594;</p></a>
     </div>
     <div class="youtube-video">
-      <h3>Video Vehicle Tour</h3>
+      <h3 class="uppercase">Video Vehicle Tour</h3>
       <p><?php the_field('video_description'); ?></p>
       <div class="video">
         <?php the_field('youtube_embed_code'); ?>
