@@ -3,14 +3,9 @@
   background-color: $light-grey;
   clear: both;
   .container {
-    max-width: 1220px;
-    width: 95%;
     margin: 25px auto 0;
-    box-sizing: border-box;
     &.content {
       padding:  80px 8% 25px;
-      background-color: #FFF;
-      border: 1px solid $medium-grey;
     }
   }
   ul {
