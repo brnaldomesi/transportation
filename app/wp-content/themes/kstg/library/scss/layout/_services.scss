@@ -46,13 +46,14 @@
     }
   }
   .quote-form {
-    padding-top: 30px;
-    ul {
+    padding: 30px 0;
+    display: inline-block;
+    fieldset {
       border-bottom: 0;
-      li {
-        &.form-layout {
-          padding-top: 45px;
-        }
+      float: left;
+      width: 32%;
+      &.form-layout {
+        padding-top: 45px;
       }
     }
   }

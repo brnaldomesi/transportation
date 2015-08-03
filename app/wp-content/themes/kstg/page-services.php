@@ -34,30 +34,22 @@
           <?php endif; ?>
         </ul>
       </div>
-      <div class="quote-form">
-        <ul>
-          <li>
-            <h3 class="uppercase purple-text">Get a Quote!</h3>
-            <p class="description">Have a question about this or any vehicle in our fleet?<br />
-              Send us a message with the vehicle name plus details of your needs and we'll get back to you within 1 business day!</p>
-          </li>
-          <li class="form-layout">
-            <form action="">
-            <label>Your Name</label>
-            <input type="text" value="" name="name">
-            <label>Your Email Address</label>
-            <input type="email" value="" name="email">
-            <label>Subject Line</label>
-            <input type="text" value="" name="subject">
-          </li>
-          <li class="form-layout">
-            <label>Your Message</label>
-            <textarea  name="message" rows="10" cols="50"></textarea>
-            <button name="subscribe" class="button no-underline">Get a Quote &#8594;</button>
-            </form>
-          </li>
-        </ul>
-      </div>
+      <form class="quote-form">
+        <fieldset class="form-layout">
+          <h3 class="uppercase purple-text">Get a Quote!</h3>
+          <p class="description">Have a question about this or any vehicle in our fleet?<br />
+            Send us a message with the vehicle name plus details of your needs and we'll get back to you within 1 business day!</p>
+        </fieldset>
+        <fieldset class="form-layout">
+          <label>Your Name</label><input type="text" value="" name="name">
+          <label>Your Email Address</label><input type="email" value="" name="email">
+          <label>Subject Line</label><input type="text" value="" name="subject">
+        </fieldset>
+        <fieldset class="form-layout">
+          <label>Your Message</label><textarea  name="message" rows="10" cols="50"></textarea>
+          <button name="subscribe" class="button no-underline">Get a Quote &#8594;</button>
+        </fieldset>
+      </form>
     </div>
   </div>
 <?php get_footer(); ?>
