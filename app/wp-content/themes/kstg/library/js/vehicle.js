@@ -6,13 +6,11 @@ var counter = 0;
 var $calloutValue = $('.specialFeature').text();
 
   $(document).ready(function() {
+
     function displayCallout() {
-      console.log($calloutValue);
       if ($calloutValue === 'Most popular') {
-        console.log('popular');
         $('#popular').css('display', 'block');
-      } else if ($calloutValue === 'New Arrival') {
-        console.log('new');
+      } else if ($calloutValue === 'New arrival') {
         $('#new').css('display', 'block');
       }
     }

@@ -20,8 +20,8 @@
   <h2><?php the_field('vehicle_type'); ?></h2>
   <div class="vehicle-hero">
     <img src="<?php echo $heroimage['url'] ?>" />
-    <div class="specialFeature">
-      <?php the_field('special_feature'); ?>
+    <div>
+      <div class="specialFeature"><?php the_field('special_feature'); ?></div>
       <img class="fluid-images callout" id="popular" src="<?php bloginfo('template_url'); ?>/library/images/callout-most-popular.svg" alt="Facebook" width="110px" />
       <img class="fluid-images callout" id="new" src="<?php bloginfo('template_url'); ?>/library/images/callout-new-arrival.svg" alt="Facebook"  width="110px" />
     </div>
