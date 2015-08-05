@@ -5,6 +5,19 @@ var $next = $('.carousel .next');
 var counter = 0;
 
   $(document).ready(function() {
+
+    //function for changing hero image
+
+    //function for highlighting selected image in carousel
+    function setActiveImage(event) {
+      var currentImage = $('ul').find('.borderSelector').toggleClass('borderSelector');
+      console.log(currentImage);
+      var $getImage = (event.target.id);
+      $(this).toggleClass('borderSelector');
+      console.log(this);
+    }
+
+    // Handles gallery scrolling behaviour and button state
     function changeActiveClassNext() {
       $next.eq(counter + 3).removeClass('active');
       $next.eq(counter).addClass('active');
@@ -31,31 +44,36 @@ var counter = 0;
         $('.next').prop('disabled', false);
       }
     }
+    function setEventListeners() {
+      $('.next').on('click', function() {
+        console.log(counter);
+        counter++;
+        changeActiveClassNext();
+        changeButtonState();
+        $('ul').animate({
+          left: '-=210'
+        }, 500);
+      });
 
-    $('.next').on('click', function() {
-      console.log(counter);
-      counter++;
-      changeActiveClassNext();
-      changeButtonState();
-      $('ul').animate({
-        left: '-=210'
-      }, 500);
-    });
+      $('.prev').on('click', function() {
+        counter--;
+        changeActiveClassPrev();
+        changeButtonState();
+        if (counter === 0) {
+          $(this).prop('disabled', true);
+        } else {
+          $(this).prop('disabled', false);
+        }
+        $('ul').animate({
+          left: '+=210'
+        }, 500);
+      });
 
-    $('.prev').on('click', function() {
-      counter--;
-      changeActiveClassPrev();
-      changeButtonState();
-      if (counter === 0) {
-        $(this).prop('disabled', true);
-      } else {
-        $(this).prop('disabled', false);
-      }
-      $('ul').animate({
-        left: '+=210'
-      }, 500);
-    });
+      //event handler for image selection
+      $('img').on('click', setActiveImage)
+    }
   changeButtonState()
+  setEventListeners()
   });
 
 })(jQuery);

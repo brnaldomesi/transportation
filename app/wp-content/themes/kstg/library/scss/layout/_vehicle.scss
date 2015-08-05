@@ -1,4 +1,8 @@
 .vehicle {
+  .borderSelector {
+    border: 5px solid $purple-text;
+    box-sizing: border-box;
+  }
   padding: 0 5% 80px;
   background-color: $light-grey;
   clear: both;

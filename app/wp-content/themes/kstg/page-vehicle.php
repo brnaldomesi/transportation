@@ -28,22 +28,22 @@
       <div class="carousel-images">
         <ul>
           <?php if( !empty($image1) ): ?>
-            <li><img src="<?php echo $image1['url']; ?>" alt="<?php echo $image1['alt']; ?>" width="200px" height="100px" /></li>
+            <li><img id="img1" src="<?php echo $image1['url']; ?>" alt="<?php echo $image1['alt']; ?>" width="200px" height="100px" /></li>
           <?php endif; ?>
           <?php if( !empty($image2) ): ?>
-            <li><img src="<?php echo $image2['url']; ?>" alt="<?php echo $image2['alt']; ?>" width="200px" height="100px" /></li>
+            <li><img id="img2" src="<?php echo $image2['url']; ?>" alt="<?php echo $image2['alt']; ?>" width="200px" height="100px" /></li>
           <?php endif; ?>
           <?php if( !empty($image3) ): ?>
-            <li><img src="<?php echo $image3['url']; ?>" alt="<?php echo $image3['alt']; ?>" width="200px" height="100px" /></li>
+            <li><img id="img3" src="<?php echo $image3['url']; ?>" alt="<?php echo $image3['alt']; ?>" width="200px" height="100px" /></li>
           <?php endif; ?>
           <?php if( !empty($image4) ): ?>
-            <li><img src="<?php echo $image4['url']; ?>" alt="<?php echo $image4['alt']; ?>" width="200px" height="100px" /></li>
+            <li><img id="img4" src="<?php echo $image4['url']; ?>" alt="<?php echo $image4['alt']; ?>" width="200px" height="100px" /></li>
           <?php endif; ?>
           <?php if( !empty($image5) ): ?>
-            <li><img src="<?php echo $image5['url']; ?>" alt="<?php echo $image5['alt']; ?>" width="200px" height="100px" /></li>
+            <li><img id="img5" src="<?php echo $image5['url']; ?>" alt="<?php echo $image5['alt']; ?>" width="200px" height="100px" /></li>
           <?php endif; ?>
           <?php if( !empty($image6) ): ?>
-            <li><img src="<?php echo $image6['url']; ?>" alt="<?php echo $image6['alt']; ?>" width="200px" height="100px" /></li>
+            <li><img id="img6" src="<?php echo $image6['url']; ?>" alt="<?php echo $image6['alt']; ?>" width="200px" height="100px" /></li>
           <?php endif; ?>
         </ul>
       </div>
