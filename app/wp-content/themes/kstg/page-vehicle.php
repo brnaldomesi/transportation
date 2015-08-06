@@ -19,7 +19,7 @@
 <div id="vehicle" class="vehicle">
   <h2><?php the_field('vehicle_type'); ?></h2>
   <div class="vehicle-hero container">
-    <img src="<?php echo $heroimage['url'] ?>" />
+    <img src="<?php echo $heroimage['sizes']['hero-image'] ?>" />
     <div class="special-feature"><?php the_field('special_feature'); ?></div>
   </div>
   <div class="container content about">
@@ -28,22 +28,22 @@
       <div class="carousel-images">
         <ul>
           <?php if( !empty($image1) ): ?>
-            <li><img src="<?php echo $image1['url']; ?>" alt="<?php echo $image1['alt']; ?>" width="200px" height="100px" /></li>
+            <li><img src="<?php echo $image1['sizes']['gallery-thumb']; ?>" alt="<?php echo $image1['alt']; ?>" width="200px" height="100px" /></li>
           <?php endif; ?>
           <?php if( !empty($image2) ): ?>
-            <li><img src="<?php echo $image2['url']; ?>" alt="<?php echo $image2['alt']; ?>" width="200px" height="100px" /></li>
+            <li><img src="<?php echo $image2['sizes']['gallery-thumb']; ?>" alt="<?php echo $image2['alt']; ?>" width="200px" height="100px" /></li>
           <?php endif; ?>
           <?php if( !empty($image3) ): ?>
-            <li><img src="<?php echo $image3['url']; ?>" alt="<?php echo $image3['alt']; ?>" width="200px" height="100px" /></li>
+            <li><img src="<?php echo $image3['sizes']['gallery-thumb']; ?>" alt="<?php echo $image3['alt']; ?>" width="200px" height="100px" /></li>
           <?php endif; ?>
           <?php if( !empty($image4) ): ?>
-            <li><img src="<?php echo $image4['url']; ?>" alt="<?php echo $image4['alt']; ?>" width="200px" height="100px" /></li>
+            <li><img src="<?php echo $image4['sizes']['gallery-thumb']; ?>" alt="<?php echo $image4['alt']; ?>" width="200px" height="100px" /></li>
           <?php endif; ?>
           <?php if( !empty($image5) ): ?>
-            <li><img src="<?php echo $image5['url']; ?>" alt="<?php echo $image5['alt']; ?>" width="200px" height="100px" /></li>
+            <li><img src="<?php echo $image5['sizes']['gallery-thumb']; ?>" alt="<?php echo $image5['alt']; ?>" width="200px" height="100px" /></li>
           <?php endif; ?>
           <?php if( !empty($image6) ): ?>
-            <li><img src="<?php echo $image6['url']; ?>" alt="<?php echo $image6['alt']; ?>" width="200px" height="100px" /></li>
+            <li><img src="<?php echo $image6['sizes']['gallery-thumb']; ?>" alt="<?php echo $image6['alt']; ?>" width="200px" height="100px" /></li>
           <?php endif; ?>
         </ul>
       </div>
