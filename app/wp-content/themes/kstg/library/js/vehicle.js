@@ -3,8 +3,18 @@ var $galleryImages = $('.carousel-images ul li');
 var $prev = $('.carousel .prev');
 var $next = $('.carousel .next');
 var counter = 0;
+var calloutValue = $('.specialFeature').text();
 
   $(document).ready(function() {
+
+    function displayCallout() {
+      if (calloutValue === 'Most popular') {
+        $('#popular').css('display', 'block');
+      } else if (calloutValue === 'New arrival') {
+        $('#new').css('display', 'block');
+      }
+    }
+
     function changeActiveClassNext() {
       $next.eq(counter + 3).removeClass('active');
       $next.eq(counter).addClass('active');
@@ -55,6 +65,7 @@ var counter = 0;
         left: '+=210'
       }, 500);
     });
+  displayCallout()
   changeButtonState()
   });
 
