@@ -100,10 +100,10 @@ you like. Enjoy!
 add_filter( 'image_size_names_choose', 'bones_custom_image_sizes' );
 
 function bones_custom_image_sizes( $sizes ) {
-    return array_merge( $sizes, array(
-        'bones-thumb-600' => __('600px by 150px'),
-        'bones-thumb-300' => __('300px by 100px'),
-    ) );
+    $custom_sizes = array(
+        'featured-image' => 'Featured Image'
+    );
+    return array_merge( $sizes, $custom_sizes );
 }
 
 /*
