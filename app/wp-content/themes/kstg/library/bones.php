@@ -142,7 +142,7 @@ function bones_scripts_and_styles() {
 
 		//adding scripts file in the footer
     wp_register_script( 'validation-js', get_stylesheet_directory_uri() . '/library/js/validation.js', '', '', true );
-    wp_register_script( 'fleet-js', get_template_directory_uri() . '/library/js/fleet.js', array('jquery'), '', true);
+    wp_register_script( 'vehicle-js', get_template_directory_uri() . '/library/js/vehicle.js', array('jquery'), '', true);
     wp_register_script( 'bones-js', get_stylesheet_directory_uri() . '/library/js/scripts.js', array( 'jquery' ), '', true );
 
     // page specific js
@@ -151,7 +151,7 @@ function bones_scripts_and_styles() {
       wp_enqueue_script( 'homepage-js' );
     }
     if ( is_page_template( 'page-vehicle.php' ) ) {
-      wp_enqueue_script( 'fleet-js' );
+      wp_enqueue_script( 'vehicle-js' );
     }
 
 

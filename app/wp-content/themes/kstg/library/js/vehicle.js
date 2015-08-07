@@ -3,8 +3,25 @@ var $galleryImages = $('.carousel-images ul li');
 var $prev = $('.carousel .prev');
 var $next = $('.carousel .next');
 var counter = 0;
+var calloutValue = $('.specialFeature').text();
 
   $(document).ready(function() {
+
+    //on click get id of thumbnail image
+    //border - DONE
+    //get hero img id
+    //delete hero imgString
+    // var imgString = '<img src="<?php echo $image1['sizes']['gallery-thumb']; ?>" alt="<?php echo ID OF CLICKED IMG['alt']; ?>" width="200px" height="100px" />'
+    //change hero - add.html(imgString); to vehicle-hero dive
+
+    function displayCallout() {
+      if (calloutValue === 'Most popular') {
+        $('#popular').css('display', 'block');
+      } else if (calloutValue === 'New arrival') {
+        $('#new').css('display', 'block');
+      }
+    }
+
     function changeActiveClassNext() {
       $next.eq(counter + 3).removeClass('active');
       $next.eq(counter).addClass('active');
@@ -55,6 +72,7 @@ var counter = 0;
         left: '+=210'
       }, 500);
     });
+  displayCallout()
   changeButtonState()
   });
 
