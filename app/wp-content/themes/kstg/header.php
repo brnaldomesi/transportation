@@ -55,7 +55,7 @@
 		<div class="grid">
 			<header class="header desktop-header row" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 				<div class="inner-header">
- 					<a class="fluid-images desktop-logo" href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php bloginfo('template_url'); ?>/library/images/logo-128x72.png"/ class="logo" /></a>
+ 					<a class="fluid-images desktop-logo" href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php bloginfo('template_url'); ?>/library/images/logo.svg"/ class="logo" /></a>
             <?php wp_nav_menu( array(
               'theme_location' => 'main-nav',
               'container' => 'nav',
@@ -66,7 +66,7 @@
 
       <header class="mobile-header">
         <div class="banner-wrapper">
-          <a class="desktop-logo" href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php bloginfo('template_url'); ?>/library/images/logo-128x72.png"/ class="logo" /></a>
+          <a class="desktop-logo" href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php bloginfo('template_url'); ?>/library/images/logo.svg"/ class="logo" /></a>
           <a href="#home"  id="menu-button" class="dropdown" data-scroll><img src="<?php bloginfo('template_url'); ?>/library/images/icon-menu.png"/ class="logo" /></a>
         </div>
           <?php wp_nav_menu( array(

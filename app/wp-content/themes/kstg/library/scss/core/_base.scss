@@ -34,12 +34,3 @@ a:hover {
     border: 1px solid $medium-grey;
   }
 }
-
-/************/
-/** MOBILE **/
-/************/
-@media (max-width: 1024px) {
-  .breadcrumbs {
-    display: none;
-  }
-}
