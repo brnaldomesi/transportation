@@ -8,11 +8,18 @@ var calloutValue = $('.specialFeature').text();
   $(document).ready(function() {
 
     //function for changing hero image
+    function changeHeroImage(activeThumbId) {
+      var heroId = (activeThumbId) + '-hero';
+      $('.vehicle-hero').find('.active').toggleClass('active');
+      $('#' + heroId).addClass('active');
+    }
 
     //function for highlighting selected image in carousel
     function setActiveImage(event) {
+      var thumbId = $(this).attr('id').split('-')[0];
       $('ul').find('.borderSelector').toggleClass('borderSelector');
       $(this).toggleClass('borderSelector');
+      changeHeroImage(thumbId);
     }
 
     // Handles gallery scrolling behaviour and button state

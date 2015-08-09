@@ -7,7 +7,12 @@
 */
  ?>
 
-<?php $heroimage = get_field('hero_image'); ?>
+<?php $hero1 = get_field('hero_image_1'); ?>
+<?php $hero2 = get_field('hero_image_2'); ?>
+<?php $hero3 = get_field('hero_image_3'); ?>
+<?php $hero4 = get_field('hero_image_4'); ?>
+<?php $hero5 = get_field('hero_image_5'); ?>
+<?php $hero6 = get_field('hero_image_6'); ?>
 <?php $image1 = get_field('image_carousel_1'); ?>
 <?php $image2 = get_field('image_carousel_2'); ?>
 <?php $image3 = get_field('image_carousel_3'); ?>
@@ -19,35 +24,52 @@
 <div id="vehicle" class="vehicle">
   <h2><?php the_field('vehicle_type'); ?></h2>
   <div class="vehicle-hero container">
-    <img src="<?php echo $heroimage['url'] ?>" />
+    <?php if( !empty($hero1) ): ?>
+    <img id="img1-hero" class="active" src="<?php echo $hero1['sizes']['hero-image'] ?>" />
+    <?php endif; ?>
+    <?php if( !empty($hero2) ): ?>
+    <img id="img2-hero" src="<?php echo $hero2['sizes']['hero-image'] ?>" />
+    <?php endif; ?>
+    <?php if( !empty($hero3) ): ?>
+    <img id="img3-hero" src="<?php echo $hero3['sizes']['hero-image'] ?>" />
+    <?php endif; ?>
+    <?php if( !empty($hero4) ): ?>
+    <img id="img4-hero" src="<?php echo $hero4['sizes']['hero-image'] ?>" />
+    <?php endif; ?>
+    <?php if( !empty($hero5) ): ?>
+    <img id="img5-hero" src="<?php echo $hero5['sizes']['hero-image'] ?>" />
+    <?php endif; ?>
+    <?php if( !empty($hero6) ): ?>
+    <img id="img6-hero" src="<?php echo $hero6['sizes']['hero-image'] ?>" />
+    <?php endif; ?>
     <div>
       <div class="specialFeature"><?php the_field('special_feature'); ?></div>
       <img class="fluid-images callout" id="popular" src="<?php bloginfo('template_url'); ?>/library/images/callout-most-popular.svg" alt="Facebook" width="110px" />
       <img class="fluid-images callout" id="new" src="<?php bloginfo('template_url'); ?>/library/images/callout-new-arrival.svg" alt="Facebook"  width="110px" />
     </div>
 </div>
-  <div class="about">
+  <div class="container content about">
     <div class="carousel">
       <button class="prev"></button>
       <div class="carousel-images">
         <ul>
           <?php if( !empty($image1) ): ?>
-            <li><img id="img1-thumb" src="<?php echo $image1['url']; ?>" alt="<?php echo $image1['alt']; ?>" width="200px" height="100px" /></li>
+            <li><img id="img1-thumb" src="<?php echo $image1['sizes']['gallery-thumb']; ?>" alt="<?php echo $image1['alt']; ?>" width="200px" height="100px" /></li>
           <?php endif; ?>
           <?php if( !empty($image2) ): ?>
-            <li><img id="img2-thumb" src="<?php echo $image2['url']; ?>" alt="<?php echo $image2['alt']; ?>" width="200px" height="100px" /></li>
+            <li><img id="img2-thumb" src="<?php echo $image2['sizes']['gallery-thumb']; ?>" alt="<?php echo $image2['alt']; ?>" width="200px" height="100px" /></li>
           <?php endif; ?>
           <?php if( !empty($image3) ): ?>
-            <li><img id="img3-thumb" src="<?php echo $image3['url']; ?>" alt="<?php echo $image3['alt']; ?>" width="200px" height="100px" /></li>
+            <li><img id="img3-thumb" src="<?php echo $image3['sizes']['gallery-thumb']; ?>" alt="<?php echo $image3['alt']; ?>" width="200px" height="100px" /></li>
           <?php endif; ?>
           <?php if( !empty($image4) ): ?>
-            <li><img id="img4-thumb" src="<?php echo $image4['url']; ?>" alt="<?php echo $image4['alt']; ?>" width="200px" height="100px" /></li>
+            <li><img id="img4-thumb" src="<?php echo $image4['sizes']['gallery-thumb']; ?>" alt="<?php echo $image4['alt']; ?>" width="200px" height="100px" /></li>
           <?php endif; ?>
           <?php if( !empty($image5) ): ?>
-            <li><img id="img5-thumb" src="<?php echo $image5['url']; ?>" alt="<?php echo $image5['alt']; ?>" width="200px" height="100px" /></li>
+            <li><img id="img5-thumb" src="<?php echo $image5['sizes']['gallery-thumb']; ?>" alt="<?php echo $image5['alt']; ?>" width="200px" height="100px" /></li>
           <?php endif; ?>
           <?php if( !empty($image6) ): ?>
-            <li><img id="img6-thumb" src="<?php echo $image6['url']; ?>" alt="<?php echo $image6['alt']; ?>" width="200px" height="100px" /></li>
+            <li><img id="img6-thumb" src="<?php echo $image6['sizes']['gallery-thumb']; ?>" alt="<?php echo $image6['alt']; ?>" width="200px" height="100px" /></li>
           <?php endif; ?>
         </ul>
       </div>
