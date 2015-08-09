@@ -29,7 +29,7 @@ header {
           &.current_page_item {
             a {
               color: $purple-text;
-              text-decoration: underline;
+              border-bottom: 3px solid;
             }
           }
           a {
@@ -38,10 +38,8 @@ header {
             text-transform: uppercase;
             &:hover {
               color: $purple;
-            }
-            &:active {
-              color: $purple-text;
-              text-decoration: underline;
+              border-bottom: 3px solid;
+
             }
           }
         }
