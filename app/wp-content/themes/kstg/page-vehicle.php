@@ -24,7 +24,7 @@
 <div id="vehicle" class="vehicle">
   <h2><?php the_field('vehicle_type'); ?></h2>
   <div class="vehicle-hero container">
-    <img id="img1-hero" src="<?php echo $hero1['sizes']['hero-image'] ?>" />
+    <img id="img1-hero" class="active" src="<?php echo $hero1['sizes']['hero-image'] ?>" />
     <img id="img2-hero" src="<?php echo $hero2['sizes']['hero-image'] ?>" />
     <img id="img3-hero" src="<?php echo $hero3['sizes']['hero-image'] ?>" />
     <img id="img4-hero" src="<?php echo $hero4['sizes']['hero-image'] ?>" />
