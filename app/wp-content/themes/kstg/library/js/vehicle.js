@@ -11,11 +11,9 @@ var calloutValue = $('.specialFeature').text();
 
     //function for highlighting selected image in carousel
     function setActiveImage(event) {
-      var currentImage = $('ul').find('.borderSelector').toggleClass('borderSelector');
-      console.log(currentImage);
+      $('ul').find('.borderSelector').toggleClass('borderSelector');
       var $getImage = (event.target.id);
       $(this).toggleClass('borderSelector');
-      console.log(this);
     }
 
     // Handles gallery scrolling behaviour and button state
@@ -53,9 +51,9 @@ var calloutValue = $('.specialFeature').text();
         $('.next').prop('disabled', false);
       }
     }
+
     function setEventListeners() {
       $('.next').on('click', function() {
-        console.log(counter);
         counter++;
         changeActiveClassNext();
         changeButtonState();
@@ -81,29 +79,7 @@ var calloutValue = $('.specialFeature').text();
       //event handler for image selection
       $('img').on('click', setActiveImage)
     }
-    $('.next').on('click', function() {
-      console.log(counter);
-      counter++;
-      changeActiveClassNext();
-      changeButtonState();
-      $('ul').animate({
-        left: '-=210'
-      }, 500);
-    });
 
-    $('.prev').on('click', function() {
-      counter--;
-      changeActiveClassPrev();
-      changeButtonState();
-      if (counter === 0) {
-        $(this).prop('disabled', true);
-      } else {
-        $(this).prop('disabled', false);
-      }
-      $('ul').animate({
-        left: '+=210'
-      }, 500);
-    });
   displayCallout()
   changeButtonState()
   setEventListeners()
