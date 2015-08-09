@@ -14,6 +14,15 @@ var calloutValue = $('.specialFeature').text();
     // var imgString = '<img src="<?php echo $image1['sizes']['gallery-thumb']; ?>" alt="<?php echo ID OF CLICKED IMG['alt']; ?>" width="200px" height="100px" />'
     //change hero - add.html(imgString); to vehicle-hero dive
 
+    //function for changing hero image
+
+    //function for highlighting selected image in carousel
+    function setActiveImage(event) {
+      $('ul').find('.borderSelector').toggleClass('borderSelector');
+      $(this).toggleClass('borderSelector');
+    }
+
+    // Handles gallery scrolling behaviour and button state
     function displayCallout() {
       if (calloutValue === 'Most popular') {
         $('#popular').css('display', 'block');
@@ -49,31 +58,37 @@ var calloutValue = $('.specialFeature').text();
       }
     }
 
-    $('.next').on('click', function() {
-      console.log(counter);
-      counter++;
-      changeActiveClassNext();
-      changeButtonState();
-      $('ul').animate({
-        left: '-=210'
-      }, 500);
-    });
+    function setEventListeners() {
+      $('.next').on('click', function() {
+        counter++;
+        changeActiveClassNext();
+        changeButtonState();
+        $('ul').animate({
+          left: '-=210'
+        }, 500);
+      });
 
-    $('.prev').on('click', function() {
-      counter--;
-      changeActiveClassPrev();
-      changeButtonState();
-      if (counter === 0) {
-        $(this).prop('disabled', true);
-      } else {
-        $(this).prop('disabled', false);
-      }
-      $('ul').animate({
-        left: '+=210'
-      }, 500);
-    });
+      $('.prev').on('click', function() {
+        counter--;
+        changeActiveClassPrev();
+        changeButtonState();
+        if (counter === 0) {
+          $(this).prop('disabled', true);
+        } else {
+          $(this).prop('disabled', false);
+        }
+        $('ul').animate({
+          left: '+=210'
+        }, 500);
+      });
+
+      //event handler for image selection
+      $('img').on('click', setActiveImage)
+    }
+
   displayCallout()
   changeButtonState()
+  setEventListeners()
   });
 
 })(jQuery);

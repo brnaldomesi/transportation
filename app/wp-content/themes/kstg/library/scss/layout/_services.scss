@@ -79,5 +79,21 @@
     @include standard-button;
     margin-top: 20px;
   }
-
+  /************/
+  /** MOBILE **/
+  /************/
+  @media only screen and (max-width: 800px) {
+    padding: 0 0 80px 0;
+    .container,
+    .vehicle-hero {
+      width: 100%;
+    }
+    fieldset {
+      &.form-layout,
+      button {
+        clear: both;
+        width: 100%;
+      }
+    }
+  }
 }
