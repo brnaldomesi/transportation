@@ -4,22 +4,15 @@ var $prev = $('.carousel .prev');
 var $next = $('.carousel .next');
 var counter = 0;
 var calloutValue = $('.specialFeature').text();
-var heroImage = $('.hero-image');
 
   $(document).ready(function() {
 
-    //on click get id of thumbnail image
-    //get hero img id - DONE
-    //change value of imgString
-    // var imgString = '<img src="<?php echo $image1['sizes']['gallery-thumb']; ?>" alt="<?php echo ID OF CLICKED IMG['alt']; ?>" width="200px" height="100px" />'
-    //change hero - add.html(imgString); to vehicle-hero dive
-
     //function for changing hero image
     function changeHeroImage(activeThumbId) {
-      var foo = (activeThumbId) + '-hero';
-      console.log('image got', foo);
+      var heroId = (activeThumbId) + '-hero';
+      $('.vehicle-hero').find('.active').toggleClass('active');
+      $('#' + heroId).addClass('active');
     }
-
 
     //function for highlighting selected image in carousel
     function setActiveImage(event) {
