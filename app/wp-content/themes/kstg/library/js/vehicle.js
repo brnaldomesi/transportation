@@ -12,7 +12,7 @@ var calloutValue = $('.specialFeature').text();
     //function for highlighting selected image in carousel
     function setActiveImage(event) {
       $('ul').find('.borderSelector').toggleClass('borderSelector');
-      var $getImage = (event.target.id);
+      var $image = (event.target.id);
       $(this).toggleClass('borderSelector');
     }
 
