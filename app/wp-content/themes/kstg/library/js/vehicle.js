@@ -15,18 +15,17 @@ var heroImage = $('.hero-image');
     //change hero - add.html(imgString); to vehicle-hero dive
 
     //function for changing hero image
-    function changeHeroImage(val) {
-      var foo = val;
-      console.log('image got', val);
+    function changeHeroImage(activeThumbId) {
+      var foo = (activeThumbId) + '-large';
+      console.log('image got', foo);
     }
 
 
     //function for highlighting selected image in carousel
     function setActiveImage(event) {
-      // var thumbId = this.attr('id');
+      var thumbId = $(this).attr('id').split('-')[0];
       $('ul').find('.borderSelector').toggleClass('borderSelector');
       $(this).toggleClass('borderSelector');
-      console.log($(this).attr('id'));
       changeHeroImage(thumbId);
     }
 

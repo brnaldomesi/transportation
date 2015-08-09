@@ -7,7 +7,12 @@
 */
  ?>
 
-<?php $heroimage = get_field('hero_image'); ?>
+<?php $hero1 = get_field('hero_image_1'); ?>
+<?php $hero2 = get_field('hero_image_2'); ?>
+<?php $hero3 = get_field('hero_image_3'); ?>
+<?php $hero4 = get_field('hero_image_4'); ?>
+<?php $hero5 = get_field('hero_image_5'); ?>
+<?php $hero6 = get_field('hero_image_6'); ?>
 <?php $image1 = get_field('image_carousel_1'); ?>
 <?php $image2 = get_field('image_carousel_2'); ?>
 <?php $image3 = get_field('image_carousel_3'); ?>
@@ -19,7 +24,12 @@
 <div id="vehicle" class="vehicle">
   <h2><?php the_field('vehicle_type'); ?></h2>
   <div class="vehicle-hero container">
-    <img id="hero-image" src="<?php echo $heroimage['sizes']['hero-image'] ?>" />
+    <img id="img1-hero" src="<?php echo $hero1['sizes']['hero-image'] ?>" />
+    <img id="img2-hero" src="<?php echo $hero2['sizes']['hero-image'] ?>" />
+    <img id="img3-hero" src="<?php echo $hero3['sizes']['hero-image'] ?>" />
+    <img id="img4-hero" src="<?php echo $hero4['sizes']['hero-image'] ?>" />
+    <img id="img5-hero" src="<?php echo $hero5['sizes']['hero-image'] ?>" />
+    <img id="img6-hero" src="<?php echo $hero6['sizes']['hero-image'] ?>" />
     <div>
       <div class="specialFeature"><?php the_field('special_feature'); ?></div>
       <img class="fluid-images callout" id="popular" src="<?php bloginfo('template_url'); ?>/library/images/callout-most-popular.svg" alt="Facebook" width="110px" />
