@@ -19,7 +19,7 @@
 <div id="vehicle" class="vehicle">
   <h2><?php the_field('vehicle_type'); ?></h2>
   <div class="vehicle-hero container">
-    <img src="<?php echo $heroimage['sizes']['hero-image'] ?>" />
+    <img id="hero-image" src="<?php echo $heroimage['sizes']['hero-image'] ?>" />
     <div>
       <div class="specialFeature"><?php the_field('special_feature'); ?></div>
       <img class="fluid-images callout" id="popular" src="<?php bloginfo('template_url'); ?>/library/images/callout-most-popular.svg" alt="Facebook" width="110px" />
