@@ -24,12 +24,24 @@
 <div id="vehicle" class="vehicle">
   <h2><?php the_field('vehicle_type'); ?></h2>
   <div class="vehicle-hero container">
+    <?php if( !empty($hero1) ): ?>
     <img id="img1-hero" class="active" src="<?php echo $hero1['sizes']['hero-image'] ?>" />
+    <?php endif; ?>
+    <?php if( !empty($hero2) ): ?>
     <img id="img2-hero" src="<?php echo $hero2['sizes']['hero-image'] ?>" />
+    <?php endif; ?>
+    <?php if( !empty($hero3) ): ?>
     <img id="img3-hero" src="<?php echo $hero3['sizes']['hero-image'] ?>" />
+    <?php endif; ?>
+    <?php if( !empty($hero4) ): ?>
     <img id="img4-hero" src="<?php echo $hero4['sizes']['hero-image'] ?>" />
+    <?php endif; ?>
+    <?php if( !empty($hero5) ): ?>
     <img id="img5-hero" src="<?php echo $hero5['sizes']['hero-image'] ?>" />
+    <?php endif; ?>
+    <?php if( !empty($hero6) ): ?>
     <img id="img6-hero" src="<?php echo $hero6['sizes']['hero-image'] ?>" />
+    <?php endif; ?>
     <div>
       <div class="specialFeature"><?php the_field('special_feature'); ?></div>
       <img class="fluid-images callout" id="popular" src="<?php bloginfo('template_url'); ?>/library/images/callout-most-popular.svg" alt="Facebook" width="110px" />
