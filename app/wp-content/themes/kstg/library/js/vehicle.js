@@ -16,7 +16,7 @@ var heroImage = $('.hero-image');
 
     //function for changing hero image
     function changeHeroImage(activeThumbId) {
-      var foo = (activeThumbId) + '-large';
+      var foo = (activeThumbId) + '-hero';
       console.log('image got', foo);
     }
 
