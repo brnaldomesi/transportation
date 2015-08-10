@@ -59,7 +59,7 @@
             <?php wp_nav_menu( array(
               'theme_location' => 'main-nav',
               'container' => 'nav',
-              'depth' => 1
+              'depth' => 2
             )); ?>
 				</div>
 			</header>
