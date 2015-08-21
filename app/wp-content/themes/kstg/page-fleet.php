@@ -9,15 +9,13 @@
 
 <?php get_header(); ?>
 <div class="fleet">
-  <h2>Our Fleet</h2>
+  <h2><?php the_title(); ?></h2>
   <div class="container content">
     <?php
     // get the child pages of the current page. For the main fleet page,
     // this will be all subcategories.
     $childPages = get_pages(array(
-      'meta_key' => '_wp_page_template',
-      'meta_value' => 'page-fleet.php',
-      'child_of' => get_the_ID()
+      'parent' => get_the_ID()
     ));
 
     // if we have subcategories, let's get going!
