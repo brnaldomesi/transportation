@@ -35,18 +35,18 @@
         <?php
         // now, we need the actual vehicles, all pages that are a child of the
         // current $post... ends up happening for each subcategory
-        $vehiclePages = get_pages(array(
+        $categoryPages = get_pages(array(
         'child_of' => get_the_ID()
         ));
 
-        if( $vehiclePages ): ?>
+        if( $categoryPages ): ?>
 
         <ul>
-          <?php foreach( $vehiclePages as $post): ?>
+          <?php foreach( $categoryPages as $post): ?>
           <?php setup_postdata($post); ?>
           <li><a href="<?php echo wp_get_shortlink(); ?>">
             <img class="fluid-images" src="<?php echo get_field('hero_image')['url']; ?>" />
-            <h4 class="uppercase"><?php the_field('vehicle_type'); ?> &#8594;</h4>
+            <h4 class="uppercase"><?php the_field('type'); ?> &#8594;</h4>
           </a></li>
           <?php endforeach; ?>
         </ul>
