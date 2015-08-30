@@ -3,6 +3,7 @@ header {
   &.mobile-header {
     display: none;
   }
+
   height: 100px;
   position: relative;
   background-color: $white;
@@ -13,78 +14,140 @@ header {
   padding: $site-padding;
   max-width: 1220px;
   margin: 0 auto;
-    a {
-      img {
+  }
+
+  .logo {
+    float: left;
+    margin: 13px 1%;
+    width: 144px
+  }
+
+
+
+  /**********************
+  MENU: TOP LEVEL DESKTOP
+  ***********************/
+
+  nav {
+    float: right;
+    padding: 42px 2% 42px 0;
+
+    ul {
+      li {
         float: left;
-        margin: 8px 1%;
-        width: 144px
-      }
-    }
-    nav {
-      float: right;
-      padding: 42px 2% 42px 0;
-      ul {
-        li {
-          float: left;
+        display: block;
+        position: relative;
+        margin-left: 3.7em;
+        a {
           display: block;
-          position: relative;
-          padding-left: 3.7em;
+          font-weight: bold;
+          font-size: 1.2em;
+          text-transform: uppercase;
+          margin-bottom: 50px;
+        }
+      }
+
+      /**********************
+      MENU: DROPDOWN
+      ***********************/
+      ul {
+        display: none;
+        position: absolute;
+        top: 59px;
+        &.sub-menu {
+          margin-left: -40px;
+          padding: 20px 0;
+          background-color: white;
+          border: 1px solid $medium-grey;
+          box-shadow: 0 5px 6px -6px $dark-grey;
+        }
+
+        li {
+          float: none;
+          width: 200px;
+          padding: 10px 0;
+          margin-left: 30px;
           &.current_page_item {
             a {
-              color: $purple-text;
-              border-bottom: 3px solid;
+              color: $medium-grey;
+              border-bottom: none;
               display: block;
-              height: 100px;
             }
           }
-          &:hover > ul {
-            display: block;
-          }
+
           a {
-            margin-bottom: 41px;
-            display: block;
-            font-weight: bold;
-            font-size: 1.2em;
-            text-transform: uppercase;
+            margin-bottom: 0;
+            padding: 5px 10px;
+            font-size: 0.9em;
+            text-transform: none;
+            border-bottom: none;
+            font-weight: normal;
             &:hover {
-              color: $purple;
-              border-bottom: 3px solid;
+              border-bottom: 0;
+              text-decoration: underline;
             }
           }
         }
-        ul {
-          display: none;
-          position: absolute;
-          top: 59px;
-          &.sub-menu {
-            margin-left: -30px;
-            padding: 20px 0;
-            background-color: white;
-            border: 1px solid $medium-grey;
-            box-shadow: 0 5px 6px -6px $dark-grey;
+      }
+    }
+
+
+
+    /**********************
+    MENU: HOVER
+    ***********************/
+
+    ul {
+       > li {
+        &:hover {
+          > a {
+            color: $purple-text;
           }
-          li {
-            float: none;
-            width: 250px;
-            padding: 10px 0 10px 3%;
-            a {
-              margin-bottom: 0;
-              padding: 5px 10px;
-              font-size: 0.9em;
-              text-transform: none;
-              &:hover {
-                border-bottom: 0;
-                text-decoration: underline;
-              }
-            }
+        }
+
+        &:hover > ul {
+          display: block;
+        }
+      }
+    }
+
+
+
+    /**********************
+    MENU: ACTIVE PAGE
+    ***********************/
+
+    .current_page_item {
+      a {
+        color: $purple-text;
+        border-bottom: 3px solid $purple-text;
+      }
+
+      &:hover {
+        border-bottom: none;
+      }
+
+      ul {
+        li {
+          a {
+            border-bottom: none;
+            color: $dark-grey;
+          }
+
+          &:hover {
+            border-bottom: none;
           }
         }
       }
     }
   }
-  /************/
-  /** MOBILE **/
-  /************/
+
+
+
+  /**********************
+  MOBILE
+  ***********************/
+
   @media only screen and (max-width: 1024px) {
     &.desktop-header {
       display: none;
@@ -165,6 +228,13 @@ header {
     }
   }
 }
+
+
+
+/**********************
+BREADCRUMBS
+***********************/
+
 .breadcrumbs {
   span {
     &:last-child {
