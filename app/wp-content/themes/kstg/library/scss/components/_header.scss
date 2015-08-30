@@ -18,7 +18,7 @@ header {
 
   .logo {
     float: left;
-    margin: 8px 1%;
+    margin: 13px 1%;
     width: 144px
   }
 
@@ -98,11 +98,10 @@ header {
     ***********************/
 
     ul {
-      > li {
+       > li {
         &:hover {
-          a {
+          > a {
             color: $purple-text;
-            border-bottom: 3px solid $purple-text;
           }
         }
 
