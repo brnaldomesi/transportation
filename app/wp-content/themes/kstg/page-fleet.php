@@ -41,7 +41,7 @@
         <!-- any markup for the subcats goes here (e.g. the heading) -->
         <h3 class="uppercase purple-text"><?php the_title(); ?></h3>
 
-        <ul>
+        <ul class="fleet-page">
           <?php foreach( $childPages as $post): ?>
           <?php setup_postdata($post); ?>
           <li><a href="<?php echo wp_get_shortlink(); ?>">
@@ -55,8 +55,7 @@
 
       <?php else: ?>
 
-        <ul>
-          <h1>hello</h1>
+        <ul class="column">
           <li><a href="<?php echo wp_get_shortlink(); ?>">
             <img class="fluid-images" src="<?php echo get_field('hero_image')['url']; ?>" />
             <h4 class="uppercase"><?php the_field('type'); ?> &#8594;</h4>

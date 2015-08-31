@@ -1,14 +1,8 @@
 .fleet {
   padding: 0 5% 80px;
   background-color: $light-grey;
-  // clear: both;
-  .container {
-    margin: 25px auto 0;
-    &.content {
-      padding:  80px 8% 25px;
-    }
-  }
-  ul {
+
+  .fleet-page {
     @include clearfix();
     margin: 20px 0 50px;
     &:last-child {
@@ -28,6 +22,26 @@
       }
     }
   }
+
+  .container {
+    margin: 25px auto 0;
+    &.content {
+      padding:  80px 8% 0;
+    @include clearfix();
+
+    }
+  }
+
+  .column {
+    display: block;
+    float: left;
+    width: 48%;
+    padding: 0 1% 50px;
+  }
+
+
+
+
   /************/
   /** MOBILE **/
   /************/
@@ -67,4 +81,8 @@
       }
     }
   }
+}
+
+footer {
+  clear: both;
 }
