@@ -1,15 +1,18 @@
-.page-template-page-text,
-.page-template-page-faqs {
+.white-container {
+  padding: 0 5% 80px;
   background-color: $light-grey;
-  h1 {
-    font-size: 1.2em;
-    font-weight: 700;
-    color: $dark-grey;
-  }
   .container {
-    margin: 25px auto;
+    max-width: 1220px;
+    width: 95%;
+    margin: 0 auto 0;
+    box-sizing: border-box;
     &.content {
-      padding:  50px 5%;
+      padding:  80px 8% 65px;
+      background-color: #FFF;
+      border: 1px solid $medium-grey;
     }
+  }
+  .text-template-copy {
+    margin: 25px auto 0;
   }
 }
