@@ -12,29 +12,6 @@
     padding: 0 30px 70px 30px;
     max-width: 1220px;
     margin: 2px auto 0;
-    .gallery-container {
-      margin: 60px 25px 50px -5px;
-      display: inline-block;
-      div {
-        padding-left: 30px;
-      }
-      .gallery-corporate, .gallery-events, .gallery-travel, .gallery-wedding {
-        float: left;
-      }
-      a {
-        height: 45px;
-        margin-top: -2px;
-        display: block;
-        background-color: $dark-purple;
-        p {
-          padding: 14px 0;
-          font-weight: 600;
-          color: $light-grey;
-          text-align: center;
-          text-transform: uppercase;
-        }
-      }
-    }
     .about {
       @include white-container;
       p {
@@ -52,6 +29,43 @@
       }
     }
   }
+
+
+
+  /**********************
+  GALLERY
+  ***********************/
+
+  .gallery-container {
+    margin: 60px 25px 50px -5px;
+    display: inline-block;
+    div {
+      padding-left: 30px;
+    }
+    .gallery-corporate, .gallery-events, .gallery-travel, .gallery-wedding {
+      float: left;
+    }
+    a {
+      height: 45px;
+      margin-top: -2px;
+      display: block;
+      background-color: $dark-purple;
+      p {
+        padding: 14px 0;
+        font-weight: 600;
+        color: $light-grey;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+
+
+  /**********************
+  SECONDARY SECTION
+  ***********************/
+
   aside {
     background-color: $medium-grey;
     .aside-wrapper {
@@ -59,43 +73,62 @@
       margin: 0 auto;
       padding: 5px 13% 130px;
       @include clearfix();
-      .newsletter,
-      .contact-us {
-        display: inline-block;
-        height: 185px;
-        h2 {
-          margin-bottom: 30px;
-          text-transform: uppercase;
-        }
-      }
-      .newsletter {
-        label {
-          display: block;
-          font-weight: 600;
-          margin-bottom: 10px;
-        }
-        input {
-          @include text-field;
-        }
-        button {
-          @include standard-button;
-          margin-top: 20px;
-        }
-      }
-      .contact-us {
-        padding-left:100px;
-        p {
-          line-height: 27px;
-          span {
-            font-weight: 600;
-          }
-        }
+    }
+  }
+
+  .newsletter,
+  .contact-us {
+    display: inline-block;
+    height: 185px;
+    h2 {
+      margin-bottom: 30px;
+      text-transform: uppercase;
+    }
+  }
+
+
+
+  /**********************
+  SECONDARY SECTION: NEWSLETTER
+  ***********************/
+
+  .newsletter {
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    input {
+      @include text-field;
+    }
+    button {
+      @include standard-button;
+      margin-top: 20px;
+    }
+  }
+
+
+
+  /**********************
+  SECONDARY SECTION: CONTACT
+  ***********************/
+
+  .contact-us {
+    padding-left:100px;
+    p {
+      line-height: 27px;
+      span {
+        font-weight: 600;
       }
     }
   }
-  /************/
-  /** MOBILE **/
-  /************/
+
+
+
+  /**********************
+  MOBILE
+  ***********************/
+
   @media (max-width: 768px) {
     section {
       padding: 20px 0 0 0;
@@ -112,6 +145,7 @@
           }
         }
       }
+
       .about {
         margin: 20px 0;
         padding: 20px 5%;
@@ -123,6 +157,7 @@
         }
       }
     }
+
     aside {
       .aside-wrapper {
         padding: 5px 20px 55px;
