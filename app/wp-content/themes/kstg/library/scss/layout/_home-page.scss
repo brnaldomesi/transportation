@@ -1,4 +1,7 @@
-//white container
+/**********************
+HOME PAGE
+***********************/
+
 @mixin white-container {
   background-color: #FFF;
   margin: 25px 20px;
@@ -12,20 +15,27 @@
     padding: 0 30px 70px 30px;
     max-width: 1220px;
     margin: 2px auto 0;
-    .about {
-      @include white-container;
+  }
+
+
+
+  /**********************
+  ABOUT
+  ***********************/
+
+  .about {
+    @include white-container;
+    p {
+      margin-top: 20px;
+      line-height: 25px;
+      color: $dark-grey;
+    }
+    .button {
+        margin-right: 730px;
+        width: 255px;
       p {
+        @include standard-button;
         margin-top: 20px;
-        line-height: 25px;
-        color: $dark-grey;
-      }
-      .button {
-          margin-right: 730px;
-          width: 255px;
-        p {
-          @include standard-button;
-          margin-top: 20px;
-        }
       }
     }
   }
@@ -128,35 +138,57 @@
   /**********************
   MOBILE
   ***********************/
+  /**********************
+  HOME PAGE
+  ***********************/
 
   @media (max-width: 768px) {
     section {
       padding: 20px 0 0 0;
-      .gallery-container {
-        margin: 15px 5%;
-        div {
-          width: 47.5%;
-          padding: 10px 0;
-          &:nth-child(2n) {
-            float: right;
-          }
-          p {
-            padding: 17px 0;
-          }
-        }
-      }
+    }
 
-      .about {
-        margin: 20px 0;
-        padding: 20px 5%;
-        .button {
-          width: 100%;
-          p {
-            text-align: center;
-          }
+
+
+    /**********************
+    ABOUT
+    ***********************/
+
+    .about {
+      margin: 20px 0;
+      padding: 20px 5%;
+      .button {
+        width: 100%;
+        p {
+          text-align: center;
         }
       }
     }
+
+
+
+    /**********************
+    GALLERY
+    ***********************/
+
+    .gallery-container {
+      margin: 15px 5%;
+      div {
+        width: 47.5%;
+        padding: 10px 0;
+        &:nth-child(2n) {
+          float: right;
+        }
+        p {
+          padding: 17px 0;
+        }
+      }
+    }
+
+
+
+    /**********************
+    SECONDARY SECTION
+    ***********************/
 
     aside {
       .aside-wrapper {
