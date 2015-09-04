@@ -13,12 +13,13 @@ body {
   h2 {
     font-size: 1.2em;
     font-weight: 700;
-    padding-top: 50px;
+    padding: 50px 0 0 30px;;
     color: $dark-grey;
   }
   h3 {
     font-size: 1em;
     font-weight: bold;
+    line-height: 2;
   }
   h4 {
     font-size: 0.8em;
@@ -28,6 +29,7 @@ body {
   p {
     font-size: 1em;
     color: $dark-grey;
+    line-height: 1.5;
   }
   .uppercase {
     text-transform: uppercase;

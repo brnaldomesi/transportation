@@ -34,7 +34,7 @@
           <?php endif; ?>
         </ul>
       </div>
-      <form class="quote-form">
+<!--       <form class="quote-form">
         <fieldset class="form-layout">
           <h3 class="uppercase purple-text">Get a Quote!</h3>
           <p class="description">Have a question about this or any vehicle in our fleet?<br />
@@ -49,7 +49,7 @@
           <label>Your Message</label><textarea  name="message" rows="10" cols="50"></textarea>
           <button name="subscribe" class="button no-underline">Get a Quote &#8594;</button>
         </fieldset>
-      </form>
+      </form> -->
     </div>
   </div>
 <?php get_footer(); ?>

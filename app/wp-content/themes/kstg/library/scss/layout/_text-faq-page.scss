@@ -16,3 +16,26 @@
     margin: 25px auto 0;
   }
 }
+
+.rates-page {
+  ul {
+    li {
+      &:first-child {
+        font-weight: bold;
+      }
+      width: 26%;
+      display: inline-block;
+      line-height: 1.5;
+      padding-right: 10%;
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+  .button {
+    @include standard-button;
+    margin-top: 20px;
+  }
+}
+
+
