@@ -1,4 +1,7 @@
-//white container
+/**********************
+HOME PAGE
+***********************/
+
 @mixin white-container {
   background-color: #FFF;
   margin: 25px 20px;
@@ -12,120 +15,184 @@
     padding: 0 30px 70px 30px;
     max-width: 1220px;
     margin: 2px auto 0;
-    .gallery-container {
-      margin: 60px 25px 50px -5px;
-      display: inline-block;
-      div {
-        padding-left: 30px;
-      }
-      .gallery-corporate, .gallery-events, .gallery-travel, .gallery-wedding {
-        float: left;
-      }
-      a {
-        height: 45px;
-        margin-top: -2px;
-        display: block;
-        background-color: $dark-purple;
-        p {
-          padding: 14px 0;
-          font-weight: 600;
-          color: $light-grey;
-          text-align: center;
-          text-transform: uppercase;
-        }
-      }
+  }
+
+
+
+  /**********************
+  ABOUT
+  ***********************/
+
+  .about {
+    @include white-container;
+    p {
+      margin-top: 20px;
+      line-height: 25px;
+      color: $dark-grey;
     }
-    .about {
-      @include white-container;
+    .button {
+        margin-right: 730px;
+        width: 255px;
       p {
+        @include standard-button;
         margin-top: 20px;
-        line-height: 25px;
-        color: $dark-grey;
-      }
-      .button {
-          margin-right: 730px;
-          width: 255px;
-        p {
-          @include standard-button;
-          margin-top: 20px;
-        }
       }
     }
   }
+
+
+
+  /**********************
+  GALLERY
+  ***********************/
+
+  .gallery-container {
+    margin: 60px 25px 50px -5px;
+    display: inline-block;
+    div {
+      padding-left: 30px;
+    }
+    .gallery-corporate, .gallery-events, .gallery-travel, .gallery-wedding {
+      float: left;
+    }
+    a {
+      height: 45px;
+      margin-top: -2px;
+      display: block;
+      background-color: $dark-purple;
+      p {
+        padding: 14px 0;
+        font-weight: 600;
+        color: $light-grey;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+
+
+  /**********************
+  SECONDARY SECTION
+  ***********************/
+
   aside {
     background-color: $medium-grey;
     .aside-wrapper {
       max-width: 1220px;
       margin: 0 auto;
-      padding: 45px 13% 75px;
+      padding: 5px 13% 130px;
       @include clearfix();
-      .newsletter,
-      .contact-us {
-        display: inline-block;
-        height: 185px;
-        h2 {
-          margin-bottom: 30px;
-          text-transform: uppercase;
-        }
-      }
-      .newsletter {
-        label {
-          display: block;
-          font-weight: 600;
-          margin-bottom: 10px;
-        }
-        input {
-          @include text-field;
-        }
-        button {
-          @include standard-button;
-          margin-top: 20px;
-        }
-      }
-      .contact-us {
-        padding-left:100px;
-        p {
-          line-height: 27px;
-          span {
-            font-weight: 600;
-          }
-        }
+    }
+  }
+
+  .newsletter,
+  .contact-us {
+    display: inline-block;
+    height: 185px;
+    h2 {
+      margin-bottom: 30px;
+      text-transform: uppercase;
+    }
+  }
+
+
+
+  /**********************
+  SECONDARY SECTION: NEWSLETTER
+  ***********************/
+
+  .newsletter {
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    input {
+      @include text-field;
+    }
+    button {
+      @include standard-button;
+      margin-top: 20px;
+    }
+  }
+
+
+
+  /**********************
+  SECONDARY SECTION: CONTACT
+  ***********************/
+
+  .contact-us {
+    padding-left:100px;
+    p {
+      line-height: 27px;
+      span {
+        font-weight: 600;
       }
     }
   }
-  /************/
-  /** MOBILE **/
-  /************/
+
+
+
+  /**********************
+  MOBILE
+  ***********************/
+  /**********************
+  HOME PAGE
+  ***********************/
+
   @media (max-width: 768px) {
     section {
       padding: 20px 0 0 0;
-      .gallery-container {
-        margin: 15px 5%;
-        div {
-          width: 47.5%;
-          padding: 10px 0;
-          &:nth-child(2n) {
-            float: right;
-          }
-          p {
-            padding: 17px 0;
-          }
-        }
-      }
-      .about {
-        margin: 20px 0;
-        padding: 20px 5%;
-        .button {
-          width: 100%;
-          p {
-            text-align: center;
-          }
+    }
+
+
+
+    /**********************
+    ABOUT
+    ***********************/
+
+    .about {
+      margin: 20px 0;
+      padding: 20px 5%;
+      .button {
+        width: 100%;
+        p {
+          text-align: center;
         }
       }
     }
+
+
+
+    /**********************
+    GALLERY
+    ***********************/
+
+    .gallery-container {
+      margin: 15px 5%;
+      div {
+        width: 47.5%;
+        padding: 10px 0;
+        &:nth-child(2n) {
+          float: right;
+        }
+        p {
+          padding: 17px 0;
+        }
+      }
+    }
+
+
+
+    /**********************
+    SECONDARY SECTION
+    ***********************/
+
     aside {
       .aside-wrapper {
-        padding: 45px 20px 55px;
+        padding: 5px 20px 55px;
         .col-1-2 {
           width: 100%;
         }

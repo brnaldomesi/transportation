@@ -13,7 +13,7 @@ body {
   h2 {
     font-size: 1.2em;
     font-weight: 700;
-    padding: 50px 2.5% 0;
+    padding-top: 50px;
     color: $dark-grey;
   }
   h3 {
@@ -41,7 +41,7 @@ body {
   and (min-width: 737px) {
     font-size: 12px;
     h2 {
-      padding: 30px 6.5% 0;
+      padding-top: 30px;
     }
     .footer {
       font-size: 14px;
@@ -51,7 +51,7 @@ body {
   @media (max-width: 736px) {
     font-size: 12px;
     h2 {
-      padding: 40px 6.5% 0;
+      padding-top: 40px;
     }
     .footer {
       font-size: 14px;
