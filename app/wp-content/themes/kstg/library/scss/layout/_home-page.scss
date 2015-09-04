@@ -78,6 +78,9 @@ HOME PAGE
 
   aside {
     background-color: $medium-grey;
+    h2 {
+      padding-left: 0;
+    }
     .aside-wrapper {
       max-width: 1220px;
       margin: 0 auto;
