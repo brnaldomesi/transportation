@@ -15,27 +15,118 @@
   .text-template-copy {
     margin: 25px auto 0;
   }
-}
 
-.rates-page {
-  ul {
-    li {
-      &:first-child {
-        font-weight: bold;
-      }
-      width: 26%;
-      display: inline-block;
-      line-height: 1.5;
-      padding-right: 10%;
-      &:last-child {
-        padding-right: 0;
+
+
+  /************/
+  /** MOBILE **/
+  /************/
+
+  @media only screen and (max-width: 800px) {
+    padding: 0 0 80px 0;
+    .container {
+      width: 100%;
+      &.content {
+        padding:  0;
       }
     }
   }
-  .button {
-    @include standard-button;
-    margin-top: 20px;
+}
+
+.rates-page {
+  .rates-table {
+    ul {
+      border-bottom: 1px solid $light-grey;
+      li {
+        width: 21%;
+        display: inline-block;
+        line-height: 3;
+        padding: 0 8% 0 3%;
+        &:first-child {
+          width: 32%;
+        }
+        &:last-child {
+          padding-right: 0;
+        }
+
+
+
+        /************/
+        /** MOBILE **/
+        /************/
+
+        @media only screen and (max-width: 800px) {
+          line-height: 1.5;
+          padding: 1% 8% 1% 3%;
+          vertical-align: top;
+          &:first-child {
+            width: 26%;
+          }
+        }
+      }
+
+      &.top-row {
+        background-color: $purple-text;
+        li {
+          font-weight: 400;
+          color: #FFF;
+        }
+      }
+
+      &.table {
+        li {
+          &:first-child {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+  .footnotes {
+    margin-top: 30px;
+    font-size: 0.75em;
+    line-height: 1.5;
+
+
+
+    /************/
+    /** MOBILE **/
+    /************/
+
+    @media only screen and (max-width: 800px) {
+     padding: 0 3%;
+    }
+  }
+
+ .button {
+  width: 25%;
+  margin-top: 30px;
+  display: block;
+  padding: 13px 29px;
+  font-size: 1em;
+  background-color: $dark-purple;
+  border: none;
+  cursor: pointer;
+  a {
+    color: $light-grey;
+    font-weight: 600;
+    text-transform: uppercase;
+    }
+
+
+
+    /************/
+    /** MOBILE **/
+    /************/
+
+    @media only screen and (max-width: 800px) {
+      width: 79%;
+      margin: 30px 3%;
+      text-align: center;
+    }
   }
 }
+
 
 
