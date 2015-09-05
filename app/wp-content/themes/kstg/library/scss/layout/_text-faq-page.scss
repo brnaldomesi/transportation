@@ -18,20 +18,47 @@
 }
 
 .rates-page {
-  ul {
-    li {
-      &:first-child {
-        font-weight: bold;
+  .rates-table {
+    ul {
+      border-bottom: 1px solid $light-grey;
+      li {
+        width: 21%;
+        display: inline-block;
+        line-height: 3;
+        padding: 0 8% 0 3%;
+        &:first-child {
+          width: 32%;
+        }
+        &:last-child {
+          padding-right: 0;
+        }
       }
-      width: 26%;
-      display: inline-block;
-      line-height: 1.5;
-      padding-right: 10%;
-      &:last-child {
-        padding-right: 0;
+
+      &.top-row {
+        background-color: $purple-text;
+        li {
+          font-weight: 400;
+          color: #FFF;
+          // line-height: 2;
+        }
+      }
+
+      &.table {
+        li {
+          &:first-child {
+            font-weight: bold;
+          }
+        }
       }
     }
   }
+
+  .footnotes {
+    margin-top: 30px;
+    font-size: 0.75em;
+    line-height: 1.5;
+  }
+
   .button {
     @include standard-button;
     margin-top: 20px;

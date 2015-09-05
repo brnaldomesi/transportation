@@ -37,6 +37,10 @@ body {
   .purple-text {
     color: $purple-text;
   }
+  sup {
+    font-size: 0.75em;
+    vertical-align: top;
+  }
 
   //tablet
   @media (max-width: 1024px)
