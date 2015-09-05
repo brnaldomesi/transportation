@@ -60,9 +60,22 @@
   }
 
   .button {
-    @include standard-button;
-    margin-top: 20px;
+    width: 21%;
+    margin-top: 30px;
+    display: block;
+    padding: 13px 29px;
+    font-size: 1em;
+    background-color: $dark-purple;
+    border: none;
+    cursor: pointer;
+    a {
+      color: $light-grey;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
   }
 }
+
+
 
 
