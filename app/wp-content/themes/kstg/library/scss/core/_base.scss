@@ -30,6 +30,11 @@ a:hover {
     margin: 25px auto 0;
     box-sizing: border-box;
   }
+  h2,
+  .breadcrumbs {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
 }
 
 @media only screen and (max-width: 800px) {
