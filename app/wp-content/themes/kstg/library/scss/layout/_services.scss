@@ -35,39 +35,23 @@
       }
     }
   }
-  .quote-form {
-    padding: 30px 0;
-    display: inline-block;
-    fieldset {
-      border-bottom: 0;
-      float: left;
-      width: 32%;
-      &.form-layout {
-        padding-top: 45px;
-      }
+  .quote-form-container {
+    @include clearfix();
+    padding: 20px 0;
+  }
+  .quote-form-instructions {
+    width: 33%;
+    float: left;
+    .description {
+      margin-bottom: 10px;
     }
   }
-  label {
-    display: block;
-    font-weight: 600;
-    margin-bottom: 10px;
+  .quote-form {
+    width: 66%;
+    float: right;
   }
-  input,
-  textarea {
-    @include text-field;
-    border: 1px solid $medium-grey;
-  }
-  input {
-    height: 40px;
-    margin-bottom: 15px;
-  }
-  textarea {
-    height: 140px;
-    width: 95%;
-  }
-  button {
-    @include standard-button;
-    margin-top: 20px;
+  .ninja-forms-all-fields-wrap {
+    padding: 5px 0;
   }
   /************/
   /** MOBILE **/
