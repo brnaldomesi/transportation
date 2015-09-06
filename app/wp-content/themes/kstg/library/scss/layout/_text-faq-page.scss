@@ -7,7 +7,7 @@
     margin: 0 auto 0;
     box-sizing: border-box;
     &.content {
-      padding:  80px 8% 65px;
+      padding:  7%;
       background-color: #FFF;
       border: 1px solid $medium-grey;
     }
@@ -16,24 +16,16 @@
     margin: 25px auto 0;
   }
 
-
-
-  /************/
-  /** MOBILE **/
-  /************/
-
   @media only screen and (max-width: 800px) {
     padding: 0 0 80px 0;
     .container {
       width: 100%;
-      &.content {
-        padding:  0;
-      }
     }
   }
 }
 
 .rates-page {
+  margin: -7%;
   .rates-table {
     ul {
       border-bottom: 1px solid $light-grey;
@@ -127,6 +119,3 @@
     }
   }
 }
-
-
-
