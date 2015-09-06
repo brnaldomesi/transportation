@@ -37,3 +37,53 @@ a:hover {
     border: 1px solid $medium-grey;
   }
 }
+
+.two-column-form {
+  .ninja-forms-all-fields-wrap {
+    @include clearfix();
+    padding: 40px 0;
+    .text-wrap,
+    .textarea-wrap,
+    .submit-wrap {
+      width: 50%;
+    }
+    .text-wrap {
+      clear: left;
+      float: left;
+      padding-right: 20px;
+    }
+    .textarea-wrap,
+    .submit-wrap {
+      float: right;
+      clear: right;
+      padding-left: 20px
+    }
+    input[type=text] {
+      @include text-field();
+    }
+    input[type=submit] {
+      @include standard-button;
+      margin-top: 20px;
+    }
+    textarea {
+      @include textarea();
+      height: 145px;
+    }
+    .field-wrap {
+      position: relative;
+    }
+    .ninja-forms-field-error {
+      position: absolute;
+      top: 0;
+      right: 20px;
+      font-size: .5rem;
+      line-height: 20px;
+    }
+    .ninja-forms-error {
+      input[type=text],
+      textarea {
+        border-color: red;
+      }
+    }
+  }
+}
