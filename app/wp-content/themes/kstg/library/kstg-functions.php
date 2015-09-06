@@ -41,6 +41,12 @@ function kstg_beep_beep() {
     return 'http://kevinsmithgroup.com';
   }
   add_filter('login_headerurl','loginpage_custom_link');
+
+  function alloweditorToUpdateMenu() {
+    $role_object = get_role('editor');
+    $role_object->add_cap('edit_theme_options');
+  }
+  add_action('admin_head', 'alloweditorToUpdateMenu');
 }
 
 add_action( 'after_setup_theme', 'kstg_beep_beep' );
