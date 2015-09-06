@@ -31,6 +31,15 @@ module.exports = function(grunt) {
         }
       }
     },
+    php: {
+      dist: {
+        options: {
+          port: 9000,
+          open: true,
+          base: '<%= localConfig.local_repo_path %>/app/'
+        }
+      }
+    },
     wordpressdeploy: {
       options: {
         backup_dir: 'backups/',
@@ -181,9 +190,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-wordpress-deploy');
   grunt.loadNpmTasks('grunt-rsync');
   grunt.loadNpmTasks('grunt-prompt');
+  grunt.loadNpmTasks('grunt-php');
 
   // tasks
-  grunt.registerTask('dev', ['watch']);
+  grunt.registerTask('dev', ['php', 'watch']);
   grunt.registerTask('pull', ['pull_db', 'rsync:pull_uploads', 'rsync:pull_plugins']);
   grunt.registerTask('pull_prod', ['rsync:pull_uploads_prod', 'rsync:pull_plugins_prod']);
   grunt.registerTask('push', ['push_db', 'rsync:push_uploads', 'rsync:push_plugins']);
