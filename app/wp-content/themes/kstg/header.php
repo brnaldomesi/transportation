@@ -76,9 +76,11 @@
             'depth' => 2
           )); ?>
       </header>
-      <div class="page-container">
       <?php if (!is_front_page()) : ?>
-        <div class="breadcrumbs">
-          <?php bcn_display() ?>
-        </div>
+				<div class="white-container">
+	        <div class="breadcrumbs">
+	          <?php bcn_display() ?>
+	        </div>
+			<?php else : ?>
+				<div class="page-container">
       <?php endif; ?>

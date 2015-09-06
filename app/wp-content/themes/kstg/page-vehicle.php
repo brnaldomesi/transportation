@@ -24,7 +24,7 @@
 <?php get_header(); ?>
 <div id="vehicle" class="vehicle">
   <h2><?php the_field('vehicle_type'); ?></h2>
-  <div class="vehicle-hero container">
+  <div class="vehicle-hero">
     <?php if( !empty($hero1) ): ?>
     <img id="img1-hero" class="active" src="<?php echo $hero1['sizes']['hero-image'] ?>" />
     <?php endif; ?>

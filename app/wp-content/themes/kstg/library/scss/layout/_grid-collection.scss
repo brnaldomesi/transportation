@@ -1,8 +1,9 @@
-.fleet {
+.grid-collection {
   padding: 0 5% 80px;
   background-color: $light-grey;
+  @include clearfix();
 
-  .fleet-page {
+  .grid-collection-items {
     @include clearfix();
     margin: 20px 0 50px;
     &:last-child {
@@ -23,15 +24,6 @@
     }
   }
 
-  .container {
-    margin: 25px auto 0;
-    &.content {
-      padding:  80px 8% 0;
-      @include clearfix();
-
-    }
-  }
-
   .column {
     display: block;
     float: left;
@@ -46,15 +38,7 @@
   /************/
 
   @media (max-width: 750px) {
-    padding: 0 0 80px 0;
-    .container {
-      width: 100%;
-      margin: 25px auto 0;
-      &.content {
-        padding:  80px 7% 25px;
-      }
-    }
-    .fleet-page {
+    .grid-collection-items {
       li {
         width: 100%;
       }

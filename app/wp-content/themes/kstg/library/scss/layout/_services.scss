@@ -1,17 +1,4 @@
 .services {
-  padding: 0 5% 80px;
-  background-color: $light-grey;
-  .container {
-    max-width: 1220px;
-    width: 95%;
-    margin: 0 auto 0;
-    box-sizing: border-box;
-    &.content {
-      padding:  80px 8% 25px;
-      background-color: #FFF;
-      border: 1px solid $medium-grey;
-    }
-  }
   .services-hero {
     width: 95%;
     position: relative;
@@ -19,6 +6,10 @@
     img {
       width: 100%;
     }
+  }
+  .container {
+    margin-top: 0;
+    border-top: 0;
   }
   p {
     &.description {

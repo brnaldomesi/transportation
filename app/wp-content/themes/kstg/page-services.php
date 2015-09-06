@@ -12,9 +12,9 @@
 <?php $image3 = get_field('image_gallery_3'); ?>
 
 <?php get_header(); ?>
-  <div id="services" class="services">
+  <div class="services">
     <h2><?php the_field('service_type'); ?></h2>
-    <div class="services-hero container">
+    <div class="services-hero">
       <img src="<?php echo $image['url'] ?>" />
     </div>
     <div class="container content">

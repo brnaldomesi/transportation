@@ -1,22 +1,15 @@
 .vehicle {
-  padding: 0 5% 80px;
-  background-color: $light-grey;
-  .container {
-    &.content {
-      padding-bottom: 135px;
-    }
-  }
-
-
 
   /**********************
   VECHILE A-SPOT
   ***********************/
 
   .vehicle-hero {
-    width: 95%;
     position: relative;
+    width: 95%;
+    padding: 0;
     margin: 25px auto 0;
+
     img {
       width: 100%;
       height: auto;
@@ -44,7 +37,10 @@
     }
   }
 
-
+  .container {
+    margin-top: 0;
+    border-top: 0;
+  }
 
   /**********************
   ABOUT VEHICLE SECTION
@@ -224,4 +220,3 @@
     }
   }
 }
-
