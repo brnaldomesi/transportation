@@ -14,6 +14,7 @@
   <div class="container content text-template-copy">
 
   <?php $faqs = get_posts( array(
+    'posts_per_page' => 100,
     'post_type' => 'faq_type'
   ));
 
