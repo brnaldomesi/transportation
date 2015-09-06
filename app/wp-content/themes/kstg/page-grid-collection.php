@@ -1,6 +1,6 @@
 <?php
 /*
- Template Name: Fleet
+ Template Name: Grid Collection
  *
  * @package WordPress
  * @subpackage kstg
