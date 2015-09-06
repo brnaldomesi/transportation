@@ -1,3 +1,4 @@
+</div><!-- close page-container from header.php -->
 <footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
   <div class="inner-footer">
     <div class="copyright">
@@ -28,7 +29,6 @@
       </ul>
     </div>
   </div>
-</div><!-- close page-container from header.php -->
 </footer>
 </div>
 <?php // all js scripts are loaded in library/bones.php ?>
