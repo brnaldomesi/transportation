@@ -131,15 +131,6 @@ module.exports = function(grunt) {
           ssh: true,
           delete: true
         }
-      },
-      update_wordpress_prod: {
-        options: {
-          args: ['--verbose', '--progress', '-rlt', '--compress', '--omit-dir-times'],
-          src: '<%= localConfig.local_repo_path %>/app/wordpress/',
-          dest: 'kevinsmithgroup@kevinsmithgroup.com:/home/kevinsmithgroup/wordpress/wordpress/',
-          ssh: true,
-          delete: true
-        }
       }
     },
     prompt: {
@@ -180,25 +171,6 @@ module.exports = function(grunt) {
             }
           }
         }
-      },
-      update_wordpress_prod: {
-        options: {
-          questions: [
-            {
-              config: 'continue',
-              type: 'confirm',
-              message: 'Did you update the Wordpress submodule locally?',
-              default: false
-            }
-          ],
-          then: function(results, done) {
-            if (results.continue) {
-              done();
-            } else {
-              grunt.fail.warn('Before you run this task, you need to update wordpress via git: `git submodule foreach git pull origin master`');
-            }
-          }
-        }
       }
     }
   });
@@ -216,7 +188,6 @@ module.exports = function(grunt) {
   grunt.registerTask('pull_prod', ['rsync:pull_uploads_prod', 'rsync:pull_plugins_prod']);
   grunt.registerTask('push', ['push_db', 'rsync:push_uploads', 'rsync:push_plugins']);
   grunt.registerTask('deploy_theme', ['prompt:git_master', 'rsync:deploy_theme']);
-  grunt.registerTask('update_wordpress_prod', ['prompt:update_wordpress_prod', 'rsync:update_wordpress_prod']);
   grunt.registerTask('deploy_theme_prod', ['prompt:git_master_prod', 'rsync:deploy_theme_prod']);
 
 };
