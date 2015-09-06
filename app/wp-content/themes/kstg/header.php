@@ -73,7 +73,7 @@
             'theme_location' => 'main-nav',
             'container' => 'nav',
             'container_class' => 'toggle-menu',
-            'depth' => 1
+            'depth' => 2
           )); ?>
       </header>
       <div class="page-container">

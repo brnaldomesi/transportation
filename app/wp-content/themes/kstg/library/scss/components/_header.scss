@@ -21,9 +21,6 @@ header {
     margin: 13px 1%;
     width: 144px
   }
-
-
-
   /**********************
   MENU: TOP LEVEL DESKTOP
   ***********************/
@@ -32,87 +29,71 @@ header {
     float: right;
     padding: 42px 2% 42px 0;
 
-    ul {
-      li {
-        float: left;
+    .menu-item {
+      float: left;
+      display: block;
+      position: relative;
+      margin-left: 3.7em;
+      a {
         display: block;
-        position: relative;
-        margin-left: 3.7em;
-        a {
-          display: block;
-          font-weight: bold;
-          font-size: 1.2em;
-          text-transform: uppercase;
-          margin-bottom: 50px;
-        }
+        font-weight: bold;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        margin-bottom: 50px;
       }
 
-      /**********************
-      MENU: DROPDOWN
-      ***********************/
-      ul {
-        display: none;
-        position: absolute;
-        top: 59px;
-        &.sub-menu {
-          margin-left: -40px;
-          padding: 20px 0;
-          background-color: white;
-          border: 1px solid $medium-grey;
-          box-shadow: 0 5px 6px -6px $dark-grey;
-        }
+     &:hover {
+       > a {
+         color: $purple-text;
+       }
+     }
 
-        li {
-          float: none;
-          width: 200px;
-          padding: 10px 0;
-          margin-left: 30px;
-          &.current_page_item {
-            a {
-              color: $medium-grey;
-              border-bottom: none;
-              display: block;
-            }
-          }
-
-          a {
-            margin-bottom: 0;
-            padding: 5px 10px;
-            font-size: 0.9em;
-            text-transform: none;
-            border-bottom: none;
-            font-weight: normal;
-            line-height: 1.5;
-            &:hover {
-              border-bottom: 0;
-              text-decoration: underline;
-            }
-          }
-        }
-      }
+     &:hover > ul {
+       display: block;
+     }
     }
-
-
 
     /**********************
-    MENU: HOVER
+    MENU: DROPDOWN
     ***********************/
+    .sub-menu {
+      display: none;
+      position: absolute;
+      top: 59px;
+      margin-left: -40px;
+      padding: 20px 0;
+      background-color: white;
+      border: 1px solid $medium-grey;
+      box-shadow: 0 5px 6px -6px $dark-grey;
 
-    ul {
-       > li {
-        &:hover {
-          > a {
-            color: $purple-text;
+      li {
+        float: none;
+        width: 200px;
+        padding: 10px 0;
+        margin-left: 30px;
+        &.current_page_item {
+          a {
+            color: $medium-grey;
+            border-bottom: none;
+            display: block;
           }
         }
 
-        &:hover > ul {
-          display: block;
+        a {
+          margin-bottom: 0;
+          padding: 5px 10px;
+          font-size: 0.9em;
+          text-transform: none;
+          border-bottom: none;
+          font-weight: normal;
+          line-height: 1.5;
+          &:hover {
+            border-bottom: 0;
+            text-decoration: underline;
+          }
         }
       }
     }
-
-
 
     /**********************
     MENU: ACTIVE PAGE
@@ -142,24 +123,30 @@ header {
       }
     }
   }
+}
 
 
 
-  /**********************
-  MOBILE
-  ***********************/
+/**********************
+MOBILE
+***********************/
 
-  @media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
+  body {
+    padding-top: 95px;
+  }
+  header {
+    height: 95px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+
     &.desktop-header {
       display: none;
     }
     &.mobile-header {
       display: block;
     }
-    height: 95px;
-    margin: 0;
-    padding: 0;
-    position: relative;
     a {
       img {
         margin: 12px 4%;
@@ -196,7 +183,7 @@ header {
       left: 0;
       z-index: 100;
       &.open-menu {
-        ul {
+        > ul {
           top: 83px;
           -webkit-transition: all .25s ease;
              -moz-transition: all .25s ease;
@@ -208,7 +195,7 @@ header {
 
       ul {
         width: 100%;
-        top: -143px;
+        top: -800px;
         display: inline-block;
         position: absolute;
         left: 0;
@@ -217,18 +204,51 @@ header {
             -ms-transition: all .25s ease;
              -o-transition: all .25s ease;
                 transition: all .25s ease;
-        li {
-          padding: 9px 0;
-          border-bottom: 1px solid $medium-grey;
-          &:first-child {
-            border-top: 1px solid $medium-grey;
-          }
-
-          background-color: $white;
-          a {
-            font-weight: bold;
-            float: none;
-          }
+      }
+      .menu-item {
+        border-bottom: 1px solid $medium-grey;
+        margin: 0;
+        float: none;
+        background-color: $white;
+        &:first-child {
+          border-top: 1px solid $medium-grey;
+        }
+        &:hover a {
+          color: $dark-grey
+        }
+        a {
+          padding: 15px 0;
+          margin: 0 50px;
+          font-weight: bold;
+          border-bottom: none;
+        }
+      }
+      .menu > .menu-item-has-children {
+        &:after {
+          content: '+';
+          position: absolute;
+          top: 23px;
+          right: 10px;
+          display: block;
+          height: 25px;
+          width: 25px;
+          font-size: 1.5rem;
+          color: $dark-grey;
+          margin-top: -13px;
+        }
+      }
+      .sub-menu {
+        top: 0;
+        width: 100%;
+        position: relative;
+        display: none;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        box-shadow: none;
+        > li {
+          width: 100%;
+          margin: 0;
         }
       }
     }
@@ -250,6 +270,3 @@ BREADCRUMBS
     }
   }
 }
-
-
-
