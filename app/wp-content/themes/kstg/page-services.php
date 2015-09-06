@@ -34,10 +34,14 @@
           <?php endif; ?>
         </ul>
       </div>
-      <?php
-        if(function_exists( 'ninja_forms_display_form' ) && get_field('form_ninja_id')) {
-          ninja_forms_display_form(get_field('form_ninja_id'));
-      } ?>
+      <div class="quote-form">
+        <?php if (function_exists( 'ninja_forms_display_form' ) && get_field('form_ninja_id')) { ?>
+          <h3 class="uppercase purple-text">Get a Quote!</h3>
+          <p class="description">Have a question about this or any vehicle in our fleet?</p>
+          <p class="description">Send us a message with the vehicle name plus details of your needs and we'll get back to you within 1 business day!</p>
+          <?php ninja_forms_display_form(get_field('form_ninja_id')); ?>
+        <?php } ?>
+      </div>
 <!--       <form class="quote-form">
         <fieldset class="form-layout">
           <h3 class="uppercase purple-text">Get a Quote!</h3>
