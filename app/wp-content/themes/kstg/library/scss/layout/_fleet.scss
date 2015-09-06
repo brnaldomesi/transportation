@@ -41,45 +41,19 @@
 
 
 
-
   /************/
   /** MOBILE **/
   /************/
-  @media (max-width: 1024px)
-  and (min-width: 751px) {
-    padding: 0 0 80px 0;
-    .container {
-      width: 100%;
-      margin: 25px auto 0;
-      &.content {
-        padding:  80px 7% 25px;
-      }
-    }
-  }
+
   @media (max-width: 750px) {
-    padding: 0 0 80px 0;
-    h3 {
-      position: relative;
-      left: 50%;
-      margin-left: -150px;
-    }
-    .container {
-      width: 100%;
-      margin: 25px auto 0;
-      &.content {
-        padding:  80px 7% 25px;
-      }
-    }
-    ul {
-      margin: 20px auto 50px;
-      width: 300px;
-      li {
+      padding: 0 0 80px 0;
+      .container {
         width: 100%;
-        position: relative;
-        left: 50%;
-        margin-left: -150px;
+        margin: 25px auto 0;
+        &.content {
+          padding:  80px 7% 25px;
+        }
       }
-    }
   }
 }
 
