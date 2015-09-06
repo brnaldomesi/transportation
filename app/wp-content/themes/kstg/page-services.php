@@ -34,6 +34,10 @@
           <?php endif; ?>
         </ul>
       </div>
+      <?php
+        if(function_exists( 'ninja_forms_display_form' ) && get_field('form_ninja_id')) {
+          ninja_forms_display_form(get_field('form_ninja_id'));
+      } ?>
 <!--       <form class="quote-form">
         <fieldset class="form-layout">
           <h3 class="uppercase purple-text">Get a Quote!</h3>
