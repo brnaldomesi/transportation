@@ -67,10 +67,28 @@ module.exports = function(grunt) {
           delete: true
         }
       },
+      pull_uploads_prod: {
+        options: {
+          args: ['--verbose', '--progress', '-rlt', '--compress', '--omit-dir-times'],
+          src: 'kevinsmithgroup@kevinsmithgroup.com:/home/kevinsmithgroup/wordpress/wp-content/uploads/',
+          dest: '<%= localConfig.local_repo_path %>/app/wp-content/uploads/',
+          ssh: true,
+          delete: true
+        }
+      },
       pull_plugins: {
         options: {
           args: ['--verbose', '--progress', '-rlt', '--compress', '--omit-dir-times'],
           src: '<%= localConfig.server_user %>@dev.derrickshowers.com:/var/www/sites/kstg/wp-content/plugins/',
+          dest: '<%= localConfig.local_repo_path %>/app/wp-content/plugins/',
+          ssh: true,
+          delete: true
+        }
+      },
+      pull_plugins_prod: {
+        options: {
+          args: ['--verbose', '--progress', '-rlt', '--compress', '--omit-dir-times'],
+          src: 'kevinsmithgroup@kevinsmithgroup.com:/home/kevinsmithgroup/wordpress/wp-content/plugins/',
           dest: '<%= localConfig.local_repo_path %>/app/wp-content/plugins/',
           ssh: true,
           delete: true
@@ -103,6 +121,16 @@ module.exports = function(grunt) {
           ssh: true,
           delete: true
         }
+      },
+      deploy_theme_prod: {
+        options: {
+          args: ['--verbose', '--progress', '-rlt', '--compress', '--omit-dir-times'],
+          exclude: ['scss','.sass-cache'],
+          src: '<%= localConfig.local_repo_path %>/app/wp-content/themes/kstg/',
+          dest: 'kevinsmithgroup@kevinsmithgroup.com:/home/kevinsmithgroup/wordpress/wp-content/themes/kstg/',
+          ssh: true,
+          delete: true
+        }
       }
     },
     prompt: {
@@ -113,6 +141,25 @@ module.exports = function(grunt) {
               config: 'continue',
               type: 'confirm',
               message: 'You are about to deploy the kstg theme to staging. Are you sure you\'re on master?',
+              default: false
+            }
+          ],
+          then: function(results, done) {
+            if (results.continue) {
+              done();
+            } else {
+              grunt.fail.warn('Please make sure you\'re deploying master');
+            }
+          }
+        }
+      },
+      git_master_prod: {
+        options: {
+          questions: [
+            {
+              config: 'continue',
+              type: 'confirm',
+              message: 'You are about to deploy the kstg theme to PRODUCTION. Are you sure you\'re on master?',
               default: false
             }
           ],
@@ -138,7 +185,9 @@ module.exports = function(grunt) {
   // tasks
   grunt.registerTask('dev', ['watch']);
   grunt.registerTask('pull', ['pull_db', 'rsync:pull_uploads', 'rsync:pull_plugins']);
+  grunt.registerTask('pull_prod', ['rsync:pull_uploads_prod', 'rsync:pull_plugins_prod']);
   grunt.registerTask('push', ['push_db', 'rsync:push_uploads', 'rsync:push_plugins']);
   grunt.registerTask('deploy_theme', ['prompt:git_master', 'rsync:deploy_theme']);
+  grunt.registerTask('deploy_theme_prod', ['prompt:git_master_prod', 'rsync:deploy_theme_prod']);
 
 };
