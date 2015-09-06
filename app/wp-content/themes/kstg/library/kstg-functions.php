@@ -47,6 +47,12 @@ function kstg_beep_beep() {
     $role_object->add_cap('edit_theme_options');
   }
   add_action('admin_head', 'alloweditorToUpdateMenu');
+
+  function my_custom_change_ninja_forms_capabilities_filter($capabilities) {
+    $capabilities = 'edit_others_posts';
+    return $capabilities;
+  }
+  add_filter( 'ninja_forms_admin_menu_capabilities', 'my_custom_change_ninja_forms_capabilities_filter' );
 }
 
 add_action( 'after_setup_theme', 'kstg_beep_beep' );
