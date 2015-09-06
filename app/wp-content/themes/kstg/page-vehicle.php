@@ -19,6 +19,7 @@
 <?php $image4 = get_field('image_carousel_4'); ?>
 <?php $image5 = get_field('image_carousel_5'); ?>
 <?php $image6 = get_field('image_carousel_6'); ?>
+<?php $video = get_field('youtube_embed_code'); ?>
 
 <?php get_header(); ?>
 <div id="vehicle" class="vehicle">
@@ -43,11 +44,14 @@
     <img id="img6-hero" src="<?php echo $hero6['sizes']['hero-image'] ?>" />
     <?php endif; ?>
     <div>
-      <div class="specialFeature"><?php the_field('special_feature'); ?></div>
+      <div class="specialFeature">
+        <?php the_field('special_feature'); ?>
+      </div>
       <img class="fluid-images callout" id="popular" src="<?php bloginfo('template_url'); ?>/library/images/callout-most-popular.svg" alt="Facebook" width="110px" />
       <img class="fluid-images callout" id="new" src="<?php bloginfo('template_url'); ?>/library/images/callout-new-arrival.svg" alt="Facebook"  width="110px" />
     </div>
-</div>
+  </div>
+
   <div class="container content about">
     <div class="carousel">
       <button class="prev"></button>
@@ -75,6 +79,7 @@
       </div>
       <button class="next"></button>
     </div>
+
     <p class="description"><?php the_field('vehicle_description'); ?></p>
     <div class="button">
       <a href=""><p class="uppercase">Get a quote &#8594;</p></a>
@@ -82,6 +87,8 @@
     <div class="button">
       <a href=""><p class="uppercase">Make a reservation &#8594;</p></a>
     </div>
+
+    <?php if( !empty($video) ): ?>
     <div class="youtube-video">
       <h3 class="uppercase">Video Vehicle Tour</h3>
       <p><?php the_field('video_description'); ?></p>
@@ -89,6 +96,9 @@
         <?php the_field('youtube_embed_code'); ?>
       </div>
     </div>
+    <?php endif; ?>
+
   </div>
 </div>
+
 <?php get_footer(); ?>
