@@ -61,7 +61,7 @@ HOME PAGE
       display: block;
       background-color: $dark-purple;
       p {
-        padding: 14px 0;
+        line-height: 45px;
         font-weight: 600;
         color: $light-grey;
         text-align: center;
@@ -181,8 +181,8 @@ HOME PAGE
         &:nth-child(2n) {
           float: right;
         }
-        p {
-          padding: 17px 0;
+        img {
+          width: 100%;
         }
       }
     }
