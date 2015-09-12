@@ -64,3 +64,18 @@ body {
     }
   }
 }
+
+.homepage-banner {
+  text-align: center;
+  p {
+    font-weight: 600;
+    color: $dark-grey;
+  }
+  .headline {
+    font-family: 'Cookie', cursive;
+    font-size: 3em;
+    color: $purple-text;
+    font-weight: 400;
+    line-height: 36px;
+  }
+}
