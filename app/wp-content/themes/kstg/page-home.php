@@ -10,6 +10,11 @@
 <?php get_header(); ?>
 <div class="homepage-wrapper">
   <section class="main">
+    <div class="homepage-banner">
+      <p class="uppercase">Kevin Smith Transportation Group</p>
+      <p class="headline">Pennsylvania's Luxury Limousine Source</p>
+    </div>
+
     <div class="gallery-container row">
 
       <?php

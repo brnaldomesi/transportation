@@ -17,7 +17,14 @@ HOME PAGE
     margin: 2px auto 0;
   }
 
-
+.homepage-banner {
+  display: inline-block;
+  width: 100%;
+  margin-top: 25px;
+  .headline {
+    padding: 10px 20%;
+  }
+}
 
   /**********************
   ABOUT
@@ -47,7 +54,7 @@ HOME PAGE
   ***********************/
 
   .gallery-container {
-    margin: 60px 25px 50px -5px;
+    margin: 30px 25px 50px -5px;
     display: inline-block;
     div {
       padding-left: 30px;
