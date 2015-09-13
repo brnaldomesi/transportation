@@ -93,3 +93,28 @@
     }
   }
 }
+
+.contact-page {
+  @media only screen and (max-width: 800px) {
+    padding-bottom: 110px;
+    .two-column-form {
+      .ninja-forms-all-fields-wrap {
+        .field-wrap {
+          width: 100%;
+        }
+        .submit-wrap {
+          top: 170px;
+          left: -20px;
+        }
+      }
+    }
+    div {
+      #ninja_forms_field_3_div_wrap {
+        position: absolute;
+        top: 310px;
+        left: -20px;
+        width: 96%;
+      }
+    }
+  }
+}
