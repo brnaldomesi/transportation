@@ -94,6 +94,12 @@
   }
 }
 
+
+
+/**********************
+  FORM MOBILE OVERRIDES
+***********************/
+
 .contact-page {
   @media only screen and (max-width: 800px) {
     padding-bottom: 110px;
@@ -108,6 +114,7 @@
         }
       }
     }
+
     div {
       #ninja_forms_field_3_div_wrap {
         position: absolute;
