@@ -93,3 +93,35 @@
     }
   }
 }
+
+
+
+/**********************
+  FORM MOBILE OVERRIDES
+***********************/
+
+.contact-page {
+  @media only screen and (max-width: 800px) {
+    padding-bottom: 110px;
+    .two-column-form {
+      .ninja-forms-all-fields-wrap {
+        .field-wrap {
+          width: 100%;
+        }
+        .submit-wrap {
+          top: 170px;
+          left: -20px;
+        }
+      }
+    }
+
+    div {
+      .textarea-wrap {
+        position: absolute;
+        top: 310px;
+        left: -20px;
+        width: 96%;
+      }
+    }
+  }
+}
