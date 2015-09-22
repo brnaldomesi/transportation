@@ -17,6 +17,7 @@
 		<meta name="HandheldFriendly" content="True">
 		<meta name="MobileOptimized" content="320">
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="Kevin Smith Transportation Group - Pennsylvania’s source for luxury limousine and chauffeured transportation">
     <link rel="stylesheet" src="<?php bloginfo('template_url'); ?>/library/scss/style.css"/ type="text/css" media="screen" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400, 600,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
