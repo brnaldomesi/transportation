@@ -144,6 +144,8 @@ function bones_scripts_and_styles() {
     wp_register_script( 'validation-js', get_stylesheet_directory_uri() . '/library/js/validation.js', '', '', true );
     wp_register_script( 'vehicle-js', get_template_directory_uri() . '/library/js/vehicle.js', array('jquery'), '', true);
     wp_register_script( 'bones-js', get_stylesheet_directory_uri() . '/library/js/scripts.js', array( 'jquery' ), '', true );
+    wp_register_script ( 'limo-anywhere-js', '<script type="text/javascript" src="https://book.mylimobiz.com/v4/widgets/widget-loader.js"></script>', '', '', true );
+
 
     // page specific js
     wp_register_script( 'homepage-js', get_stylesheet_directory_uri() . '/library/js/home-page.js', array( 'jquery', 'validation-js' ), '', true );

@@ -85,7 +85,7 @@
       <a href=""><p class="uppercase">Get a quote &#8594;</p></a>
     </div>
     <div class="button">
-      <a href=""><p class="uppercase">Make a reservation &#8594;</p></a>
+      <a href="https://book.mylimobiz.com/v4/ksmithtrans" data-ores-widget="website" data-ores-alias="ksmithtrans"><p>Make a reservation &#8594;</p></a>
     </div>
 
     <?php if( !empty($video) ): ?>
