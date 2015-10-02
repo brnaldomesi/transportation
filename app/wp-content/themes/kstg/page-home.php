@@ -45,7 +45,7 @@
       <h1><?php the_field('text_area_title'); ?></h1>
       <p><?php the_field('text_area_content'); ?></p>
       <div class="button">
-        <a href="mailto:<?php the_field('email_address'); ?>" class="no-underline"><p>Make a reservation &#8594;</p></a>
+        <a href="https://book.mylimobiz.com/v4/ksmithtrans" data-ores-widget="website" data-ores-alias="ksmithtrans"><p>Make a reservation &#8594;</p></a>
       </div>
     </div>
   </section>
