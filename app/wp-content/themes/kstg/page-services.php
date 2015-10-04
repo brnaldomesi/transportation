@@ -20,20 +20,41 @@
     <div class="container content">
       <h3 class="uppercase purple-text">Section Title</h3>
       <p class="description"><?php the_field('service_description'); ?></p>
+
+      <?php
+      // *** RECOMMENDED RIDES ***
+      //
+      // To setup on the WP dashboard, add a field to 'Services', and choose
+      // the 'relationship' type. Make sure the name of the field is
+      // 'recommended_rides', and then fill out the rest of the details.
+      //
+      // To add details to each recommended ride, just use the `get_field()` method
+      // below, and point it to the name of the field on the vehicle template.
+
+      $posts = get_field('recommended_rides');
+      $i = 0;
+      if( $posts ): ?>
+
       <div class="recommended-rides">
         <h3 class="uppercase purple-text">Recommended rides</h3>
-        <ul>
-          <?php if( !empty($image1) ): ?>
-            <li><img src="<?php echo $image1['url']; ?>" alt="<?php echo $image1['alt']; ?>" width="300px" height="150px" /></li>
-          <?php endif; ?>
-          <?php if( !empty($image2) ): ?>
-            <li><img src="<?php echo $image2['url']; ?>" alt="<?php echo $image2['alt']; ?>" width="300px" height="150px" /></li>
-          <?php endif; ?>
-          <?php if( !empty($image3) ): ?>
-            <li><img src="<?php echo $image3['url']; ?>" alt="<?php echo $image3['alt']; ?>" width="300px" height="150px" /></li>
-          <?php endif; ?>
-        </ul>
+          <ul>
+            <?php foreach( $posts as $post): ?>
+              <?php
+                if ($i++ == 3) break;
+                setup_postdata($post);
+              ?>
+              <? $image = get_field('hero_image_1'); ?>
+              <li>
+                <a href="<?php the_permalink() ?>">
+                  <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" width="300px" height="150px" />
+                </a>
+              </li>
+            <?php endforeach; ?>
+          </ul>
+          <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
       </div>
+      <?php endif; // END RECOMMENDED RIDES SECTION ?>
+
       <div class="quote-form-container">
         <?php if (function_exists( 'ninja_forms_display_form' ) && get_field('form_ninja_id')) { ?>
           <div class="quote-form-instructions">
@@ -46,22 +67,6 @@
           </div>
         <?php } ?>
       </div>
-<!--       <form class="quote-form">
-        <fieldset class="form-layout">
-          <h3 class="uppercase purple-text">Get a Quote!</h3>
-          <p class="description">Have a question about this or any vehicle in our fleet?<br />
-            Send us a message with the vehicle name plus details of your needs and we'll get back to you within 1 business day!</p>
-        </fieldset>
-        <fieldset class="form-layout">
-          <label>Your Name</label><input type="text" value="" name="name">
-          <label>Your Email Address</label><input type="email" value="" name="email">
-          <label>Subject Line</label><input type="text" value="" name="subject">
-        </fieldset>
-        <fieldset class="form-layout">
-          <label>Your Message</label><textarea  name="message" rows="10" cols="50"></textarea>
-          <button name="subscribe" class="button no-underline">Get a Quote &#8594;</button>
-        </fieldset>
-      </form> -->
     </div>
   </div>
 <?php get_footer(); ?>
