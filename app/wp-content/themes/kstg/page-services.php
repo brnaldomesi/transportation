@@ -18,7 +18,7 @@
       <img src="<?php echo $image['url'] ?>" />
     </div>
     <div class="container content">
-      <h3 class="uppercase purple-text">Section Title</h3>
+      <h3 class="uppercase purple-text"><?php the_field('description_title'); ?></h3>
       <p class="description"><?php the_field('service_description'); ?></p>
       <div class="recommended-rides">
         <h3 class="uppercase purple-text">Recommended rides</h3>
