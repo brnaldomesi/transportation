@@ -46,7 +46,7 @@
               <? $image = get_field('hero_image_1'); ?>
               <li>
                 <a href="<?php the_permalink() ?>">
-                  <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" width="300px" height="150px" />
+                  <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="fluid-images"/>
                 </a>
               </li>
             <?php endforeach; ?>
