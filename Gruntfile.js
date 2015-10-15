@@ -136,7 +136,7 @@ module.exports = function(grunt) {
           args: ['--verbose', '--progress', '-rlt', '--compress', '--omit-dir-times'],
           exclude: ['scss','.sass-cache'],
           src: '<%= localConfig.local_repo_path %>/app/wp-content/themes/kstg/',
-          dest: 'kevinsmithgroup@kevinsmithgroup.com:/home/kevinsmithgroup/wordpress/wp-content/themes/kstg/',
+          dest: 'kevinsmithgroup@kevinsmithgroup.com:/home/kevinsmithgroup/public_html/wp-content/themes/kstg/',
           ssh: true,
           delete: true
         }
