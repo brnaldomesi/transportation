@@ -59,11 +59,16 @@
         <?php if (function_exists( 'ninja_forms_display_form' ) && get_field('form_ninja_id')) { ?>
           <div class="quote-form-instructions">
             <h3 class="uppercase purple-text">Get a Quote!</h3>
-            <p class="description">Have a question about this or any vehicle in our fleet?</p>
-            <p class="description">Send us a message with the vehicle name plus details of your needs and we'll get back to you within 1 business day!</p>
+            <div class="description">
+              <p>Have a question about this or any vehicle in our fleet?</p>
+              <p>Send us a message with the vehicle name plus details of your needs and we'll get back to you within 1 business day!</p>
+            </div>
           </div>
-          <div class="quote-form two-column-form">
-            <?php ninja_forms_display_form(get_field('form_ninja_id')); ?>
+          <div class="button">
+            <a href="../../../contact"><p>Get a quote &#8594;</p></a>
+          </div>
+          <div class="button">
+            <a href="https://book.mylimobiz.com/v4/ksmithtrans" data-ores-widget="website" data-ores-alias="ksmithtrans"><p>Make a reservation &#8594;</p></a>
           </div>
         <?php } ?>
       </div>
