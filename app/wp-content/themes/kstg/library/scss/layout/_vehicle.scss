@@ -126,6 +126,10 @@
   VECHILE DESCRIPTION
   ***********************/
 
+    .description-section {
+      margin-bottom: 60px;
+    }
+
     p {
       &.description {
         clear: both;
@@ -133,6 +137,7 @@
         line-height: 23px;
       }
     }
+
     .button {
       float: left;
       margin-right: 1%;
@@ -141,6 +146,7 @@
         padding: 13px 19px;
         margin-top: 20px;
       }
+
       a:hover {
         text-decoration: none;
       }

@@ -57,20 +57,28 @@
     @include clearfix();
     padding: 20px 0;
   }
+
   .quote-form-instructions {
-    width: 33%;
+    width: 100%;
     float: left;
     .description {
       margin-bottom: 10px;
     }
   }
-  .quote-form {
-    width: 66%;
-    float: right;
+
+  .button {
+    float: left;
+    margin-right: 1%;
+    p {
+      @include standard-button;
+      padding: 13px 19px;
+      margin-top: 20px;
+    }
+    a:hover {
+      text-decoration: none;
+    }
   }
-  .ninja-forms-all-fields-wrap {
-    padding: 5px 0;
-  }
+
 
 
 
@@ -102,6 +110,13 @@
       button {
         clear: both;
         width: 100%;
+      }
+    }
+
+    .button {
+      width: 100%;
+      p {
+        text-align: center;
       }
     }
 
