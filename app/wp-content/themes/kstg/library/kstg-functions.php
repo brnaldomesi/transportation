@@ -53,6 +53,11 @@ function kstg_beep_beep() {
     return $capabilities;
   }
   add_filter( 'ninja_forms_admin_menu_capabilities', 'my_custom_change_ninja_forms_capabilities_filter' );
+
+  function nf_subs_capabilities( $cap ) {
+      return 'edit_posts';
+  }
+  add_filter( 'ninja_forms_admin_submissions_capabilities', 'nf_subs_capabilities' );
 }
 
 add_action( 'after_setup_theme', 'kstg_beep_beep' );
